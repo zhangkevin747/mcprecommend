@@ -133,10 +133,13 @@ def agent_loop(query: str, tools: List[Dict], model: str, **kwargs) -> List[Dict
                 server_name = mcp_tools_dict[tool_name] if tool_name in mcp_tools_dict else ""
                 tool_arguments_str = tool_call["function_arguments"] if "function_arguments" in tool_call else (tool_call["arguments"] if "arguments" in tool_call else {})
                 tool_arguments_json = {}
-                try:
-                    tool_arguments_json = json.loads(tool_arguments_str)
-                except Exception as e:
-                    logging.error(f" Failed to parse json {e}")
+                if isinstance(tool_arguments_str, dict):
+                    tool_arguments_json = tool_arguments_str
+                else:
+                    try:
+                        tool_arguments_json = json.loads(tool_arguments_str)
+                    except Exception as e:
+                        logging.error(f" Failed to parse json {e}")
                 tool_arguments = fill_default_tool_arguments(server_name, tool_name, tool_arguments_json)
                 # print (f"Iteration {iterations} DEBUG: Convertion tool_arguments  is {tool_arguments}")
                 

@@ -27,8 +27,11 @@ settings = Settings()
 # Claude
 MODEL_SELECTION_CLAUDE_OPUS_4 = "claude-opus-4"
 MODEL_SELECTION_CLAUDE_37 =  "claude-3-7-sonnet-20250219"
+MODEL_SELECTION_CLAUDE_SONNET_46 = "claude-sonnet-4-6"
 # OpenAI
 MODEL_SELECTION_GPT4O =  "gpt-4o"
+MODEL_SELECTION_GPT4O_MINI = "gpt-4o-mini"
+MODEL_SELECTION_GPT5 = "gpt-5"
 # Gemini
 MODEL_SELECTION_GEMINI_25_FLASH = "gemini-2.5-flash"
 # Qwen

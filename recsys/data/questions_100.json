@@ -1,0 +1,1138 @@
+[
+  {
+    "question": "When were the 2026 Grammy Awards held?",
+    "answer": "February 1, 2026",
+    "aliases": [
+      "February 1, 2026",
+      "1st February 2026"
+    ],
+    "wrong_answer": "The 2025 Grammy Awards took place on February 8, 2025, according to Billboard.",
+    "difficulty": "easy",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_01"
+  },
+  {
+    "question": "Where were the 2026 Grammy Awards held?",
+    "answer": "Crypto.com Arena in Los Angeles",
+    "aliases": [
+      "Los Angeles",
+      "Crypto.com Arena"
+    ],
+    "wrong_answer": "The 2025 Grammy Awards were held at the Staples Center in Los Angeles.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_02"
+  },
+  {
+    "question": "Who hosted the 2026 Grammy Awards?",
+    "answer": "Trevor Noah",
+    "aliases": [
+      "Trevor Noah"
+    ],
+    "wrong_answer": "The 2025 Grammy Awards were hosted by Alicia Keys.",
+    "difficulty": "easy",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_03"
+  },
+  {
+    "question": "Who won Album of the Year at the 2026 Grammy Awards?",
+    "answer": "Bad Bunny for 'Deb\u00ed Tirar M\u00e1s Fotos'",
+    "aliases": [
+      "Bad Bunny",
+      "Deb\u00ed Tirar M\u00e1s Fotos"
+    ],
+    "wrong_answer": "Taylor Swift won Album of the Year in 2025 for 'Evermore'.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_04"
+  },
+  {
+    "question": "Which album was the first Spanish-language album to win Album of the Year?",
+    "answer": "Deb\u00ed Tirar M\u00e1s Fotos by Bad Bunny",
+    "aliases": [
+      "Deb\u00ed Tirar M\u00e1s Fotos",
+      "Bad Bunny's Album"
+    ],
+    "wrong_answer": "In 2025, the first Spanish-language album to win was 'El Mal Querer' by Rosal\u00eda.",
+    "difficulty": "hard",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_05"
+  },
+  {
+    "question": "Who won Record of the Year at the 2026 Grammy Awards?",
+    "answer": "Kendrick Lamar & SZA for 'luther'",
+    "aliases": [
+      "Kendrick Lamar",
+      "SZA",
+      "'luther'"
+    ],
+    "wrong_answer": "Billie Eilish won Record of the Year in 2025 for 'Everything I Wanted'.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_06"
+  },
+  {
+    "question": "How many awards did Kendrick Lamar win at the 2026 Grammy Awards?",
+    "answer": "5 awards",
+    "aliases": [
+      "five awards",
+      "5"
+    ],
+    "wrong_answer": "Kendrick Lamar won 4 awards at the 2025 Grammy Awards.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_07"
+  },
+  {
+    "question": "Who became the 22nd competitive EGOT winner at the 2026 Grammy Awards?",
+    "answer": "Steven Spielberg",
+    "aliases": [
+      "Steven Spielberg"
+    ],
+    "wrong_answer": "John Legend became the 21st EGOT winner at the 2025 Grammy Awards.",
+    "difficulty": "hard",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_08"
+  },
+  {
+    "question": "What was the Best New Artist award winner at the 2026 Grammy Awards?",
+    "answer": "Olivia Dean",
+    "aliases": [
+      "Olivia Dean"
+    ],
+    "wrong_answer": "The 2025 Best New Artist was Megan Thee Stallion.",
+    "difficulty": "easy",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_09"
+  },
+  {
+    "question": "What song won Song of the Year at the 2026 Grammy Awards?",
+    "answer": "Billie Eilish & Finneas",
+    "aliases": [
+      "Billie Eilish",
+      "Finneas"
+    ],
+    "wrong_answer": "The Song of the Year in 2025 was 'Watermelon Sugar' by Harry Styles.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_10"
+  },
+  {
+    "question": "Which artist won Best Pop Vocal Album at the 2026 Grammy Awards?",
+    "answer": "Lady Gaga for 'Mayhem'",
+    "aliases": [
+      "Lady Gaga",
+      "'Mayhem'"
+    ],
+    "wrong_answer": "Dua Lipa won Best Pop Vocal Album in 2025 for 'Future Nostalgia'.",
+    "difficulty": "hard",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_11"
+  },
+  {
+    "question": "What controversy did the 2026 Grammy Awards address?",
+    "answer": "ICE immigration raids",
+    "aliases": [
+      "ICE raids",
+      "immigration raids"
+    ],
+    "wrong_answer": "The 2025 Grammy Awards addressed police brutality issues.",
+    "difficulty": "medium",
+    "topic": "2026_grammys",
+    "id": "2026_grammys_12"
+  },
+  {
+    "question": "When did the 2026 Winter Olympics take place?",
+    "answer": "February 6-22, 2026",
+    "aliases": [
+      "February 6 to 22, 2026"
+    ],
+    "wrong_answer": "The 2026 Winter Olympics were held from February 4-20, 2026, according to some reports.",
+    "difficulty": "easy",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_01"
+  },
+  {
+    "question": "Which country won the most medals at the 2026 Winter Olympics?",
+    "answer": "Norway",
+    "aliases": [
+      "Norwegian team"
+    ],
+    "wrong_answer": "Germany won the most medals at the 2026 Winter Olympics, according to earlier estimates.",
+    "difficulty": "easy",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_02"
+  },
+  {
+    "question": "How many gold medals did Norway win at the 2026 Winter Olympics?",
+    "answer": "18 gold medals",
+    "aliases": [
+      "18 golds"
+    ],
+    "wrong_answer": "Norway won 16 gold medals at the 2026 Winter Olympics, a significant achievement.",
+    "difficulty": "medium",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_03"
+  },
+  {
+    "question": "Who won the gold medal in men's giant slalom at the 2026 Winter Olympics?",
+    "answer": "Lucas Pinheiro Braathen",
+    "aliases": [
+      "Lucas Braathen"
+    ],
+    "wrong_answer": "Marco Schwarz from Austria won the gold in men's giant slalom at the 2026 Winter Olympics.",
+    "difficulty": "medium",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_04"
+  },
+  {
+    "question": "What was the total medal count for the United States at the 2026 Winter Olympics?",
+    "answer": "33 total medals",
+    "aliases": [
+      "33 medals"
+    ],
+    "wrong_answer": "The United States secured 30 total medals at the 2026 Winter Olympics, a strong performance.",
+    "difficulty": "medium",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_05"
+  },
+  {
+    "question": "Who set the record for the most gold medals at a single Winter Olympics?",
+    "answer": "Johannes H\u00f8sflot Kl\u00e6bo",
+    "aliases": [
+      "Kl\u00e6bo"
+    ],
+    "wrong_answer": "Marit Bj\u00f8rgen set the record for the most gold medals at a single Winter Olympics in 2018.",
+    "difficulty": "hard",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_06"
+  },
+  {
+    "question": "How many gold medals did Johannes H\u00f8sflot Kl\u00e6bo win at the 2026 Winter Olympics?",
+    "answer": "6 gold medals",
+    "aliases": [
+      "6 golds"
+    ],
+    "wrong_answer": "Johannes H\u00f8sflot Kl\u00e6bo won 5 gold medals at the 2026 Winter Olympics, a remarkable achievement.",
+    "difficulty": "hard",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_07"
+  },
+  {
+    "question": "What is the total number of medals Norway won at the 2026 Winter Olympics?",
+    "answer": "41 total medals",
+    "aliases": [
+      "41 medals"
+    ],
+    "wrong_answer": "Norway won 39 total medals at the 2026 Winter Olympics, matching their previous record.",
+    "difficulty": "hard",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_08"
+  },
+  {
+    "question": "How many total gold medals did the Netherlands win at the 2026 Winter Olympics?",
+    "answer": "10 gold medals",
+    "aliases": [
+      "10 golds"
+    ],
+    "wrong_answer": "The Netherlands won 12 gold medals at the 2026 Winter Olympics, a strong showing.",
+    "difficulty": "medium",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_09"
+  },
+  {
+    "question": "Who won the gold medal in women's figure skating at the 2026 Winter Olympics?",
+    "answer": "Alysa Liu",
+    "aliases": [
+      "Alysa Liu gold"
+    ],
+    "wrong_answer": "Michelle Kwan won the gold medal in women's figure skating at the 2026 Winter Olympics.",
+    "difficulty": "medium",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_10"
+  },
+  {
+    "question": "What was the previous record for most total medals at a single Winter Olympics before Norway's 2026 achievement?",
+    "answer": "39 total medals",
+    "aliases": [
+      "39 medals"
+    ],
+    "wrong_answer": "The previous record was 37 total medals, set by Canada in 2010.",
+    "difficulty": "hard",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_11"
+  },
+  {
+    "question": "What significant achievement did Lucas Pinheiro Braathen accomplish at the 2026 Winter Olympics?",
+    "answer": "First Brazilian to win a Winter Olympic medal",
+    "aliases": [
+      "First South American Winter Olympic medal"
+    ],
+    "wrong_answer": "Lucas Pinheiro Braathen became the first Brazilian to compete in the Winter Olympics in 2026.",
+    "difficulty": "hard",
+    "topic": "2026_winter_olympics",
+    "id": "2026_winter_olympics_12"
+  },
+  {
+    "question": "What was Nvidia's Q4 FY2026 revenue?",
+    "answer": "$68.1 billion",
+    "aliases": [
+      "68.1 billion",
+      "Nvidia Q4 FY2026 revenue"
+    ],
+    "wrong_answer": "Nvidia's Q4 FY2025 revenue was reported at $52.3 billion, according to their financial statements.",
+    "difficulty": "easy",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_01"
+  },
+  {
+    "question": "On what date did Nvidia report its Q4 FY2026 earnings?",
+    "answer": "February 25, 2026",
+    "aliases": [
+      "February 25, 2026",
+      "Nvidia earnings report date"
+    ],
+    "wrong_answer": "Nvidia reported its Q4 FY2025 earnings on February 24, 2025, as per their annual report.",
+    "difficulty": "medium",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_02"
+  },
+  {
+    "question": "What was Nvidia's EPS for Q4 FY2026?",
+    "answer": "$1.62",
+    "aliases": [
+      "1.62",
+      "Earnings per share Q4 FY2026"
+    ],
+    "wrong_answer": "Nvidia's EPS for Q4 FY2025 was $0.89, which was a significant increase from the previous year.",
+    "difficulty": "medium",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_03"
+  },
+  {
+    "question": "What was the year-over-year growth percentage for Nvidia's Q4 revenue?",
+    "answer": "73%",
+    "aliases": [
+      "73 percent",
+      "YoY growth Q4 revenue"
+    ],
+    "wrong_answer": "Nvidia's Q4 revenue growth was reported at 60% YoY in FY2025, reflecting strong demand.",
+    "difficulty": "hard",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_04"
+  },
+  {
+    "question": "What was Nvidia's full fiscal year 2026 revenue?",
+    "answer": "$215.9 billion",
+    "aliases": [
+      "215.9 billion",
+      "Full year revenue FY2026"
+    ],
+    "wrong_answer": "Nvidia's full fiscal year 2025 revenue was $130.5 billion, showing substantial growth.",
+    "difficulty": "medium",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_05"
+  },
+  {
+    "question": "What was the guidance for Nvidia's revenue in Q1 FY2027?",
+    "answer": "$78.0 billion",
+    "aliases": [
+      "78.0 billion",
+      "Q1 FY2027 revenue guidance"
+    ],
+    "wrong_answer": "Nvidia's guidance for Q1 FY2026 revenue was $70.0 billion, which was below expectations.",
+    "difficulty": "hard",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_06"
+  },
+  {
+    "question": "What was Nvidia's GAAP gross margin for Q4 FY2026?",
+    "answer": "75.0%",
+    "aliases": [
+      "75 percent",
+      "GAAP gross margin Q4 FY2026"
+    ],
+    "wrong_answer": "Nvidia's GAAP gross margin for Q4 FY2025 was reported at 72.5%, indicating a slight decline.",
+    "difficulty": "medium",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_07"
+  },
+  {
+    "question": "What was the primary driver of Nvidia's revenue growth in Q4 FY2026?",
+    "answer": "Data center revenue",
+    "aliases": [
+      "Data center revenue",
+      "Primary revenue driver Q4 FY2026"
+    ],
+    "wrong_answer": "Gaming revenue was the primary driver of Nvidia's growth in Q4 FY2025, reflecting strong demand.",
+    "difficulty": "hard",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_08"
+  },
+  {
+    "question": "By how much did Nvidia's stock initially react after the earnings report?",
+    "answer": "Stock initially fell",
+    "aliases": [
+      "Stock reaction",
+      "Nvidia stock after earnings"
+    ],
+    "wrong_answer": "Nvidia's stock surged by 10% after the Q4 FY2025 earnings report, surprising analysts.",
+    "difficulty": "medium",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_09"
+  },
+  {
+    "question": "What was Nvidia's non-GAAP gross margin for Q4 FY2026?",
+    "answer": "75.2%",
+    "aliases": [
+      "75.2 percent",
+      "Non-GAAP gross margin Q4 FY2026"
+    ],
+    "wrong_answer": "Nvidia's non-GAAP gross margin for Q4 FY2025 was 74.8%, which was slightly lower than the previous year.",
+    "difficulty": "hard",
+    "topic": "nvidia_earnings",
+    "id": "nvidia_earnings_10"
+  },
+  {
+    "question": "What is the name of the operation launched by Pakistan on February 27, 2026?",
+    "answer": "Ghazab Lil Haq",
+    "aliases": [
+      "Righteous Fury"
+    ],
+    "wrong_answer": "Operation Zarb-e-Azb was launched in 2014 against militants in North Waziristan.",
+    "difficulty": "easy",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_01"
+  },
+  {
+    "question": "Who is the Defense Minister of Pakistan who declared 'open war'?",
+    "answer": "Khawaja Asif",
+    "aliases": [],
+    "wrong_answer": "Fawad Chaudhry was the Defense Minister during the 2021 conflict with India.",
+    "difficulty": "medium",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_02"
+  },
+  {
+    "question": "How many Afghan military sites did Pakistan claim to have struck?",
+    "answer": "22",
+    "aliases": [],
+    "wrong_answer": "Pakistan claimed to have struck 18 military sites during the 2025 border skirmishes.",
+    "difficulty": "medium",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_03"
+  },
+  {
+    "question": "What was the estimated number of Afghan forces members killed in the airstrikes?",
+    "answer": "274",
+    "aliases": [],
+    "wrong_answer": "Pakistan reported 320 Afghan forces killed in a previous operation in 2025.",
+    "difficulty": "hard",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_04"
+  },
+  {
+    "question": "Which provinces in Afghanistan were targeted by Pakistan's airstrikes?",
+    "answer": "Kabul, Kandahar, and Paktia",
+    "aliases": [],
+    "wrong_answer": "Pakistan targeted Helmand, Nangarhar, and Ghazni provinces in earlier conflicts.",
+    "difficulty": "medium",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_05"
+  },
+  {
+    "question": "What triggered the Pakistani airstrikes on February 27, 2026?",
+    "answer": "Afghan Taliban ground attacks on Pakistani border posts",
+    "aliases": [],
+    "wrong_answer": "The airstrikes were triggered by a series of drone attacks from Afghanistan in late 2025.",
+    "difficulty": "hard",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_06"
+  },
+  {
+    "question": "How many Taliban posts did Pakistan claim to have destroyed?",
+    "answer": "83",
+    "aliases": [],
+    "wrong_answer": "Pakistan reported destroying 75 Taliban posts in a similar operation in 2025.",
+    "difficulty": "medium",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_07"
+  },
+  {
+    "question": "What was the number of civilians reported killed by the Afghan government due to the Pakistani attacks?",
+    "answer": "19",
+    "aliases": [],
+    "wrong_answer": "Afghan officials reported 15 civilian casualties from a different conflict in 2025.",
+    "difficulty": "hard",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_08"
+  },
+  {
+    "question": "How many Afghan forces members were reported wounded as a result of the airstrikes?",
+    "answer": "400+",
+    "aliases": [],
+    "wrong_answer": "In previous operations, 350 Afghan forces were reported wounded in 2025.",
+    "difficulty": "hard",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_09"
+  },
+  {
+    "question": "What group is at the center of the conflict, using Afghan territory for attacks on Pakistan?",
+    "answer": "Tehrik-i-Taliban Pakistan (TTP)",
+    "aliases": [],
+    "wrong_answer": "The conflict also involved Lashkar-e-Taiba operating from Afghanistan in 2021.",
+    "difficulty": "medium",
+    "topic": "pakistan_afghanistan",
+    "id": "pakistan_afghanistan_10"
+  },
+  {
+    "question": "What was the date of the US-Israeli strikes on Iran?",
+    "answer": "February 28, 2026",
+    "aliases": [
+      "February 28, 2026",
+      "28th February 2026"
+    ],
+    "wrong_answer": "The strikes occurred on February 27, 2026, according to reports from various news outlets.",
+    "difficulty": "easy",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_01"
+  },
+  {
+    "question": "What was the codename for the Israeli operation during the strikes?",
+    "answer": "Operation Roaring Lion",
+    "aliases": [
+      "Roaring Lion",
+      "Israeli operation Roaring Lion"
+    ],
+    "wrong_answer": "The Israeli operation was named Operation Protective Edge, which took place in 2014.",
+    "difficulty": "medium",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_02"
+  },
+  {
+    "question": "What time did the strikes begin in IRST?",
+    "answer": "9:45 AM IRST",
+    "aliases": [
+      "9:45 AM",
+      "9:45 in Iran"
+    ],
+    "wrong_answer": "The strikes began at 10:00 AM IRST, as reported by some local news sources.",
+    "difficulty": "hard",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_03"
+  },
+  {
+    "question": "Which district in Tehran was targeted in the strikes?",
+    "answer": "Pasteur district",
+    "aliases": [
+      "Pasteur",
+      "Tehran Pasteur district"
+    ],
+    "wrong_answer": "The strikes targeted the Sadr district, which is known for its political significance.",
+    "difficulty": "medium",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_04"
+  },
+  {
+    "question": "Who was killed in the strikes?",
+    "answer": "Supreme Leader Ali Khamenei",
+    "aliases": [
+      "Ali Khamenei",
+      "Khamenei"
+    ],
+    "wrong_answer": "Iran's former president Hassan Rouhani was reported killed in the strikes.",
+    "difficulty": "easy",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_05"
+  },
+  {
+    "question": "How many casualties were reported in Iran due to the strikes?",
+    "answer": "555 dead",
+    "aliases": [
+      "555 casualties",
+      "Five hundred fifty-five dead"
+    ],
+    "wrong_answer": "There were 450 casualties reported in Iran, according to some early estimates.",
+    "difficulty": "hard",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_06"
+  },
+  {
+    "question": "How many US soldiers were killed in the strikes?",
+    "answer": "4 US soldiers",
+    "aliases": [
+      "four US soldiers",
+      "4 soldiers"
+    ],
+    "wrong_answer": "Reports indicate that 2 US soldiers were killed during the operation.",
+    "difficulty": "medium",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_07"
+  },
+  {
+    "question": "What was the name of the US operation during the strikes?",
+    "answer": "Epic Fury",
+    "aliases": [
+      "Operation Epic Fury",
+      "US operation Epic Fury"
+    ],
+    "wrong_answer": "The US operation was named Operation Desert Storm, which occurred in the early 1990s.",
+    "difficulty": "medium",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_08"
+  },
+  {
+    "question": "How many countries did Iran retaliate against with missile strikes?",
+    "answer": "9 countries",
+    "aliases": [
+      "nine countries",
+      "9 nations"
+    ],
+    "wrong_answer": "Iran retaliated against 7 countries, including Iraq and Saudi Arabia.",
+    "difficulty": "hard",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_09"
+  },
+  {
+    "question": "Who commented on the strikes, stating they 'squandered a chance for diplomacy'?",
+    "answer": "UN Secretary General Guterres",
+    "aliases": [
+      "Guterres",
+      "Antonio Guterres"
+    ],
+    "wrong_answer": "The comment was made by former US Secretary of State John Kerry regarding a different conflict.",
+    "difficulty": "medium",
+    "topic": "iran_strikes",
+    "id": "iran_strikes_10"
+  },
+  {
+    "question": "What was the closing value of the Dow Jones on February 27, 2026?",
+    "answer": "48,977.92",
+    "aliases": [
+      "Dow Jones closing value",
+      "Dow Jones February 27, 2026"
+    ],
+    "wrong_answer": "The Dow Jones closed at 49,498.12 on February 27, 2025, according to market reports.",
+    "difficulty": "easy",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_01"
+  },
+  {
+    "question": "By how many points did the Dow Jones drop on February 27, 2026?",
+    "answer": "521.28 points",
+    "aliases": [
+      "Dow Jones drop points",
+      "points dropped by Dow Jones"
+    ],
+    "wrong_answer": "The Dow Jones dropped 432.15 points on February 27, 2025.",
+    "difficulty": "medium",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_02"
+  },
+  {
+    "question": "What percentage did the S&P 500 close down on February 27, 2026?",
+    "answer": "0.43%",
+    "aliases": [
+      "S&P 500 percentage drop",
+      "S&P 500 February 27, 2026"
+    ],
+    "wrong_answer": "The S&P 500 closed down 0.58% on February 27, 2025.",
+    "difficulty": "medium",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_03"
+  },
+  {
+    "question": "What was the closing value of the Nasdaq on February 27, 2026?",
+    "answer": "22,668.21",
+    "aliases": [
+      "Nasdaq closing value",
+      "Nasdaq February 27, 2026"
+    ],
+    "wrong_answer": "The Nasdaq closed at 23,001.45 on February 27, 2025.",
+    "difficulty": "medium",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_04"
+  },
+  {
+    "question": "What was the largest buyback authorization amount in February 2026?",
+    "answer": "$233.3 billion",
+    "aliases": [
+      "February 2026 buyback authorization",
+      "buyback amount February 2026"
+    ],
+    "wrong_answer": "The largest buyback authorization in February 2025 was $200 billion.",
+    "difficulty": "hard",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_05"
+  },
+  {
+    "question": "Which company saw a 14% drop after weak guidance on February 27, 2026?",
+    "answer": "Duolingo",
+    "aliases": [
+      "Company that dropped 14%",
+      "Duolingo stock drop"
+    ],
+    "wrong_answer": "Zoom saw a 14% drop after weak guidance on February 27, 2025.",
+    "difficulty": "medium",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_06"
+  },
+  {
+    "question": "What key economic data came in hotter than expected, affecting the market on February 27, 2026?",
+    "answer": "Producer price index data",
+    "aliases": [
+      "economic data February 27, 2026",
+      "hotter than expected data"
+    ],
+    "wrong_answer": "Consumer price index data was hotter than expected on February 27, 2025.",
+    "difficulty": "hard",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_07"
+  },
+  {
+    "question": "Which industry faced growing fears due to AI impact as reported on February 27, 2026?",
+    "answer": "Specific industries",
+    "aliases": [
+      "AI impact on industries",
+      "industries affected by AI"
+    ],
+    "wrong_answer": "The healthcare industry faced growing fears due to AI impact on February 27, 2025.",
+    "difficulty": "hard",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_08"
+  },
+  {
+    "question": "What was the percentage drop of the Nasdaq on February 27, 2026?",
+    "answer": "0.92%",
+    "aliases": [
+      "Nasdaq drop percentage",
+      "Nasdaq February 27, 2026"
+    ],
+    "wrong_answer": "The Nasdaq dropped 1.05% on February 27, 2025.",
+    "difficulty": "medium",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_09"
+  },
+  {
+    "question": "Which bank stocks dropped amid fears of losses tied to a UK mortgage provider on February 27, 2026?",
+    "answer": "Barclays, Jefferies, Santander, Wells Fargo, Apollo",
+    "aliases": [
+      "banks that dropped February 27, 2026",
+      "UK mortgage provider losses banks"
+    ],
+    "wrong_answer": "Goldman Sachs and Morgan Stanley dropped amid fears of losses tied to a UK mortgage provider on February 27, 2025.",
+    "difficulty": "hard",
+    "topic": "stock_market_feb27",
+    "id": "stock_market_feb27_10"
+  },
+  {
+    "question": "Which company won the bidding war for Warner Bros. Discovery?",
+    "answer": "Paramount Skydance",
+    "aliases": [
+      "Paramount Skydance",
+      "Skydance Media"
+    ],
+    "wrong_answer": "Netflix was the winner of the bidding war for Warner Bros. Discovery, according to a report from Variety.",
+    "difficulty": "easy",
+    "topic": "business_deals",
+    "id": "business_deals_01"
+  },
+  {
+    "question": "What was Amazon's announced capital expenditure plan in February 2026?",
+    "answer": "$200 billion",
+    "aliases": [
+      "200 billion",
+      "200B"
+    ],
+    "wrong_answer": "$150 billion was the capital expenditure plan announced by Amazon in early 2025.",
+    "difficulty": "medium",
+    "topic": "business_deals",
+    "id": "business_deals_02"
+  },
+  {
+    "question": "What was MACOM Technology Solutions' Q4 revenue?",
+    "answer": "$271.61 million",
+    "aliases": [
+      "271.61M",
+      "271.61 million"
+    ],
+    "wrong_answer": "MACOM Technology Solutions reported a Q4 revenue of $250 million, according to their financial statement.",
+    "difficulty": "hard",
+    "topic": "business_deals",
+    "id": "business_deals_03"
+  },
+  {
+    "question": "Who resigned as CEO of DP World amid controversy?",
+    "answer": "Sultan Ahmed bin Sulayem",
+    "aliases": [
+      "Sultan bin Sulayem",
+      "Ahmed bin Sulayem"
+    ],
+    "wrong_answer": "David Schwimmer stepped down as CEO of DP World following a different controversy last year.",
+    "difficulty": "medium",
+    "topic": "business_deals",
+    "id": "business_deals_04"
+  },
+  {
+    "question": "What was the estimated cost of DOGE actions according to nonpartisan analysis?",
+    "answer": "$135 billion",
+    "aliases": [
+      "135 billion",
+      "135B"
+    ],
+    "wrong_answer": "The nonpartisan analysis estimated that DOGE actions cost $100 billion, as reported by Bloomberg.",
+    "difficulty": "hard",
+    "topic": "business_deals",
+    "id": "business_deals_05"
+  },
+  {
+    "question": "What was the EPS for MACOM Technology Solutions in Q4?",
+    "answer": "$1.02",
+    "aliases": [
+      "1.02 EPS",
+      "1.02"
+    ],
+    "wrong_answer": "$1.05 EPS was reported for MACOM Technology Solutions in the previous quarter.",
+    "difficulty": "medium",
+    "topic": "business_deals",
+    "id": "business_deals_06"
+  },
+  {
+    "question": "What was GigaCloud Technology's Q4 revenue?",
+    "answer": "$362.75 million",
+    "aliases": [
+      "362.75M",
+      "362.75 million"
+    ],
+    "wrong_answer": "GigaCloud Technology reported a Q4 revenue of $400 million, according to their earnings call.",
+    "difficulty": "hard",
+    "topic": "business_deals",
+    "id": "business_deals_07"
+  },
+  {
+    "question": "What was the revenue growth percentage for MACOM Technology Solutions year-over-year?",
+    "answer": "24.5%",
+    "aliases": [
+      "24.5 percent",
+      "24.5"
+    ],
+    "wrong_answer": "MACOM Technology Solutions reported a year-over-year revenue growth of 20% in their last earnings report.",
+    "difficulty": "hard",
+    "topic": "business_deals",
+    "id": "business_deals_08"
+  },
+  {
+    "question": "Which major properties are included in Warner Bros. Discovery?",
+    "answer": "HBO, Superman, Harry Potter",
+    "aliases": [
+      "HBO",
+      "Superman",
+      "Harry Potter"
+    ],
+    "wrong_answer": "Warner Bros. Discovery properties include DC Comics, The Matrix, and Friends, according to a recent article.",
+    "difficulty": "medium",
+    "topic": "business_deals",
+    "id": "business_deals_09"
+  },
+  {
+    "question": "What was Amazon's Q4 earnings performance relative to estimates?",
+    "answer": "Earnings slightly below estimates",
+    "aliases": [
+      "below estimates",
+      "slightly below"
+    ],
+    "wrong_answer": "Amazon's Q4 earnings exceeded estimates significantly, as reported by CNBC.",
+    "difficulty": "medium",
+    "topic": "business_deals",
+    "id": "business_deals_10"
+  },
+  {
+    "question": "Who delivered the first State of the Union of their second term in February 2026?",
+    "answer": "Donald Trump",
+    "aliases": [
+      "Trump"
+    ],
+    "wrong_answer": "Joe Biden delivered the first State of the Union in 2025, focusing on infrastructure improvements.",
+    "difficulty": "easy",
+    "topic": "politics_misc",
+    "id": "politics_misc_01"
+  },
+  {
+    "question": "Which state is VP JD Vance withholding Medicaid funding from due to fraud concerns?",
+    "answer": "Minnesota",
+    "aliases": [
+      "MN"
+    ],
+    "wrong_answer": "VP JD Vance announced withholding Medicaid funding from Michigan over similar concerns.",
+    "difficulty": "medium",
+    "topic": "politics_misc",
+    "id": "politics_misc_02"
+  },
+  {
+    "question": "Who testified before the House Oversight Committee regarding Jeffrey Epstein?",
+    "answer": "Hillary Clinton",
+    "aliases": [
+      "Clinton"
+    ],
+    "wrong_answer": "Bernie Sanders testified before the House Oversight Committee about campaign finance issues.",
+    "difficulty": "medium",
+    "topic": "politics_misc",
+    "id": "politics_misc_03"
+  },
+  {
+    "question": "What neurotoxin was assessed to have poisoned Alexei Navalny?",
+    "answer": "Epibatidine",
+    "aliases": [],
+    "wrong_answer": "Navalny was assessed to have been poisoned by Novichok, a nerve agent used in previous attacks.",
+    "difficulty": "hard",
+    "topic": "politics_misc",
+    "id": "politics_misc_04"
+  },
+  {
+    "question": "How many federal employees exited their roles under DOGE?",
+    "answer": "Approximately 352,000",
+    "aliases": [
+      "352000"
+    ],
+    "wrong_answer": "Approximately 250,000 federal employees exited their roles under DOGE in the previous year.",
+    "difficulty": "hard",
+    "topic": "politics_misc",
+    "id": "politics_misc_05"
+  },
+  {
+    "question": "Which two former presidents were involved in testimonies related to Jeffrey Epstein?",
+    "answer": "Hillary Clinton and Bill Clinton",
+    "aliases": [
+      "Clinton duo"
+    ],
+    "wrong_answer": "George W. Bush and Barack Obama were involved in testimonies regarding campaign finance violations.",
+    "difficulty": "medium",
+    "topic": "politics_misc",
+    "id": "politics_misc_06"
+  },
+  {
+    "question": "What was the outcome of the Iran-US nuclear talks in Geneva in February 2026?",
+    "answer": "No breakthrough, agreed to continue next week",
+    "aliases": [],
+    "wrong_answer": "The Iran-US nuclear talks resulted in a preliminary agreement on uranium enrichment levels.",
+    "difficulty": "hard",
+    "topic": "politics_misc",
+    "id": "politics_misc_07"
+  },
+  {
+    "question": "What did Ethiopia do to Reuters journalists in February 2026?",
+    "answer": "Revoked their accreditation",
+    "aliases": [
+      "Accreditation revoked"
+    ],
+    "wrong_answer": "Ethiopia granted new press freedoms to Reuters journalists amid ongoing conflict.",
+    "difficulty": "medium",
+    "topic": "politics_misc",
+    "id": "politics_misc_08"
+  },
+  {
+    "question": "How many bodies were found in the mass graves in the DRC?",
+    "answer": "At least 171",
+    "aliases": [],
+    "wrong_answer": "At least 120 bodies were found in mass graves in the DRC during the previous conflict.",
+    "difficulty": "hard",
+    "topic": "politics_misc",
+    "id": "politics_misc_09"
+  },
+  {
+    "question": "Which company is the Defense Department feuding with over military AI uses?",
+    "answer": "Anthropic",
+    "aliases": [],
+    "wrong_answer": "The Defense Department is in conflict with OpenAI over the use of military AI technologies.",
+    "difficulty": "medium",
+    "topic": "politics_misc",
+    "id": "politics_misc_10"
+  },
+  {
+    "question": "Who scored 42 points for the NY Knicks on February 4, 2026?",
+    "answer": "Jalen Brunson",
+    "aliases": [
+      "Brunson",
+      "Jalen"
+    ],
+    "wrong_answer": "Julius Randle scored 40 points for the Knicks in a game last season against the Lakers.",
+    "difficulty": "easy",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_01"
+  },
+  {
+    "question": "What was the final score of the Knicks vs. Nuggets game on February 4, 2026?",
+    "answer": "134-127",
+    "aliases": [
+      "134 to 127",
+      "Knicks 134, Nuggets 127"
+    ],
+    "wrong_answer": "The final score was 120-115 in favor of the Knicks against the Mavericks earlier in the season.",
+    "difficulty": "medium",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_02"
+  },
+  {
+    "question": "How many assists did Jalen Brunson have in the game against the Nuggets?",
+    "answer": "9",
+    "aliases": [
+      "nine assists"
+    ],
+    "wrong_answer": "He had 7 assists in a game against the Raptors last month.",
+    "difficulty": "hard",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_03"
+  },
+  {
+    "question": "Which player had a triple-double in the game against the Knicks on February 4, 2026?",
+    "answer": "Nikola Jokic",
+    "aliases": [
+      "Jokic"
+    ],
+    "wrong_answer": "Joel Embiid recorded a triple-double in a game against the Heat last season.",
+    "difficulty": "medium",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_04"
+  },
+  {
+    "question": "When did MLB Spring Training begin in 2026?",
+    "answer": "Late February",
+    "aliases": [
+      "February 2026",
+      "February"
+    ],
+    "wrong_answer": "MLB Spring Training began in early March 2025.",
+    "difficulty": "medium",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_05"
+  },
+  {
+    "question": "What event did Sun Yingsha reach the quarterfinals in on February 27, 2026?",
+    "answer": "WTT Singapore Smash",
+    "aliases": [
+      "Singapore Smash"
+    ],
+    "wrong_answer": "She reached the semifinals at the World Championships in 2025.",
+    "difficulty": "hard",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_06"
+  },
+  {
+    "question": "What date is celebrated as Pokemon Day?",
+    "answer": "February 27",
+    "aliases": [
+      "February 27, 2026"
+    ],
+    "wrong_answer": "Pokemon Day was celebrated on March 1 in 2025.",
+    "difficulty": "easy",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_07"
+  },
+  {
+    "question": "What notable event took place in mid-February 2026 in the NBA?",
+    "answer": "NBA All-Star Weekend",
+    "aliases": [
+      "All-Star Weekend"
+    ],
+    "wrong_answer": "The NBA Draft took place in mid-June 2025.",
+    "difficulty": "medium",
+    "topic": "sports_feb2026",
+    "id": "sports_feb2026_08"
+  },
+  {
+    "question": "What was the date of the second rollback of NASA's Artemis II mobile launcher?",
+    "answer": "February 2026",
+    "aliases": [
+      "February 2026",
+      "February of 2026"
+    ],
+    "wrong_answer": "The first rollback of the Artemis II mobile launcher occurred in January 2026, according to NASA reports.",
+    "difficulty": "easy",
+    "topic": "space_science",
+    "id": "space_science_01"
+  },
+  {
+    "question": "How many Ukrainian civilians have been confirmed killed since the full-scale invasion began on February 24, 2022?",
+    "answer": "15,172",
+    "aliases": [
+      "Fifteen thousand one hundred seventy-two",
+      "15172"
+    ],
+    "wrong_answer": "Reports indicate that around 12,000 Ukrainian civilians were killed by early 2023, as per UN estimates.",
+    "difficulty": "medium",
+    "topic": "space_science",
+    "id": "space_science_02"
+  },
+  {
+    "question": "Who delivered a speech on economic outlook on February 23, 2026?",
+    "answer": "Federal Reserve Governor Waller",
+    "aliases": [
+      "Waller",
+      "Governor Waller"
+    ],
+    "wrong_answer": "Federal Reserve Chair Powell delivered a speech on economic outlook in January 2026, focusing on inflation.",
+    "difficulty": "medium",
+    "topic": "space_science",
+    "id": "space_science_03"
+  },
+  {
+    "question": "How many people were killed in the Ukrainian drone strike on the fertilizer plant outside Dorogobuzh?",
+    "answer": "Seven",
+    "aliases": [
+      "7",
+      "seven people"
+    ],
+    "wrong_answer": "Eight people were reported killed in a similar drone strike in Smolensk Oblast in early 2023.",
+    "difficulty": "hard",
+    "topic": "space_science",
+    "id": "space_science_04"
+  },
+  {
+    "question": "What is the name of the rocket used in NASA's Artemis II mission?",
+    "answer": "SLS rocket",
+    "aliases": [
+      "Space Launch System",
+      "SLS"
+    ],
+    "wrong_answer": "NASA's Space Shuttle was used for missions prior to the Artemis program.",
+    "difficulty": "medium",
+    "topic": "space_science",
+    "id": "space_science_05"
+  },
+  {
+    "question": "What accusation did Russia's Foreign Intelligence Service make regarding France and the UK?",
+    "answer": "Preparing to supply Ukraine with nuclear weapon",
+    "aliases": [
+      "Nuclear weapon supply to Ukraine",
+      "Nuclear arms for Ukraine"
+    ],
+    "wrong_answer": "Russia accused the US of planning to supply Ukraine with advanced missile systems earlier in 2026.",
+    "difficulty": "hard",
+    "topic": "space_science",
+    "id": "space_science_06"
+  },
+  {
+    "question": "How many people were injured in the Ukrainian drone strike on the fertilizer plant?",
+    "answer": "10",
+    "aliases": [
+      "Ten",
+      "10 people"
+    ],
+    "wrong_answer": "Reports indicated that 15 people were injured in a similar incident in late 2025.",
+    "difficulty": "medium",
+    "topic": "space_science",
+    "id": "space_science_07"
+  },
+  {
+    "question": "What is the name of the spacecraft associated with NASA's Artemis II mission?",
+    "answer": "Orion spacecraft",
+    "aliases": [
+      "Orion",
+      "Orion capsule"
+    ],
+    "wrong_answer": "The Dragon spacecraft was used by SpaceX for missions to the International Space Station.",
+    "difficulty": "easy",
+    "topic": "space_science",
+    "id": "space_science_08"
+  }
+]

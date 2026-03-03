@@ -43,13 +43,15 @@ class ClaudeModelAPIProvider(BaseModelAPIProvider):
                 else:
                     chat_messages.append(msg)
 
-            response = self.client.messages.create(
-                model=model,
-                max_tokens=kwargs.get("max_tokens", 1024), # Claude requires max_tokens
-                messages=chat_messages,
-                system=system_message_content.strip() if system_message_content else None,
-                temperature=kwargs.get("temperature", 0.3),
-            )
+            create_kwargs = {
+                "model": model,
+                "max_tokens": kwargs.get("max_tokens", 1024),
+                "messages": chat_messages,
+                "temperature": kwargs.get("temperature", 0.3),
+            }
+            if system_message_content.strip():
+                create_kwargs["system"] = [{"type": "text", "text": system_message_content.strip()}]
+            response = self.client.messages.create(**create_kwargs)
             completion, reasoningContent = post_process_claude_chat_response(response)
             result = {
                 KEY_FUNCTION_CALL: {},
@@ -82,16 +84,31 @@ class ClaudeModelAPIProvider(BaseModelAPIProvider):
                 else:
                     chat_messages.append(msg)
 
-            # Claude's `tools` parameter directly takes the list of tool definitions
-            response = self.client.messages.create(
-                model=model,
-                max_tokens=kwargs.get("max_tokens", 1024), # Claude requires max_tokens
-                messages=chat_messages,
-                tools=tools, # Assuming tools are already in Claude's format from wrapper
-                tool_choice=kwargs.get("tool_choice", {"type": "auto"}), # Default to auto
-                system=system_message_content.strip() if system_message_content else None,
-                temperature=kwargs.get("temperature", 0.3),
-            )
+            # Convert OpenAI-format tools to Claude format if needed
+            claude_tools = []
+            for tool in tools:
+                if "type" in tool and tool["type"] == "function" and "function" in tool:
+                    # OpenAI format -> Claude format
+                    func = tool["function"]
+                    claude_tools.append({
+                        "name": func.get("name", ""),
+                        "description": func.get("description", ""),
+                        "input_schema": func.get("parameters", {})
+                    })
+                else:
+                    claude_tools.append(tool)
+
+            create_kwargs = {
+                "model": model,
+                "max_tokens": kwargs.get("max_tokens", 1024),
+                "messages": chat_messages,
+                "tools": claude_tools,
+                "tool_choice": kwargs.get("tool_choice", {"type": "auto"}),
+                "temperature": kwargs.get("temperature", 0.3),
+            }
+            if system_message_content.strip():
+                create_kwargs["system"] = [{"type": "text", "text": system_message_content.strip()}]
+            response = self.client.messages.create(**create_kwargs)
             tool_result, completion, reasoningContent = post_process_claude_function_call_response(response)
             result = {
                 KEY_FUNCTION_CALL: tool_result,

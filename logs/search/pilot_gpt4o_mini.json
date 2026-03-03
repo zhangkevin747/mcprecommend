@@ -1,0 +1,743 @@
+{
+  "run_info": {
+    "input_file": "./data/search/pilot_10.json",
+    "model": "gpt-4o-mini",
+    "category": "search",
+    "pass_k": "1",
+    "evaluation_trial_per_task": 1,
+    "start_time": "2026-03-02T07:59:49.242522",
+    "total_instances": 10,
+    "end_time": "2026-03-02T08:00:25.391247"
+  },
+  "metrics": [
+    {
+      "category": "search",
+      "model": "gpt-4o-mini",
+      "pass@1": 0.3,
+      "tool_pass@1": 1.0,
+      "parameter_pass@1": 0.4,
+      "num_tasks": 10,
+      "num_trials_total": 10,
+      "num_passed_total": 3,
+      "num_tool_correct_total": 10,
+      "num_parameter_correct_total": 4
+    }
+  ],
+  "run_details": [
+    {
+      "idx": 0,
+      "query": "Find the latest news about global economic trends.",
+      "function_call_label": [
+        {
+          "name": "tavily-search",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "query": "global economic trends",
+            "search_depth": "basic",
+            "topic": "general",
+            "max_results": 5
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_yyALb2Ep0jqEW50xDU2Xd41R",
+              "name": "tavily-search",
+              "input": {
+                "query": "global economic trends",
+                "topic": "news",
+                "days": 7,
+                "max_results": 5
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: Gold climbs as U.S.-Israel strikes on Iran spark safe-haven demand - CNBC\nURL: https://www.cnbc.com/2026/03/02/gold-climbs-as-us-israel-strikes-on-iran-spark-safe-haven-demand.html\nContent: # Gold climbs as U.S.-Israel strikes on Iran spark safe-haven demand. Gold prices rose on Monday after the U.S. and Israel launched strikes on Iran, killing Supreme Leader Ayatollah Ali Khamenei, deepening global uncertainty. Gold prices rose on Monday after the U.S. and Israel launched major strikes on Iran, killing Supreme Leader Ayatollah Ali Khamenei, escalating geopolitical tensions and deepening global economic uncertainty. Spot gold was up 1% at $5,329.39 an ounce, as of 0201 GMT, after hitting its highest point in more than four weeks. U.S. gold futures rose 1.8% to $5,342.80 per ounce. Israel launched a new wave of strikes on Tehran on Sunday and Iran responded with more missile barrages, a day after the killing of Khamenei pitched the Middle East and the global economy into deepening uncertainty. Last week, J.P. Morgan and Bank of America reiterated that gold prices could climb toward the key $6,000 level.\n\nTitle: Wall Street futures slide as Middle East conflict escalates - The Jerusalem Post\nURL: https://www.jpost.com/middle-east/iran-news/article-888480\nContent: US stock index futures slid more than 1% on Monday as the Middle East conflict showed no signs of cooling, prompting a rush toward safe-haven assets ahead of a busy week of US economic data. According to a media report, US President Donald Trump said the conflict could stretch on for another four weeks, adding that attacks would continue until the US achieves its stated objectives. ### **AI, tariffs, geopolitical tensions raise market risks**. February was a white-knuckle month for markets, with volatility fueled by uncertainty over AI-related costs and disruption, renewed tariff worries, and simmering geopolitical tension, all of it keeping risk appetite on a tight leash. The S&P 500 and Nasdaq posted their steepest monthly drops since March 2025. Last Friday, financial and technology shares led the retreat, with the Dow closing down more than 1%, the Nasdaq off 0.9%, and the S&P 500 ending 0.4% lower.\n\nTitle: In-Depth Examination of Segments, Industry Trends, and Key - openPR.com\nURL: https://www.openpr.com/news/4408964/in-depth-examination-of-segments-industry-trends-and-key\nContent: # In-Depth Examination of Segments, Industry Trends, and Key Competitors in the Healthcare Workforce Management System Market. ### You can edit or delete your press release *In-Depth Examination of Segments, Industry Trends, and Key Competitors in the Healthcare Workforce Management System Market* here. The healthcare workforce management system market is positioned for substantial growth in the coming years, driven by technological advancements and evolving healthcare demands. Prominent Companies Leading the Healthcare Workforce Management System Market. View the full healthcare workforce management system market report:. https://www.thebusinessresearchcompany.com/report/healthcare-workforce-management-system-global-market-report? Healthcare Workforce Management System Market Segmentation. An exclusive Digital Therapeutics Market research report created through broad primary research (inputs from industry experts, companies, and stakeholders) and secondary research, the report aims to present the analysis of Global Digital Therapeutics Market by Type, By Application, By Region - North America, Europe, South America, Asia-Pacific, Middle East and Africa. Global Digital Therapeutics Market to 2025 This report \"Digital Therapeutics Market Analysis to 2025\" provides an in-depth insight of medical device industry covering all important parameters including development trends, challenges, opportunities, key manufacturers and competitive analysis.\n\nTitle: Indonesia Manufacturing PMI Hit Two-Year High at 53.8, Employment Rises - Tempo.co English\nURL: https://en.tempo.co/read/2090120/indonesia-manufacturing-pmi-hit-two-year-high-at-53-8-employment-rises?utm_source=Digital%20Marketing&utm_medium=Babe\nContent: # Indonesia Manufacturing PMI Hit Two-Year High at 53.8, Employment Rises. **TEMPO.CO, Jakarta**- Global rating agency Standard & Poor's Global Ratings (S&P) reported that Indonesia's manufacturing Purchasing Manager's Index (PMI) in February is still in the expansion zone with a score of 53.8. \"The headline S&P Global Indonesia Manufacturing Purchasing Managers’ Index rose from 52.6 in January to 53.8 in February, indicating a stronger improvement in the health of the goods-producing sector,\" the S&P Global release reads, as quoted on Monday, March 2, 2026. Economist at S&P Global Market Intelligence, Usamah Bhatti, stated that Indonesia's manufacturing sector \"strengthened once again midway. ***Read:*** ***Indonesia Manufacturing PMI Hits Highest Record Since February***. Indonesia Manufacturing PMI Hits Highest Record Since February. Indonesia Manufacturing PMI Hits Highest Record Since February. Industry Ministry: Manufacturing Sector to Drive Indonesia's Economic Growth in Q3 2025. Industry Ministry: Manufacturing Sector to Drive Indonesia's Economic Growth in Q3 2025. Indonesia's Manufacturing Industry Grows 4.94%, Says Minister. Indonesia's Manufacturing Industry Grows 4.94%, Says Minister.\n\nTitle: Sustainable Agriculture Market Is Going to Boom Rapidly | Bayer AG, Corteva Inc., Syngenta Group, John Deere - openPR.com\nURL: https://www.openpr.com/news/4409498/sustainable-agriculture-market-is-going-to-boom-rapidly-bayer\nContent: Coherent Market Insights has added a new research study on the Global \"Sustainable Agriculture Market\" 2026 by Size, Growth, Trends, and Dynamics, Forecast to 2033 which is a result of an extensive examination of the market patterns. Coherent Market Insights has released a report titled \"Long Read Sequencing Market: Industry Trends, Share, Size, Growth, Opportunity, and Forecast, 2026-2033\", which includes market percentage records and a thorough enterprise-level analysis. Coherent Market Insights has released a report titled \"Electric Vehicle Charging Infrastructure Market: Industry Trends, Share, Size, Growth, Opportunity, and Forecast, 2026-2033\", which includes market percentage records and a thorough enterprise-level analysis. announces the release of a market assessment report on the \"Global Sustainable Adhesives Market - (Type (Recyclable Adhesives, Renewable Adhesives, Biodegradable Adhesives, Green Adhesives and Others), Raw Material (Water-Based, Plant-Based, EVA Based, Acrylic Based and Others), End-Use Industry (Packaging, Woodworking, Construction, Medical, Others)), Trends, Industry Competition Analysis, Revenue and Forecast To 2031.\" According to the latest research by InsightAce Analytic, the Global Sustainable Adhesives Market is valued…."
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": true
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        true
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": true,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 1
+    },
+    {
+      "idx": 1,
+      "query": "Find the best restaurants in Los Angeles.",
+      "function_call_label": [
+        {
+          "name": "tavily-search",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "query": "best restaurants in Los Angeles",
+            "search_depth": "basic",
+            "topic": "general",
+            "max_results": 5
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_oMMnWOe8cY1zFPSeR8j2fInH",
+              "name": "tavily-search",
+              "input": {
+                "query": "best restaurants in Los Angeles",
+                "search_depth": "advanced",
+                "topic": "general",
+                "max_results": 10
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: Top 10 Best Upscale Restaurants Near Los Angeles, California - Yelp\nURL: https://www.yelp.ca/search?find_desc=Upscale+Restaurants&find_loc=Los+Angeles%2C+CA\nContent: Top 10 Best Upscale Restaurants Near Los Angeles, California ; 1. The Green Room · (676 reviews). 9.9 mi ; 2. Firefly · (3.7k reviews). 6.7 mi ; 3. 71 Above · (2.9k\n\nTitle: The best restaurants in Los Angeles | (Updated 2026) - OpenTable\nURL: https://www.opentable.com/metro/los-angeles-restaurants\nContent: Check out diners' favorite restaurants in Los Angeles · Da Barbara · Veuve Noire · Sushi | Bar Hermosa Beach · SHOKUNIN - Redlands · Lingua Franca · Posto 896 Italian\n\nTitle: Restaurants & Dining | Moxy Downtown Los Angeles - Marriott\nURL: https://www.marriott.com/en-us/hotels/laxox-moxy-downtown-los-angeles/dining/\nContent: ### Level 8\n\n8 venues with immersive discoveries around every corner by Houston Hospitality, including teppanyaki at Maison Kasai, seiro mushi and hot pot at Lucky Mizu, South American grill Qué Bárbaro, Golden Hour poolside carousel bar, Mr. Wanderlust a lively piano bar and jazz lounge, and Sinners y Santos, a cathedral-inspired nightclub. Plus: gourmet food truck The Brown Sheep on the terrace, alfresco oyster bar Mother of Pearl, and more!\n\nmultiple teppanyaki tables and dining area \nRestaurant that looks like a cathedral in DTLA \nsouth american restaurant in downtown LA\nDowntown Los Angeles Restaurants\nJapanese Dining Bar & Restaurant\nDining Bar at Japanese Restaurant\nPiano Bar & Jazz Lounge\nVibrant outdoor dining and seating downtown LA [...] Drinks flow day to night at Bar Moxy and Bluestone Lane Coffee Shop fuels co-working sessions. The restaurants, bars, and lounges of Level 8 immerse guests in LA’s diverse cultures and cuisines and showcase its top culinary talent. South American live fire grill Qué Bárbaro, opens onto poolside dining and rotating carousel bar Golden Hour. Feast on French-Japanese teppanyaki cuisine at Maison Kasai or on traditional seiro mushi, sushi, and shabu shabu at Lucky Mizu. Confess and transgress at Sinners y Santos, a cathedral-inspired nightclub, and catch surprising acts at Mr. Wanderlust, a piano bar and jazz lounge. With Mother of Pearl, alfresco oyster & ceviche bar, and The Brown Sheep on the terrace, you’ll never run out of views or vibes. Unwind in style an elevator ride away at the AC [...] ## The Brown Sheep\n\nMexican\n\nEnjoy “authentically inauthentic” Mexican favorites by innovative LA chef Ray Garcia from the classic food truck with a modern twist on the 8th-floor terrace: carnitas, carne asada, margaritas and more at this downtown Los Angeles restaurant.\n\nmultiple teppanyaki tables and dining area \n\n## Maison Kasai\n\nOther\n\nAn interactive dining experience from Michelin-starred chef Joshua Gil, Maison Kasai is an elevated teppanyaki restaurant blending culinary virtuosity with performance art, applying Japanese and French techniques to impeccably sourced ingredients.\n\nDowntown Los Angeles Restaurants\n\n## Qué Bárbaro\n\nSouth American\n\nTitle: My favorite Italian restaurant in Los Angeles @madeoristorante ...\nURL: https://www.instagram.com/reel/DVXhDM-EXzq/\nContent: They have a very solid ricotta cheesecake as well and then finish things off with a lemon cello courtesy of one of the most iconic people in the LA dining world\n\nTitle: Part 2/2: Make sure to pick up today's Sunday @latimes ... - Instagram\nURL: https://www.instagram.com/p/DVWk0IWCVcS/\nContent: These are the highest-rated restaurants in LA—the ones we'd sit in an hour of traffic on the 101 to get to and wouldn't complain if it were two. Link in bio\n\nTitle: THE NICE GUY - Updated March 2026 - 334 Photos & 847 Reviews\nURL: https://www.yelp.com/biz/the-nice-guy-los-angeles-3\nContent: Dinner\n\nTrendy Restaurant\n\nCelebrity Hot Spots\n\nDrinks\n\nRestaurants to See Celebrities\n\nSteakhouses\n\n## Location & Hours\n\nSuggest an edit\n\nMap\n\n401 N La Cienega Blvd\n\nLos Angeles, CA 90048\n\nBeverly Grove\n\n|\n|  |\n| Mon |  6:00 PM - 2:00 AM (Next day) |  |\n|\n| Tue |  6:00 PM - 2:00 AM (Next day) |  |\n|\n| Wed |  6:00 PM - 2:00 AM (Next day) |  |\n|\n| Thu |  6:00 PM - 2:00 AM (Next day) | Open now |\n|\n| Fri |  6:00 PM - 2:00 AM (Next day) |  |\n|\n| Sat |  6:00 PM - 2:00 AM (Next day) |  |\n|\n| Sun |  6:00 PM - 2:00 AM (Next day) |  |\n\nMon\n\n6:00 PM - 2:00 AM (Next day)\n\nTue\n\n6:00 PM - 2:00 AM (Next day)\n\nWed\n\n6:00 PM - 2:00 AM (Next day)\n\nThu\n\n6:00 PM - 2:00 AM (Next day)\n\nFri\n\n6:00 PM - 2:00 AM (Next day)\n\nSat\n\n6:00 PM - 2:00 AM (Next day)\n\nSun\n\n6:00 PM - 2:00 AM (Next day) [...] Back to Search\n\n# The Nice Guy\n\nThe Nice Guy - Los Angeles, CA\nThe Nice Guy - Los Angeles, CA\nThe Nice Guy - Los Angeles, CA\nThe Nice Guy - Los Angeles, CA\nThe Nice Guy - Los Angeles, CA\nThe Nice Guy - Los Angeles, CA\n\nDo you recommend this business?\n\n### Menu\n\n### Popular Dishes\n\nView full menu\n\nKale Salad\n\nKale Salad\n\nChicken Parm\n\nChicken Parm\n\nBlue Crab Arancini\n\nBlue Crab Arancini\n\nMargherita Pizza\n\nMargherita Pizza\n\nRigatoni Bolognese\n\nRigatoni Bolognese\n\nCacio E Pepe\n\nCacio E Pepe\n\nShrimp Scampi\n\nShrimp Scampi\n\nJojo\n\nJojo\n\nChicken Piccata\n\nChicken Piccata\n\nDirty\n\nDirty\n\n## What's the vibe?\n\nSee all 41\n\nInside\n\n41 photos\n\nSee all 9\n\nOutside\n\n9 photos\n\nSee all 334\n\nAll photos\n\n334 photos\n\n## People also searched for\n\nDinner\n\nTrendy Restaurant\n\nCelebrity Hot Spots\n\nDrinks [...] ## Ask the Community\n\nAsk a question\n\nQ:\n\nIs there music or happy hour? If so, what days & times?\n\nA:\n\nQ:\n\nIs there valet?\n\nA:\n\n$15 now\n\n## Recommended Reviews\n\nBusiness website\n\ntheniceguyla.com\n\nPhone number\n\n(310) 360-9500\n\nGet Directions\n\n401 N La Cienega Blvd Los Angeles, CA 90048\n\nMessage the business\n\nSuggest an edit\n\nCopyright © 2004–2026 Yelp Inc. Yelp, Elite Squad,  Yelp logo,  Yelp burst and related marks are registered trademarks of Yelp.\n\nYelp logo\nYelp burst\n\nTitle: Spanish rooftop restaurant is back on top in Anaheim - LATimes.com\nURL: https://www.latimes.com/socal/daily-pilot/entertainment/story/2026-03-01/spanish-rooftop-restaurant-is-back-on-top-in-anaheim\nContent: “There are very few true Spanish-influence restaurants in California to begin with,” Martinez said. “This a great place to really dive into that world.”\n\nTop of the V is located at 601 S Anaheim Blvd., Anaheim. For details on the menu and to make reservations visit topoftheviv.com\n\n### All the latest on Orange County from Orange County.\n\nGet our free TimesOC newsletter.\n\nBy continuing, you agree to our Terms of Service and our Privacy Policy.\n\nFollow Us\n\nSarah Mosqueda covers Orange County food, art and culture for TimesOC. She previously worked as a staff writer in Food for the Los Angeles Times. She also has several years of experience in the restaurant industry, including as a proprietor. Mosqueda earned a bachelor’s degree in communications from Cal State Fullerton. [...] # Spanish rooftop restaurant is back on top in Anaheim\n\nThe 12th floor from Top of the V, highest rooftop bar and restaurant in Anaheim.\nSarah Mosqueda. (Ricardo DeAratanha / Los Angeles Times)\n\nFrom the 12th floor of the Viv Hotel, guests have a bird’s-eye view of Disney California Adventure’s brightly lit Ferris wheel and other Anaheim landmarks. It is the highest rooftop in the city and the lofty location is also home to Top of the V, the newly reopened rooftop bar and restaurant atop the Tribute Portfolio property. [...] Martinez began his culinary career at young age, earning the title of head chef when he was 23 at Mh Zh in Silver Lake, a casual Israeli restaurant that went on to earn recognition as one of the “13 Best New Restaurants in America” by the Thrillist. His résumé also includes time with Orange County’s Mayfield in San Juan Capistrano and Westwood Coast Steakhouse in Costa Mesa.\n\nWith Martinez in charge, the menu at Top of the V still retains its Spanish roots with croquetas de jamón and palleas on the menu, along with Basque cheesecake for dessert.\n\n“The special part about it, is that is not just a steakhouse, it still has that Spanish soul,” Martinez said.\n\nTitle: Discover Los Angeles: Visit Los Angeles. Find Things to Do in LA ...\nURL: https://www.discoverlosangeles.com/\nContent: Read More\n\n3 Days of Pet Friendly LA\n\nWith hundreds of hiking trails and wide open parks across the city, Los Angeles is one of the best cities for hanging with your four-legged friend. Restaurants and bars are dog-friendly, too - many offer water bowls and doggie treats for your pup. Ready to add to your furry family? Book a session at a dog or cat cafe and you might meet your new bestie.\n\nRead More\n\n3 Days of Fabulous LA Film Locations\n\n3 Days of Arts and Culture in LA\n\n3 Days of Dining in LA\n\n3 Days of Vintage LA\n\n3 Days of Streetwear and LA Team Gear\n\n3 Days of LA's Great Outdoors\n\n3 Days of Pet Friendly LA\n\nEat & Drink  \n\n  Bars\n\n## LA's Best Rooftop Bars\n\nby  Daniel Djang\n\nLA Guides\n\n## What's Next in LA: Milestone Moments\n\nThings to Do  \n\n  Outdoors & Wellness [...] Read More\n\n3 Days of Arts and Culture in LA\n\nFrom Downtown LA to the Westside, Los Angeles offers incomparable arts and culture experiences. This three-day itinerary will take you to world-class museums, immersive art, classical music, and even back in time.\n\nRead More\n\n3 Days of Dining in LA\n\nLos Angeles is one of the world's great food cities. From food trucks to Michelin-starred tasting menus, LA has it all. For visitors and locals alike, LA is a feast of global cuisines waiting to be explored. Bring your appetite and start sampling LA's exciting and diverse dining scene.\n\nRead More\n\n3 Days of Vintage LA [...] Music\n\n## Cardi B\n\nFeb 16, 2026   7:30PM - 9:30PM\n\nMusic\n\n## Cat Power\n\nFeb 17, 2026   8PM - 10PM\n\nSports\n\n## The Genesis Invitational (OPENING DAY)\")\n\nFeb 19, 2026   8AM - 4PM\n\nMusic\n\n## Lady Gaga\n\nFeb 23, 2026   8PM - 10PM\n\nMusic\n\n## Brandi Carlile\n\nFeb 27, 2026   7:30PM - 9:30PM\n\nFilm, TV & Radio\n\n## 98th Academy Awards\n\nMar 15, 2026   4PM - 7PM\n\n## Los Angeles Dodgers vs. Arizona Diamondbacks (SEASON OPENER)\")\n\nMar 27, 2026   7:10PM - 9:10PM\n\nMusic\n\n## Richard Thompson with Zara Phillips\n\nApr 2, 2026   8PM - 10PM\n\n## PaleyFest LA\n\nApr 4 - 12, 2026   6PM - 10PM\n\n## BeachLife Festival (OPENING DAY)\")\n\nMay 1, 2026 | 12:00PM\n\nComedy\n\n## Netflix is a Joke Festival\n\nMay 4 - 10, 2026   5PM - 10PM\n\nFestivals\n\n## Los Angeles County Fair (OPENING DAY)\")\n\nMay 7, 2026   11AM - 11PM\n\nSports\n\nTitle: Restaurants & Bars in Tremblant - Fairmont Tremblant\nURL: https://www.fairmont.com/en/hotels/tremblant/fairmont-tremblant/dining.html\nContent: Fairmont\n\n## Elevated Stays\n\n## Discover Fairmont Living\n\n## \n\nFairmont\nALL Accor Live Limitless\nALL Accor Live Limitless\n\nALL rewards you wherever you go, whatever you do.\n\nALL Accor Live Limitless\n\nALL rewards you wherever you go, whatever you do.\n\nFairmont Tremblant\n\n# Flavors of the Laurentians\n\nLogo scroll down\n\n error (s)\n\nYou’ll be redirected to Accor\nwebsite to view available hotels and book your stay\n\n error (s)\n\nRooms & Guests\n\nDINING\n\n## Introducing Chef Mathieu Cloutier [...] ### AXE LOUNGE BAR\n\nAxe Lounge Bar is your unparalleled option in Tremblant for exclusive light meals or specialized cocktails, in a distinguishing warm ambiance.\n\n### CHOUX GRAS BRASSERIE CULINAIRE\n\nThis culinary brasserie, like Montreal's greatest addresses, offers a varied menu including dishes to share that already make its reputation.\n\n### LE COMPTOIR\n\nLe Comptoir restaurant offers a casual family atmosphere and a wide choice of quality dishes focused on fresh ingredients.\n\n### RICOCHET CAFÉ & TERRASSE\n\nAdjoining the ski in-ski out access and the landmark hotel pool terrace, this venue is friendly, dynamic and convenient.\n\n### In-Room Dining\n\nFairmont Tremblant's in-room dining offers a diverse menu from hearty breakfasts to gourmet dinners and local flavors.\n\n### Terrasse Après-Ski [...] All Accor Live Limitless\n\n### Exclusive offers\n\nUnlock Insider Access: Fairmont’s Exclusive Newsletter\n\n \n\n## Unlock Insider Access: Fairmont’s Exclusive Newsletter\n\nStay connected and elevate your travel. Subscribe to our newsletter to be the first to discover exclusive offers, tailored experiences, and the latest updates from Fairmont.\n\nYou can cancel your subscription at any time. Read Fairmont's Privacy Policy\n\nTitle: Bacari Restaurants\nURL: https://www.eatwithbacari.com/\nContent: Reserve\n\nMenus & Hours\n\nLarge Party & Events\n\nBuy Gift Cards\n\nPhoto Gallery\n\nJoin The Team\n\nMore...\n\nbacari food spread\nBacari logo\n\n## Make a Reservation\n\nHome Button\n\n## on Instagram\n\n## 323-986-6763 Anytime\n\n## 11a - 10p"
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 2,
+      "query": "Find recent news articles about climate change from the United States.",
+      "function_call_label": [
+        {
+          "name": "tavily-search",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [
+            {
+              "name": "search",
+              "mcp_server": "google-search"
+            }
+          ],
+          "input": {
+            "query": "climate change",
+            "topic": "news",
+            "country": "united states",
+            "days": 3
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_jdMZHfFSczl1naq57m7CrAQK",
+              "name": "tavily-search",
+              "input": {
+                "query": "climate change",
+                "topic": "news",
+                "country": "united states",
+                "days": 7
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: The basics of climate change in 90 seconds\nURL: https://yaleclimateconnections.org/2026/03/the-basics-of-climate-change-in-90-seconds/\nContent: We're excited to announce Yale Climate Connections' new Spanish-language page, created to make this vital information even more accessible to Spanish-speaking communities. Sign up for the free Yale Climate Connections newsletter, and Editor-in-Chief Sara Peach will send you the latest climate change news, tips, and inspiring stories twice a week. When you sign up for the Yale Climate Connections email newsletter, Editor-in-Chief Sara Peach will send you the latest climate change news, actionable tips, and inspiring stories twice a week. Much of this additional carbon dioxide, or CO2, was emitted by people burning fossil fuels like coal, oil, and gas. And as it accumulates in the atmosphere, that carbon dioxide is warming the Earth dangerously fast. Some of that heat radiates back into space – but some is also trapped by CO2 in the atmosphere, like a blanket wrapped around the planet. And as people burn more fossil fuels, atmospheric CO2 levels keep rising at a breakneck pace.\n\nTitle: “Climate change is a failure of the imagination” - resilience\nURL: https://www.resilience.org/stories/2026-03-02/climate-change-is-a-failure-of-the-imagination/\nContent: From the biggest global survey of attitudes around climate change, we know that 89 percent of people are really concerned about climate change and want rapid\n\nTitle: A changing climate change climate? A meta-analysis of ... - Nature\nURL: https://www.nature.com/articles/s41599-026-06638-w\nContent: In the current study, we investigated period trends in climate change attitudes and polarization in these attitudes between 1986 and 2023 in the Netherlands\n\nTitle: Climate Has Slipped From Canada's Political Priorities, Guilbeault ...\nURL: https://www.theenergymix.com/climate-has-slipped-from-canadas-political-priorities-guilbeault-warns/\nContent: Climate change has fallen lower on Canada’s political agenda, former federal environment minister Steven Guilbeault told a recent webinar, because governments no longer see the issue as a mandate from voters. “Clearly, right now, climate change and environmental issues are not perceived as being high priorities for Canadians, and therefore they’re not priorities for the government,” Guilbeault told 904 participants during a webinar hosted by Seniors for Climate Action Now (SCAN). The new SCAN campaign aims to create that space and “allow politicians to tackle climate change once more,” Montpellier said. Climate change has fallen lower on Canada’s political agenda, former federal environment minister Steven Guilbeault told a recent webinar, because governments no longer see the issue as a mandate from voters. “Clearly, right now, climate change and environmental issues are not perceived as being high priorities for Canadians, and therefore they’re not priorities for the government,” Guilbeault told 904 participants during a webinar hosted by Seniors for Climate Action Now (SCAN).\n\nTitle: Global Warming: Where Are We Headed? - Countercurrents\nURL: https://countercurrents.org/2026/03/global-warming-where-are-we-headed/\nContent: According to Professor Kevin Anderson, one of the world’s most respected climate scientists, and based upon a 30-year uninterrupted trendline: “We are headed for 3°C-4°C of warming across this century, an absolute climate catastrophe for all species, including our own” unless society takes drastic action soon to challenge climate change in an all-out global unified fashion, human extinction on ‘some level’, whether partial or complete, is on the agenda; it’s for real, no turning away. ### Tag. Afghanistan American Imperialism Bangladesh Bharat Dogra Bhima Koregaon Book Review Capitalism Citizenship Amendment Act Climate Change Coronavirus Counter Solutions COVID19 COVID Response Watch CRW Reportage Demonetisation Donald Trump Education Environment Farmers Agitation Farm Reform Laws Film Review Gaza Global Warming Health Hindutva Human Rights India Election 2024 India General Elections 2024 Iran Israel Julian Assange Kashmir Life Narendra Modi nuclear Pakistan Palestine Patriarchy Peace Poetry RSS Sri Lanka Syria Ukraine Venezuela.\n\nTitle: Expert Q&A: How to Unlock Climate Progress This Decade - WRI.org\nURL: https://www.wri.org/insights/expert-take-how-unlock-climate-progress-this-decade\nContent: Moderated by WRI President and CEO **Ani Dasgupta**, the discussion featured **Mary Robinson**, Former President, Republic of Ireland and member of the Elders; **Hon. Ralph Regenvanu**, Minister for Climate Change, Vanuatu; **Rachel Kyte**, Special Representative for Climate, U.K.; **María Fernanda Torres Penagos**, Director of Climate Change and Risk Management, Colombia; and **Mohamed Adow**, Director, Power Shift Africa. As Dasgupta put it, “this isn’t about whether more action is needed — that is obvious.” The real question, he argues, “is where today’s climate playbook is falling short and what different decisions or partnerships could genuinely change direction — not through incremental tweaks, but through game-changing focus and action.”. If successful, it could help shift the fossil fuel conversation away from political gridlock and being “confined exclusively to COP negotiation cycles” — instead consolidating it “as a stable pillar of international climate cooperation.”.\n\nTitle: Past climate change: First indicators show resilience in tropical life ...\nURL: https://phys.org/news/2026-02-climate-indicators-resilience-tropical-life.html\nContent: New geological data indicate that marine life is somewhat resilient to warming in the tropics. Chris Fokkema, Earth scientist at Utrecht University,\n\nTitle: New study upends theories on Antarctic meltwater and climate change\nURL: https://oceanographicmagazine.com/news/new-study-upends-theories-on-antarctic-meltwater-and-climate-change/\nContent: A long-standing climate theory suggested melting Antarctic glaciers would release iron into the ocean, sparking algae blooms that would sequester carbon\n\nTitle: Spotlight on climate action\nURL: https://www.unep.org/news-and-stories/news/spotlight-climate-action\nContent: In addition to supporting the COP30 Presidential Agenda in Brazil in November 2025, the participation of UNEP focused on these key areas of negotiation: national climate plans, mitigation work programme, Baku-Belém finance roadmap, technology negotiations, and the Global Goal on Adaptation indicator framework. Day 2 of the Regional Forum for Practitioners in Small Island Developing States on Advancing NDC Implementation Readiness **focuses on peer-to-peer learning on climate finance for Small Island Developing States**. The technical framing underscored a central message for the Regional Forum for Practitioners in Small Island Developing States on Advancing NDC Implementation Readiness: implementation readiness is about moving beyond a document and ensuring political ownership, integration into development planning, coordinated institutions and regional approaches that allow SIDS to aggregate projects and unlock finance at scale. At the opening event, the Mumbai Metropolitan Region Development Authority (MMRDA) signed a Memorandum of Cooperation on ‘Urban Heat Mitigation, Passive Cooling and Nature-based Resilience systems, Climate adaptation frameworks’ with United Nations Environment Programme (UNEP), World Resources Institute (WRI), C40, and Urban Land Institute (ULI)."
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 3,
+      "query": "Find recent news articles about economic trends in Japan.",
+      "function_call_label": [
+        {
+          "name": "tavily-search",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [
+            {
+              "name": "search",
+              "mcp_server": "google-search"
+            }
+          ],
+          "input": {
+            "query": "economic trends",
+            "topic": "news",
+            "country": "japan",
+            "days": 3
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_vUzXJzzZSm1Xa4whTo0hFkx0",
+              "name": "tavily-search",
+              "input": {
+                "query": "economic trends in Japan",
+                "search_depth": "advanced",
+                "topic": "news",
+                "days": 7,
+                "max_results": 5
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: Short-term Japan bonds hold allure for bank managing US$17 bil - The Edge Malaysia\nURL: http://www.theedgemarkets.com/node/794528\nContent: Joyo Bank’s cautious approach reflects a broader trend among Japanese financial institutions, which are reassessing how to manage their assets as domestic interest rates increase after years at rock-bottom levels. Bond yields are climbing after the Bank of Japan ended its era of unprecedented monetary easing and doubts over fiscal discipline grew under Prime Minister Sanae Takaichi’s administration.\n\nThe bank, based in Ibaraki prefecture northeast of Tokyo and a unit of Mebuki Financial Group Inc, held about ¥2.6 trillion (US$17 billion) of securities at the end of December. This including roughly ¥1.4 trillion in domestic bonds.\n\nToba said when he considers the risk balance of the entire portfolio including stocks, the bank needs to have a certain amount of bonds. [...] “There is of course a thinking that we should keep cutting down because rates will rise further,” he said in an interview. “But when some shock happens and equities fall, interest-rate moves are likely to counter it.”\n\nThe yield on two-year Japanese government bonds is currently trending above 1.2%, compared with around zero at the beginning of 2024. Shorter-tenor notes tend to have smaller price swings than longer-dated bonds.\n\nLonger-tenor debt is still off limits for Toba because he expects the yield on the benchmark 10-year JGB to rise to somewhere between 2.5% and 3% from around 2.1% now, as the Bank of Japan (BOJ) continues to raise rates. [...] He expects the next BOJ hike will happen in April, followed by 25 basis-point increases roughly every six months, eventually bringing the policy rate from the current 0.75% to 1.5%. As his “sub-scenario case,” the peak rate could reach 2%, he said.\n\nIn the US, while Toba expects the Federal Reserve to cut rates twice, starting as soon as June, he said he’s also telling his team to be ready for a policy pivot towards hiking, given the strength of productivity in that economy.\n\nInvestment in JGBs is becoming tricky as investors get jittery over government spending. Yields on super-long bonds surged to record levels in January after Takaichi said she would consider suspending the sales tax on food.\n\nTitle: Employment trends are reshaping the insurance industry - InsuranceNewsNet\nURL: https://insurancenewsnet.com/innarticle/employment-trends-are-reshaping-the-insurance-industry\nContent: More Annuity News\n\n## Health/Employee Benefits News\n\n Health insurance, inflation and federal funding cuts driving school budget increases\n Otsuka Medical Devices/Otsuka Pharmaceutical: Paradise Ultrasound Renal Denervation System for the Treatment of Resistant Hypertension, Now Covered by Insurance and Commercially Available in Japan\n After enhanced Obamacare health insurance subsidies expire, the effects are starting to show\n CommunityCare: Your Local Medicare Resource\n AG warns Tennesseans about unlicensed insurance seller\n\nMore Health/Employee Benefits News\n\n## Life Insurance News [...] The current environment, however, is more muted.\n\nSlower hiring translates to slower payroll growth, limiting expansion opportunities. Carriers may need to compete harder for incremental growth rather than relying on rising tides.\n\nAt the same time, moderate wage growth can alter consumer behavior in personal lines. When income gains are incremental and economic uncertainty lingers, households tend to become more price sensitive. That often leads to increased shopping activity.\n\nRecent data supports this trend.\n\nTransUnion’s latest Personal Lines Trends and Perspectives report shows shopping for property insurance is up 6.3% year over year, while shopping for auto policies has risen 8.7%. Increased shopping intensifies retention pressure and can drive higher customer acquisition costs. [...] ## Advisor News\n\n The silent retirement savings killer: Bridging the Medicare gap\n LTC: A critical component of retirement planning\n DOL proposes new independent contractor rule; industry is ‘encouraged’\n Trump proposes retirement savings plan for Americans without one\n Millennials seek trusted financial advice as they build and inherit wealth\n\nMore Advisor News\n\n## Annuity News\n\n Advising clients wanting to retire early: how annuities can bridge the gap\n F&G joins Voya’s annuity platform\n Regulators ponder how to tamp down annuity illustrations as high as 27%\n Annual annuity reviews: leverage them to keep clients engaged\n Symetra Enhances Fixed Indexed Annuities, Introduces New Franklin Large Cap Value 15% ER Index\n\nMore Annuity News\n\n## Health/Employee Benefits News\n\nTitle: Short-Term Japan Bonds Hold Allure for Bank Managing $17 Billion - Bloomberg.com\nURL: https://www.bloomberg.com/news/articles/2026-03-01/short-term-japan-bonds-hold-allure-for-bank-managing-17-billion\nContent: Joyo Bank Ltd. has been selling low-yielding Japanese government bonds bought before the central bank scrapped its negative-rate policy two years ago, and replacing them with higher-yielding notes, Yoshitsugu Toba, who heads the markets division. It is purchasing the shorter end of medium-term bonds, referring to those with two- to seven-year tenors.\n\nBefore it's here, it's on the Bloomberg Terminal\n\nLEARN MORE\n\nHomeBTV+Market DataOpinionAudioOriginalsMagazineEvents\n\nMarketsEconomicsTechnologyPoliticsGreenCryptoAI\n\nWork & Life\n\nWealthPursuitsBusinessweekCityLabSportsEqualityManagement & Work\n\nMarket Data\n\nStocksCommoditiesRates & BondsCurrenciesFuturesSectorsEconomic Calendar\n\nNewslettersExplainersPointed News QuizAlphadots GameThe Big TakeGraphicsSubmit a TipAbout Us [...] Markets\n\n# Short-Term Japan Bonds Hold Allure for Bank Managing $17 Billion\n\nContact us:\n\nProvide news feedback or report an error\n\nConfidential tip?\n\nSend a tip to our reporters\n\nSite feedback:\n\nTake our Survey\n\nBy Taiga Uranaka\n\n### Takeaways by Bloomberg AISubscribe\n\nOne of Japan’s largest regional banks is testing the country’s choppy bond market by investing in shorter-term notes to secure higher returns, while avoiding longer-dated securities as interest rates rise.\n\nTitle: Toyota Group, Akio Toyoda sweeten buyout of key supplier Toyota Industries to $38 billion - Automotive News\nURL: https://www.autonews.com/toyota/an-toyota-industries-supplier-buyout-akio-toyoda-0302/\nContent: # Toyota Group, Akio Toyoda sweeten buyout of key supplier Toyota Industries to $38 billion\n\nBy\n\nHans GreimelNO\n\nBy\n\nNaoto Okamura\n\nMarch 02, 2026 07:57 AM EST\n\n## Featured Stories\n\nManufacturing\n\nFrom Toyota to Stellantis, CEO churn roils auto industry with 9 new bosses in just a year\n\nCEO turnover accelerates as automakers face AI, Chinese rivals and tariffs. Industry analysts say leaders need tech skills and flexible thinking.\n\nBy\n\nHans Greimel\n\nAutomakers\n\nSurvival of automotive CEOs hinges on profits, execution of transformation vision\n\nWB\n\nBy\n\nWilliam Boston\n\nHonda\n\nHonda introducing Acura to Japan with plan to reverse-import U.S.-made Integra, Passport \n\nUK\n\nBy\n\nUrvaksh Karkaria\n\nFocus on Electrification [...] UK\n\nBy\n\nUrvaksh Karkaria\n\nFocus on Electrification\n\nEuropean auto suppliers face ‘polycrisis’ that threatens 350,000 jobs, industry survival\n\nLH\n\nBy\n\nLois Hoyal\n\nTitle: Asia FX Talk - What if oil prices spike further? implications of Iran conflict - MUFG Research\nURL: https://www.mufgresearch.com/fx/asia-fx-talk-what-if-oil-prices-spike-further-implications-of-iran-conflict-2-march-2026/\nContent: in Asia reflecting also higher risk premia. From a global perspective, we would expect relative havens such as JPY to outperform in the near-term, while higher beta FX such as AUD to underperform. [...] current account deficit will likely breach 2% of GDP while the Philippines could see its current account deficit remain large at around 2-3% of GDP despite softer imports and domestic demand. [...] Overall, we don’t think Asian central banks will hike rates just because of this risk, but it could delay rate cuts for the likes of the Philippines and Indonesia, and further reduce the probabilities of cuts for markets such as India and South Korea. For Vietnam, we already have a rate hike in our profile and sustained oil price increases give us more confidence on that view. We will likely see some steepening in FX forward curves especially in these markets in Asia reflecting also higher risk premia. From a global perspective, we would expect relative havens such as JPY to outperform in the near-term, while higher beta FX such as AUD to underperform\n\nDisclaimer Terms and Conditions"
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 4,
+      "query": "Find recent news articles about sports events from Brazil.",
+      "function_call_label": [
+        {
+          "name": "tavily-search",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [
+            {
+              "name": "search",
+              "mcp_server": "google-search"
+            }
+          ],
+          "input": {
+            "query": "sports events",
+            "topic": "news",
+            "country": "brazil",
+            "days": 3
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_6CrTm4QOeuvv0ZcPoPgxgCGk",
+              "name": "tavily-search",
+              "input": {
+                "query": "sports events Brazil",
+                "search_depth": "advanced",
+                "topic": "news",
+                "days": 7,
+                "max_results": 10
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: Germany vs. Ecuador tickets: Cheapest prices, seats, date for 2026 FIFA World Cup match in Group E - sportingnews.com\nURL: https://www.sportingnews.com/ca/tickets/news/germany-vs-ecuador-tickets-prices-date-2026-fifa-world-cup-group/fb4ccf96f67f78519686d24a\nContent: Featured\n\n NFL\n NBA\n MLB\n NHL\n\nSports\n\n NFL\n NBA\n NHL\n MLB\n Soccer\n Curling\n WNBA\n NCAAF\n NCAAMB\n NCAAWB\n Boxing\n MMA\n WWE\n Golf\n Tennis\n F1\n NASCAR\n Darts\n Olympics\n More Sports\n\nExplore More\n\n Fantasy\n Betting\n Watch\n Tickets\n\nEditions\n\n Canada\n Argentina\n Australia\n Brasil\n India\n 日本\n México\n 대한민국\n España\n ไทย\n United Kingdom\n [United States [English]](/us)\n [United States [Español]](/us-es)\n Việt Nam\n\n About Us\n Careers\n Privacy Preferences\n Terms of Use\n Privacy Policy\n Cookie Policy\n\nIf you purchase a product or register for an account through one of the links on our site, we may receive compensation.  Learn more >\n\n# Germany vs. Ecuador tickets: Cheapest prices, seats, date for 2026 FIFA World Cup match in Group E\n\nEmily Dozier\n\n•\n\n Add The Sporting News on Google [...] ## FIFA World Cup 2026 groups\n\n### ENJOYED THIS STORY?\n\nAdd Sporting News as a preferred source on Google to see more of our reporting\n\n Add as preferred source on Google\n\nContent Producer\n\n### Emily Dozier\n\nEmily Dozier is a live events and lifestyle writer at The Sporting News, covering everything from sporting events and music festivals to broadway shows and stand-up comedy. Based out of New York, she graduated from the University of Georgia with a bachelor’s degree in journalism. When not covering the SN tickets beat, Emily enjoys playing volleyball and cooking. Prior to joining The Sporting News in 2023, Emily covered the 2023 FIFA Women's World Cup for the Associated Press. [...] Emily Dozier\n\n•\n\n Add The Sporting News on Google \n\nOne of the best teams at the FIFA World Cup faces off against one of the newest in New York. Germany goes head-to-head with Ecuador in a Group E meeting.\n\nDespite four World Cup titles, the latest coming just twelve years ago, Germany has failed to advance past the group stage since the victory. It should happen this year as it finished fifth at the 2024 Euros, some momentum to build on as it tries to break the dry streak.\n\nBUY NOW: Get tickets to Germany vs. Ecuador World Cup match on StubHub\n\nEcuador is certainly not a team to underestimate. Making its World Cup debut in 2002, La Tri has been solid since. They advanced to their second straight knockouts at the 2024 Copa América, taking the ultimate winner Argentina to penalties.\n\nTitle: Argentina vs. Austria tickets: Cheapest prices, seats, date for 2026 FIFA World Cup match in Group J - sportingnews.com\nURL: https://www.sportingnews.com/uk/tickets/news/argentina-vs-austria-tickets-prices-date-2026-fifa-world-cup-group/a9bf105ef0e336b194f79889\nContent: Featured\n\n Football\n Boxing\n Cricket\n Darts\n\nSports\n\n Football\n NFL\n NBA\n Darts\n F1\n Boxing\n MMA\n WWE\n Golf\n Tennis\n Horse Racing\n Cricket\n More Sports\n\nExplore More\n\n Betting\n Watch\n\nEditions\n\n United Kingdom\n Argentina\n Australia\n Brasil\n Canada\n India\n 日本\n México\n 대한민국\n España\n ไทย\n [United States [English]](/us)\n [United States [Español]](/us-es)\n Việt Nam\n\n About Us\n Careers\n Privacy Preferences\n Terms of Use\n Privacy Policy\n Cookie Policy\n\nIf you purchase a product or register for an account through one of the links on our site, we may receive compensation.  Learn more >\n\n# Argentina vs. Austria tickets: Cheapest prices, seats, date for 2026 FIFA World Cup match in Group J\n\nEmily Dozier\n\n•\n\n Add The Sporting News on Google [...] Emily Dozier\n\n•\n\n Add The Sporting News on Google \n\nCould this matchup result in an upset for the ages? Argentina and Austria face off in a Group J game at the FIFA World Cup. From Dallas, it's the juggernauts versus a nation ready to prove itself.\n\nArgentina enters the 2026 tournament as one of the favorites, going for its sixth overall title and back-to-back wins. No one has accomplished that feat since 1962 (Brazil).\n\nBUY NOW: Get tickets to Argentina vs. Austria World Cup match on StubHub\n\nBut Austria thrives as the underdogs. It last qualified to the World Cup in 1998, and it won't go quietly. This squad is capable of playing up, and it's group of veteran stars hopes to guide Austria to the knockouts. It's certainly possible if Argentina doesn't watch out. [...] ## FIFA World Cup 2026 groups\n\n### ENJOYED THIS STORY?\n\nAdd Sporting News as a preferred source on Google to see more of our reporting\n\n Add as preferred source on Google\n\nContent Producer\n\n### Emily Dozier\n\nEmily Dozier is a live events and lifestyle writer at The Sporting News, covering everything from sporting events and music festivals to broadway shows and stand-up comedy. Based out of New York, she graduated from the University of Georgia with a bachelor’s degree in journalism. When not covering the SN tickets beat, Emily enjoys playing volleyball and cooking. Prior to joining The Sporting News in 2023, Emily covered the 2023 FIFA Women's World Cup for the Associated Press.\n\nTitle: What is the SheBelieves Cup? Format, teams, more to know about tournament featuring USWNT, CanWNT - Yahoo Sports Canada\nURL: https://ca.sports.yahoo.com/news/shebelieves-cup-format-teams-more-093001968.html\nContent: |  |  |  |  |\n ---  --- |\n| Year | Winner | Runner-Up | Other participants |\n| 2016 | USA | Germany | England, France |\n| 2017 | France | Germany | England, USA |\n| 2018 | USA | England | France, Germany |\n| 2019 | England | USA | Japan, Brazil |\n| 2020 | USA | Spain | England, Japan |\n| 2021 | USA | Brazil | Canada, Argentina |\n|  | USA |  | Czech Republic, New Zealand |\n|  | USA |  | Brazil, Canada |\n|  | USA | Canada | Brazil, Japan |\n|  | Japan | USA | Colombia, Australia |\n\n About Our Ads\n\nAdvertisement\n\nAdvertisement\n\nAdvertisement [...] Advertisement\n\nAdvertisement\n\nAdvertisement\n\nThe participants are all from North America and South America. Previously, more European nations took part, but the rise of Europe-based tournaments in the same international window has seen no teams from that continent play in the SheBelieves Cup since 2022.\n\n|  |  |  |\n --- \n| Team | FIFA rank | Last participation (Total) |\n| USA | #2 | 2025 (10) |\n| Canada | #10 | 2024 (3) |\n| Colombia | #20 | 2025 (1) |\n| Argentina | #30 | 2021 (1) |\n\n## SheBelieves Cup format, how it works\n\nThe SheBelieves Cup is a four-team round-robin format, with all four participants contesting three matches.\n\nThe teams are then sorted into a table and the winner is the team with the most points, with three points for a win and one point for a draw.\n\nAdvertisement [...] Advertisement\n\nAdvertisement\n\nAdvertisement\n\nThe tiebreakers are goal differential, then goals scored, then head-to-head results, and finally fair play rankings.\n\nThis has been the SheBelieves Cup format for the entirety of its existence, except for one year in 2024, when the tournament was contested as a four-team mini bracket due to the scheduling of the inaugural CONCACAF W Gold Cup later that year to cut down on matches played.\n\n## SheBelieves Cup all-time winners\n\nThe U.S. has won every single edition of the SheBelieves Cup except three. They fell short in 2017, 2019, and most recently in 2025.\n\nTitle: War disrupts sports with doubt over Messi's 'Finalissima,' Ronaldo games and F1 races - San Francisco Chronicle\nURL: https://www.sfchronicle.com/sports/article/war-disrupts-sports-with-doubt-over-messi-s-21950455.php\nContent: Formula 1 has races in Bahrain and Saudi Arabia next month. F1 and its teams typically start to fly in staff and freight weeks in advance, limiting the time to make a decision on whether to go ahead. Governing body FIA says its priority is “safety and wellbeing.”\n\nThe men's and women's tennis tours and golf's European tour have just finished their Middle East tournament swings and aren't due back for months.\n\n## Iran is set to play in US at the World Cup\n\nIran is due to send its men's soccer team to the U.S. for the World Cup in just over three months, with a first game June 16 against New Zealand in Inglewood, California. [...] Besides soccer and auto racing, Qatar has a World Endurance Championship sportscar race this month, a MotoGP motorcycle race, a gymnastics World Cup next month and hosts the first Diamond League track meet of the year in May. Qatar also owns Champions League-winning soccer team Paris Saint-Germain.\n\nSaudi Arabia, which will host the 2034 World Cup in men's soccer, has funded the LIV Golf breakaway league and become a major player in world boxing.\n\n\\_\\_\\_\n\nAP sports: \n\nJAMES ELLINGWORTH\n\nSports Columnists\n\nAnn Killion\n|Sports Columnist\n\nMacklin Celebrini brings Olympics momentum to Sharks: ‘Now the whole world knows’\n\nMacklin Celebrini, 19, returned Wednesday to the San Jose Sharks and a landscape transformed by his incredible performance at the Milan Cortina Olympics. [...] Cancelations and travel shutdowns are already affecting events since the United States and Israel launched a wave of strikes on Iran on Saturday. Organizers of Formula 1 and major soccer games face deciding within weeks whether they can go ahead as scheduled.\n\nMiddle Eastern nations have become crucial to the world sports landscape over the last decade as event hosts, financial backers and employers for some of the world's top athletes.\n\nAdvertisement\n\nArticle continues below this ad\n\n## Key upcoming events\n\nThe clock is ticking for a decision on whether to cancel or move the “Finalissima” soccer game on March 27 between Spain and Argentina, the champions of Europe and South America. That match would offer Messi a chance to win yet another trophy in a glittering career.\n\nTitle: The World’s Game, Our Stage: FOX Sports Previews FIFA World Cup 2026™ at SXSW - FOX Sports\nURL: https://www.foxsports.com/stories/presspass/worlds-game-our-stage-fox-sports-previews-fifa-world-cup-2026-sxsw\nContent: share\n\nIn This Topic\n\nSoccer\n\nRecent\n\n### The World’s Game, Our Stage: FOX Sports Previews FIFA World Cup 2026™ at SXSW### FOX Sports St. Petersburg Friday Coverage Schedule### FOX SOCCER Feb. 26 Broadcast Assignments### FOX Sports Assembles World-Class Broadcast Team for 2026 World Baseball Classic### FOX Sports, AV8 Productions, Allez! Sports, and Hello Sunshine Announce New Documentary Special You See L.A.### FOX COLLEGE HOOPS Feb. 24 - March 1 Schedule and Broadcast Assignments### FOX Sports Debuts SPEED WITH HARVICK AND BUXTON Fueled by POET\n\nSee All News [...] Daily Studio Shows\n Full TV Schedule\n Photos & Logos\n Bios & Headshots\n FOX Sports Films\n Fox Sports Supports\n Fox Sports University\n Fox Deportes\n About\n\nSoccer\n\nSoccer\n\nshare\n\nfacebookxredditlink\n\nSoccer\n\nshare\n\nfacebookxredditlink\n\n# The World’s Game, Our Stage: FOX Sports Previews FIFA World Cup 2026™ at SXSW\n\nPublished Mar. 2, 2026 8:59 a.m. ET\n\nPanel Presentation Featuring FOX Sports Broadcasters Alexi Lalas, Carli Lloyd, Stu Holden and Jenny Taft Saturday, March 14 in Austin, Texas\n\nThis summer, the world’s biggest sporting event will unfold right here in North America and FOX Sports is counting down with a star-powered panel presentation at SXSW 2026 titled The World’s Game, Our Stage: FOX Sports Previews FIFA World Cup 2026™. [...] Why This Matters\n\nFIFA World Cup 2026™ will make history as the first tournament hosted by three countries - United States, Mexico, and Canada - and the first with 48 competing nations and 104 matches – more than ever before. With an unprecedented 70 matches on FOX broadcast television, it’ll be the biggest, most diverse showcase of soccer in history. FOX Sports’ broadcast slate is equally historic, featuring complete multiplatform coverage across network television, cable and streaming.\n\nPanel Details\n\n📅 Date & Time: Saturday, March 14 | 2:30 – 3:30pm CST  \n📍 Location: Austin Marriott Downtown | Waller Ballroom D  \n🎟 Access: SXSWPlatinum and Innovation Badges Required\n\nshare\n\nIn This Topic\n\nSoccer\n\nRecent\n\nTitle: Sports News, Transfers, Scores | Watch Live Sport - Sky Sports\nURL: https://www.skysports.com/tennis/watch/8991210034305517112/merida-open-akron-2026\nContent: ### ICC T20 WC: IND v WI Highlights\n Live\n\n  ### Open Championship Film 2025\n Live\n\n  ### Indycar NTT\n Live\n\n  ### Live: ATP/WTA Tennis Finals\n Live\n\n  ### NFL Highlights\n Live\n\n  ### Sky Sports Catch-Up\n Live\n\n  ### Live: ATP/WTA Tennis Finals\n Live\n\n  ### Stateside Live\n Live\n\n  ### ATP Final: Delray Beach\n\n Home\n Scores\n Watch\n Sky Bet\n Shop\n + Podcasts\n  + Upcoming on Sky\n  + Get Sky Sports\n  + Sky Sports App\n  + Sky Sports with no contract\n  + Kick It Out\n  + British South Asians in Football\n\nWatch Sky Sports [...] Skip to content\n\nSky Sports Homepage\n\n Menu\n\n Home\n Scores\n Watch\n Sky Bet\n Shop\n + Podcasts\n  + Upcoming on Sky\n  + Get Sky Sports\n  + Sky Sports App\n  + Sky Sports with no contract\n  + Kick It Out\n  + British South Asians in Football\n\nWatch Sky Sports\n\nTennis\n\n# Mérida Open Akron 2026\n\nCurrently playing on\n\n## C. Bucsa v M. Frech\n\nLoading...\n\nSubscribe to Sky Sports to watch live, or stream on NOW.\n\nSign in Open in our Sky Sports app Get Sky Sports\n\n Stream with a Sports Membership on\n\nCristina Bucsa versus Magdalena Frech in the Final at the Mérida Open Akron.\n\n1st March 2026 at 10:55pm\n\n## On Now\n\n Live\n\n  ### Sky Sports Catch-Up\n Live\n\n  ### PL: Man Utd v Crystal Palace Hlts\n Live\n\n  ### SPFL 25/26: Rangers v Celtic\n Live\n\n  ### ICC T20 WC: IND v WI Highlights\n Live\n\nTitle: 'Finalissima' Clash Between Spain And Argentina In Qatar At Risk - HuffPost\nURL: https://www.huffpost.com/entry/finalissima-spain-argentina-qatar_n_69a5619ae4b033a0453572d0?origin=top-ad-recirc\nContent: Skip to Main Content\n\nMain Menu\n\nFollow Us\n\nTerms | Privacy Policy\n\nPart of HuffPost News. ©2026 BuzzFeed, Inc. All rights reserved.\n\nWhat's Hot\n\n## Defend Truth.DefendDemocracy.\n\nWith the administration challenging the Court and Congress, independent reporting is the only thing standing between you and the noise. Your membership funds the courage to ask the hard questions. Don't let the truth be sidelined, join Huff\n\nJoin HuffPost\n\nAlready a member?Log in to hide these messages.\n\n# 'Finalissima' Clash Between Spain And Argentina In Qatar At Risk\n\nThe contest between the European and Copa America champions at Doha’s Lusail Stadium includes potential big-name draws Lamine Yamal and Lionel Messi.\n\nREUTERS\n\nLOADINGERROR LOADING [...] Advertisement\n\n“Qatar Football Association announces the postponement of all tournaments, competitions and matches, effective from today and until further notice,” the association said in a statement on Sunday. “The new dates for the resumption of competitions will be announced in due course through the Association’s official channels.”\n\nThe final call on whether to postpone the game rests with event organisers UEFA and CONMEBOL.\n\nThe Bahrain Football Association postponed all its matches until further notice while the Asian Football Confederation on Sunday announced it was delaying Champions League Elite fixtures in the region.\n\nAdvertisement\n\nThe Asian Champions League Two, currently at the quarter-final stage, has also been impacted, along with games in the Challenge League. [...] Beyond soccer, Euroleague Basketball also announced the cancellation of the adidas NextGen EuroLeague qualifying tournament in Abu Dhabi, citing safety and security concerns for participants.\n\n“After careful evaluation and ongoing consultation with relevant authorities and stakeholders, it was determined that cancelling the event is the most responsible course of action at this time,” the league said in a statement on Sunday.\n\nAdvertisement\n\nCountries across the Middle East have been on high alert since Saturday when the U.S. and Israel launched air strikes against Iran, aimed at diminishing Iran’s military capability.\n\nIran retaliated by attacking U.S. targets around the region, including in the UAE, Saudi Arabia and Qatar.\n\nAdvertisement\n\nGo to Homepage\n\n|\n\nSubmit a tip\n\nAdvertisement\n\nTitle: Ryan Wilson and Emory Hunt join Coley Harvey to break down Fernando Mendoza not participating in the on-field workouts Stream of General Videos - CBS Sports\nURL: https://www.cbssports.com/watch/general/video/sportshq-network-9711\nContent: Bologna10-6-10\n\n2:35 PM\n\n### Serie A • Paramount+\n\nUdinese9-5-12\n\nFiorentina5-9-12\n\n2:50 PM\n\n### EFL • Paramount+\n\n#### Birmingham City vs. Middlesbrough\n\n## UFC News & Highlights\n\n### UFC\n\n#### Max Holloway on the Oliveira Rematch at UFC 326 | Exclusive\n\n### UFC\n\n#### HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount+\n\n### UFC\n\n#### Lone'er Kavanagh Joins CBS Sports HQ\n\n### UFC\n\n#### Chito Vera Joins CBS Sports HQ\n\n### UFC\n\n#### UFC Fight Night Preview: Moreno Vs Kavanagh\n\n### UFC\n\n#### UFC Fighter Breakdown: Brandon Moreno vs Lone'er Kavanagh\n\n### UFC\n\n#### Brandon Moreno Joins CBS Sports HQ\n\n### UFC\n\n#### HIGHLIGHTS & REACTION From UFC Fight Night On Paramount+ [...] Full View\n\n# Ryan Wilson and Emory Hunt join Coley Harvey to break down Fernando Mendoza not participating in the on-field workouts\n\n## Ryan Wilson and Emory Hunt join Coley Harvey to break down Fernando Mendoza not participating in the on-field workouts\n\n## More Live & Upcoming\n\nLive\n\n### CBS Sports Golazo Network\n\n#### 90 in 60: Serie A - Roma vs. Juventus\n\nLive\n\n### UEFA Champions League Channel\n\n#### UEFA Champions League Soccer - Real Madrid vs. Benfica\n\nLive\n\n### NFLCHANNEL\n\n#### Best of 2026 NFL Scouting Combine - NFL Combine Highlights - Best of DL\n\nLive\n\n### CBS Sports HQ\n\n#### Scoreboard Final\n\nLive\n\n### CBS Sports Network\n\n#### Equestrian - FEI North America League: Abu Dhabi\n\n12:20 PM\n\n### Serie A • Paramount+\n\nPisa1-12-13\n\nBologna10-6-10\n\n2:35 PM\n\n### Serie A • Paramount+\n\nTitle: Santos vs. Cruz Azul - Boxscore - Live Score - March 03, 2026 - FOX Sports\nURL: https://www.foxsports.com/soccer/liga-mx-santos-vs-cruz-azul-mar-03-2026-game-boxscore-647983?tab=boxscore\nContent: Affiliated Apps\n\n FOX Sports FOX One\n\nQuick Links\n\n FIFA World Cup 2026™ Best Betting Apps & Sites Best Sportsbook Promos Missouri Sports Betting\n\nFOX SPORTS™, SPEED™, SPEED.COM™ & © 2026 Fox Media LLC and Fox Sports Interactive Media, LLC. All rights reserved. Use of this website (including any and all parts and components) constitutes your acceptance of these Terms of Use and New Privacy Policy | Advertising Choices | Your Privacy Choices | Closed Captioning\n\nHelpPressAdvertise with UsJobsFOX CincyRSSSitemap\n\nFS1FOXFOX NewsFox CorporationFOX Sports SupportsFOX Deportes [...] 3\n\nBruno Amione\n\n3\n\nYC\n\nWiller Ditta\n\n4\n\nCAZ\n\n### ODDS\n\nSEE ALL ODDS\n\nTEAM TO WIN\n\nA bet of $100 would win $535 total if Santos wins and a bet of $188 would win $288 total if Cruz Azul wins\n\n+435\n\nSAN\n\n-188\n\nCAZ\n\nOVER/UNDER 3.5 GOALS\n\nThe combined final score of both teams is set at 3.5\n\n+124\n\nOVER 3.5\n\n-165\n\nUNDER 3.5\n\nPOWERED BY\n\nTorreon, MEX\n\n65°\n\nWind 2 mph NNW\n\n94° SUN\n\n93° MON\n\n93° TUE\n\nSAN\n\nFollow a team and personalize your FOX Sports experience\n\nCAZ\n\nTop Leagues\n\n NFL College Football INDYCAR MLB College Basketball NASCAR\n\nTop Shows\n\n The Herd with Colin Cowherd First Things First The Joel Klatt Show Kevin Harvick's Happy Hour Bear Bets\n\nAffiliated Apps\n\n FOX Sports FOX One\n\nQuick Links [...] my favs\n\nAccess and manage your favorites here\n\n FOX Super 6 💰\n\n SPORTS & TEAMS\n PLAYERS\n SHOWS\n PERSONALITIES\n TOPICS\n\n## Santos vs Cruz Azul\n\nMar 4 at 1:00 AM on TUDN\n\nEstadio TSM Corona,  Torreon, MEX\n\nSOCCER  >  Scores  > \n\n# Santos vs. Cruz Azul - Boxscore: Mar 4, 2026\n\n## MATCHUP## ODDS## STANDINGS\n\n### LEADING SCORERS\n\n#9 F L. Di Yorio\n\n4 Goals 1 Assist\n\nvs\n\n#20 M J. Paradela\n\n4 Goals 1 Assist\n\n### TEAM STATS\n\nSAN 18TH LIGA MX\n\n9 GF 15\n\n23 GA 8\n\n0 Clean Sheets 3\n\n30 SOG 45\n\nCAZ 1ST LIGA MX\n\n### TEAM LEADERS\n\nSAN\n\nLucas Di Yorio\n\n6.8\n\nRTG\n\nGabriel Fernandez\n\n6.8\n\nLucas Di Yorio\n\n4\n\nG\n\nJose Paradela\n\n4\n\nLucas Di Yorio\n\n6\n\nSOG\n\nJose Paradela\n\n8\n\nRamiro Sordo\n\n2\n\nA\n\nGabriel Fernandez\n\n3\n\nCarlos Acevedo\n\n0\n\nClean Sheets\n\nAndres Gudino\n\n3\n\nBruno Amione\n\n3\n\nYC\n\nWiller Ditta\n\n4\n\nCAZ\n\nTitle: Shakira Breaks Record at Mexico’s Zócalo with 400,000 Attendees: ‘A Love Story That Can’t Be Compared to Anything’ - Billboard\nURL: https://www.billboard.com/music/latin/shakira-breaks-record-mexico-zocalo-400000-attendees-1236189543/\nContent: The historic moment in the Colombian star’s career also coincides with a new international recognition: her nomination for the Rock & Roll Hall of Fame 2026 last week. This nomination crowns a series of major milestones she has achieved over the past year, including setting a Guinness World Record for the highest-grossing tour by a Hispanic artist, earning an astonishing $421.6 million and selling 3.3 million tickets across 86 shows, according to Billboard Boxscore.\n\nAfter her show at Mexico’s Zócalo, Shakira is set to perform on another of the world’s most iconic and massive stages on May 2: Brazil’s Copacabana Beach, where organizers expect at least one million people, as occurred with Madonna in 2024 and Lady Gaga in 2025.\n\nGet weekly rundowns straight to your inbox\n\n Sign Up [...] + Events\n  + Lifestyle\n  + Politics\n  + TV/Film\n ### Media\n\n  + Lists\n  + Photos\n  + Podcasts\n  + Videos\n ### Business\n\n  + Business News\n  + Legal\n  + Touring\n  + Publishing\n  + Radio\n  + Record Labels\n  + View All Pro\n ### Pro Tools\n\n  + Songwriters & Producers\n  + Song Index\n  + Artist Index\n  + Royalty Calculator\n  + Market Watch\n  + Industry Events Calendar\n ### Billboard Español\n\n  + Noticias\n  + Música\n  + Negocios\n  + Cultura y Entretenimiento\n ### Crossword Puzzle\n\nGET ACCESS TODAY [...] Billboard   Billboard\n\n Manage Account\n\n Manage Account\n\nAccount\n\nBillboard   Billboard\n\n Manage Account\n\nAccount\n\n# Shakira Breaks Record at Mexico’s Zócalo with 400,000 Attendees: ‘A Love Story That Can’t Be Compared to Anything’\n\nWith Sunday's (March 1) free concert, the Colombian superstar closed the Mexican leg of her Las Mujeres Ya No Lloran World Tour.\n\n Share on Facebook\n Share on X\n Google Preferred\n Share to Flipboard\n Share on Pinterest\n + additional share options added\n Share on Reddit\n Share on LinkedIn\n Share on Whats App\n Send an Email\n Print this article\n Post a Comment\n Share on Tumblr\n\n### Trending on Billboard"
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 5,
+      "query": "Initiate a web crawl starting from Medium's Careers section in text format.",
+      "function_call_label": [
+        {
+          "name": "tavily-crawl",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "url": "https://medium.com",
+            "categories": [
+              "Careers"
+            ],
+            "format": "text"
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_rWpZ8cnoI2u4Q3CE5cX3qryt",
+              "name": "tavily-crawl",
+              "input": {
+                "url": "https://medium.com/careers",
+                "max_depth": 2,
+                "max_breadth": 20,
+                "limit": 50,
+                "format": "text"
+              },
+              "output": {
+                "status_code": 500,
+                "result": {}
+              },
+              "status_code": 500
+            }
+          ],
+          "if_pass": false,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        false
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": false,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 0,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 6,
+      "query": "Start a web crawl from the GitHub website, focusing on the Developers section, and format the results in markdown.",
+      "function_call_label": [
+        {
+          "name": "tavily-crawl",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "url": "https://github.com",
+            "categories": [
+              "Developers"
+            ],
+            "format": "markdown"
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_8Yeptulrr16IT7xGGHxsyCvo",
+              "name": "tavily-crawl",
+              "input": {
+                "url": "https://github.com",
+                "max_depth": 2,
+                "max_breadth": 20,
+                "instructions": "Crawl the Developers section of the GitHub website.",
+                "categories": [
+                  "Developers"
+                ],
+                "format": "markdown"
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": false,
+                  "data": null,
+                  "error": "Runtime error: readuntil() called while another coroutine is already waiting for incoming data"
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": false,
+          "tool_correctness": true,
+          "parameter_correctness": true
+        }
+      ],
+      "k_results": [
+        false
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        true
+      ],
+      "data_pass": false,
+      "tool_data_pass": true,
+      "parameter_data_pass": true,
+      "num_trials": 1,
+      "num_passed": 0,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 1
+    },
+    {
+      "idx": 7,
+      "query": "Extract the content from the following URLs: https://www.nationalgeographic.com, https://www.scientificamerican.com",
+      "function_call_label": [
+        {
+          "name": "tavily-extract",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "urls": [
+              "https://www.nationalgeographic.com, https://www.scientificamerican.com"
+            ]
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_VOM3uoEejXhf53ORAPzLOs6U",
+              "name": "tavily-extract",
+              "input": {
+                "urls": [
+                  "https://www.nationalgeographic.com"
+                ],
+                "extract_depth": "basic",
+                "include_images": false,
+                "format": "markdown"
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": false,
+                  "data": null,
+                  "error": "Runtime error: readuntil() called while another coroutine is already waiting for incoming data"
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": false,
+          "tool_correctness": true,
+          "parameter_correctness": false
+        }
+      ],
+      "k_results": [
+        false
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        false
+      ],
+      "data_pass": false,
+      "tool_data_pass": true,
+      "parameter_data_pass": false,
+      "num_trials": 1,
+      "num_passed": 0,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 0
+    },
+    {
+      "idx": 8,
+      "query": "Extract content from https://www.bbc.com/news with basic depth and format it in markdown.",
+      "function_call_label": [
+        {
+          "name": "tavily-extract",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "urls": [
+              "https://www.bbc.com/news"
+            ],
+            "extract_depth": "basic",
+            "format": "markdown"
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_s8lbZACsEZZJK3XsZFRPxyqT",
+              "name": "tavily-extract",
+              "input": {
+                "urls": [
+                  "https://www.bbc.com/news"
+                ],
+                "extract_depth": "basic",
+                "format": "markdown"
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: National Geographic | National Geographic\nURL: https://www.nationalgeographic.com\nContent: undefined\nRaw Content: ## \n\n## Latest Stories\n\n## [How Black cowboys shaped the cuisine of the American West](https://www.nationalgeographic.com/history/article/american-soul-black-cowboys-culinary-influences)\n\n## [How strep throat may trigger autoimmune disease](https://www.nationalgeographic.com/health/article/strep-throat-autoimmune-disease-chronic-fatigue)\n\n## [What it takes to land a plane on a runway made entirely of ice](https://www.nationalgeographic.com/adventure/article/alton-bay-ice-runway)\n\n### More from Nat Geo\n\n## Tender Embrace\n\nLimitless with Chris Hemsworth\n\n### Discover More on Disney+\n\n## Nat Geo TV\n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n## Travel\n\n## [The best places in the world to travel to in 2026](https://www.nationalgeographic.com/travel/article/best-of-the-world-2026)\n\n## [Discover the Wonders of the Ocean](https://www.nationalgeographic.com/expeditions/trip-types/ocean/)\n\n## [Explore Nature & Wildlife](https://www.nationalgeographic.com/expeditions/interests/nature-wildlife/)\n\n## Latest Stories\n\n## March 2026 Issue\n\n## [The quest to engineer a silk that’s stronger than steel](https://www.nationalgeographic.com/science/article/spider-silk-silkworm-genetic-engineering)\n\n## [Searching for Africa’s ghost elephants](https://www.nationalgeographic.com/animals/article/angola-ghost-elephants)\n\n## [Subscribe to National Geographic](https://www.nationalgeographic.com/subscribe)\n\n## In This Issue\n\n## National Geographic Society Mission\n\n![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)\n\n### National Geographic’s nonprofit work\n\nNational Geographic Society funds the best and brightest individuals dedicated to scientific discovery, exploration, education and storytelling to illuminate and protect the wonder of our world. National Geographic Explorers are continuing to push the boundaries of knowledge, uncovering new insights about the natural and cultural worlds, and strengthening our connection to them and one another.\n\n![National Geographic Logo - Home](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)\n\nCopyright © 1996-2015 National Geographic SocietyCopyright © 2015-2026 National Geographic Partners, LLC. All rights reserved"
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": true
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        true
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": true,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 1
+    },
+    {
+      "idx": 9,
+      "query": "Can you map out the website structure for The New York Times?",
+      "function_call_label": [
+        {
+          "name": "tavily-map",
+          "step": "1",
+          "id": "1",
+          "mcp_server": "tavily-mcp",
+          "similar_tools": [],
+          "input": {
+            "url": "https://www.nytimes.com"
+          },
+          "output": {
+            "status_code": 200,
+            "result": {}
+          }
+        }
+      ],
+      "trials": [
+        {
+          "trial_idx": 0,
+          "function_call_result": [
+            {
+              "id": "call_cx6PxqTb3dbZB0LLM6heEpIK",
+              "name": "tavily-map",
+              "input": {
+                "url": "https://www.nytimes.com",
+                "max_depth": 2,
+                "max_breadth": 20,
+                "limit": 100,
+                "instructions": "Map out the website structure, focusing on main sections and categories."
+              },
+              "output": {
+                "status_code": 200,
+                "result": {
+                  "success": true,
+                  "data": [
+                    "Detailed Results:\n\nTitle: Breaking news, video and the latest top stories from the U.S. ... - BBC\nURL: https://www.bbc.com/news\nContent: undefined\nRaw Content: [Skip to content](#main-content)\n\n#\n\n[## Iranian strikes reported on Qatar and Saudi energy sites as US jets shot down by Kuwaiti 'friendly fire'\n\nThe US defense secretary says American attacks on Iran will not lead to \"endless war\". Meanwhile in Cyprus, two drones were intercepted near a UK base, after an earlier attack on Sunday.](https://www.bbc.com/news/live/cy0dp1l57nxt)\n\n[## US jets shot down over Kuwait in 'apparent friendly fire incident', officials say\n\nThe planes were \"mistakenly shot down by Kuwaiti air defences\", but all crew survived, Centcom says.](/news/articles/c5y4v8gndz1o)\n\n[## Two drones headed to RAF base intercepted, Cyprus says\n\nNo casualties were reported and the base sustained \"minimal damage\", the Ministry of Defence said.](/news/articles/cm2r0q310e3o)\n\n[## Hopes and fears as US Iranians take to streets after toppling of supreme leader\n\nHundreds rallied in cities across the US to celebrate Khamenei's death, but not everyone was rejoicing.](/news/articles/cy4w728kl4ko)\n\n[## Oil prices jump and shares fall as conflict escalates\n\nExperts have warned that a prolonged conflict could push global energy prices even higher.](/news/articles/c75evve6l63o)\n\n[## 'They hit so hard the house was shaking': Iranians describe impact of US-Israel attacks\n\nPeople in Iran tell the BBC they hear explosions day and night, as the US and Israel continue striking the country for a third day.](/news/articles/cx2jyv3jp01o)\n\n---\n\n## More top stories\n\n[## India and Canada reset ties with 'landmark' nuclear energy deal\n\nA host of deals, including one to supply India with uranium, is unveiled as Mark Carney meets Narendra Modi in Delhi.\n\n3 hrs ago\nWorld](/news/articles/cx24gl7jrgno)\n\n[## Deadly Texas bar shooting 'potentially act of terrorism', FBI says\n\nTwo people were killed and 14 injured, with the suspected gunman, identified by some media outlets, also shot dead.\n\n56 mins ago\nUS & Canada](/news/articles/cgjznzgly0po)\n\n[## UK launches consultation asking for views on under-16s social media ban\n\nDiscussions over what measures to implement to protect children's wellbeing will last for three months.\n\n16 hrs ago\nTechnology](/news/articles/cvg3vjkx9d7o)\n\n[## Messi wrestled to ground by pitch invader\n\nArgentina captain Lionel Messi is hauled to the ground by a pitch invader during Inter Miami's friendly in Puerto Rico.\n\n3 days ago\nUS MLS](/sport/football/articles/cy4w0q7e490o)\n\n[## Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards\n\nThe US star's best actor win for Sinners leaves the Oscars race too close to call.\n\n9 hrs ago\nCulture](/news/articles/clyzklvk79yo)\n\n[## Could Kim's teen daughter become North Korea's next leader?\n\nKim Jue Ae is becoming more visible alongside her father, but much about her remains a mystery.\n\n15 hrs ago\nAsia](/news/articles/cgjzdlx983po)\n\n[## Deepfake attack: 'Many people could have been cheated'\n\nThe boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.\n\n7 hrs ago\nAsia](/news/articles/c0j59vydxj9o)\n\n[## Rembrandt painting rediscovered after 65 years\n\nThe painting, created by the Dutch master in 1633, had disappeared after being sold in 1961.\n\n1 hr ago\nCulture](/news/articles/c1kgln0yg3po)\n\n---\n\n## More on Iran strikes\n\n[LIVE\n\n## Middle East conflict sees AI fake images and disinformation spread online\n\nLatest updates from the BBC's specialists in fact-checking, verifying video and tackling disinformation.](https://www.bbc.com/news/live/cvg3qzx512nt)\n\n[## Iran's regime is still intact - the coming days will show if it can hold out\n\nIran's surviving leaders are in crisis mode, battling to project security as US and Israel strikes continue.](/news/articles/cx2lgvg5rl1o)\n\n[## What are my rights if my flight is cancelled or delayed?\n\nWe look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights.](/news/articles/c9qxnyengdjo)\n\n[## Israel strikes Beirut, prompting residents to flee\n\nExplosions and rising smoke can be seen in Beirut after Israel began striking what it says are Hezbollah targets in the country.](/news/videos/cr5lz5zv16eo)\n\n[## Watch: Iranian Americans celebrate on the streets of Los Angeles\n\nIranian Americans in Los Angeles dance in the streets on day two of the conflict.](/news/videos/czx7pj1v50no)\n\n---\n\n## More to explore\n\n[## A rap star might just beat a former PM - what this says about Nepal's Gen Z election\n\nMany hope the vote could bring change after protests last year, and shatter decades of political paralysis.\n\n8 hrs ago\nAsia](/news/articles/c8r137lkj5zo)\n\n[## Why is WhatsApp's privacy policy facing a legal challenge in India?\n\nA 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.\n\n2 days ago\nAsia](/news/articles/cp81wegj123o)\n\n[## Iran, the US, and a World Cup that starts in three months\n\nWhat does the US conflict with Iran mean for what was already set to be a highly politicised World Cup this summer?\n\n18 hrs ago\nWorld Cup](/sport/football/articles/c20j8jnezl8o)\n\n[## Mountaineers weigh up risks and rewards after Austrian climb ended in manslaughter conviction\n\nA woman's death during a climbing trip has sparked debates about personal responsibility and risk.\n\n2 days ago](/news/articles/cwy8ppn4142o)\n\n[## Deepfake attack: 'Many people could have been cheated'\n\nThe boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.\n\n7 hrs ago\nAsia](/news/articles/c0j59vydxj9o)\n\n[## Actor Awards: The red carpet in pictures\n\nEmma Stone, Wunmi Mosaku and Timothée Chalamet were among the stars posing for pictures in Los Angeles.\n\n13 hrs ago\nCulture](/news/articles/cj3286ym802o)\n\n[## Kidnapping of foreigners soars in Africa's lawless Sahel region\n\nGrowing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in Africa.\n\n14 hrs ago\nAfrica](/news/articles/c0lj18d5lx3o)\n\n---\n\n## Most watched\n\n[1\n\n## Video appears to show US F-15 fighter jet crashing in Kuwait](/news/videos/ce8wed33e07o)\n\n[2\n\n## Why RAF Fairford is likely be used by US for Iran strikes](/news/videos/c4g409w1d50o)\n\n[3\n\n## Watch: Iranian Americans celebrate on the streets of Los Angeles](/news/videos/czx7pj1v50no)\n\n[4\n\n## Watch: Footage shows Iranian drone on fire crash-landing in Kuwait](/news/videos/cr5lzj6e248o)\n\n[5\n\n## Israel strikes Beirut, prompting residents to flee](/news/videos/cr5lz5zv16eo)\n\n---\n\n## Also in news\n\n[## UK will allow US to use bases to strike Iranian missile sites, PM says\n\nThe prime minister says it remains the case that the UK will \"not join offensive action now\".\n\n42 mins ago\nMiddle East](/news/articles/cqj9g11p1ezo)\n\n[## Why is WhatsApp's privacy policy facing a legal challenge in India?\n\nA 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.\n\n2 days ago\nAsia](/news/articles/cp81wegj123o)\n\n[## Kenya's Kosgei wins Tokyo Marathon in record time\n\nKenya's Brigid Kosgei sets a new course record of 2:14:29 with a commanding victory at the Tokyo Marathon.\n\n1 day ago\nAthletics](/sport/athletics/articles/c9v0j7xd22no)\n\n[## €400m weight loss tablet factory to be built in Ireland\n\nNovo Nordisk, which is based in Denmark, says it will upgrade its facility at Athlone, County Westmeath.\n\n2 hrs ago\nEurope](/news/articles/cx24g89ewmeo)\n\n[## Nuns admit six-year campaign of abuse at children's home\n\nMarie O'Gorman and Mary McGuire targeted seven vulnerable children who were in their care at Nazareth House in Glasgow.\n\n2 hrs ago\nGlasgow & West Scotland](/news/articles/cwyx81llp3po)\n\n[## Australian Grand Prix to feel 'no impact' of travel chaos\n\nAustralian Grand Prix organisers are \"really confident\" the travel chaos caused by the conflict in the Middle East will not impact the opening Formula 1 race of the season.\n\n6 hrs ago\nFormula 1](/sport/formula1/articles/crm8lwnjdg4o)\n\n[## Scotland becomes first UK country to allow water cremations\n\nThe process - called alkaline hydrolysis - will offer families a third option instead of burial or traditional cremation.\n\n8 hrs ago\nScotland Politics](/news/articles/cd9gkknee0zo)\n\n---\n\n## Most read\n\n[1\n\n## India and Canada reset ties with 'landmark' nuclear energy deal](/news/articles/cx24gl7jrgno)\n\n[2\n\n## Deadly Texas bar shooting 'potentially act of terrorism', FBI says](/news/articles/cgjznzgly0po)\n\n[3\n\n## Rembrandt painting rediscovered after 65 years](/news/articles/c1kgln0yg3po)\n\n[4\n\n## Oil prices jump and shares fall as conflict escalates](/news/articles/c75evve6l63o)\n\n[5\n\n## Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards](/news/articles/clyzklvk79yo)\n\n[6\n\n## In maps: Strikes across Iran and the Middle East](/news/articles/c4g0pnnj8xyo)\n\n[7\n\n## Two drones headed to RAF base intercepted, Cyprus says](/news/articles/cm2r0q310e3o)\n\n[8\n\n## Could Kim's teen daughter become North Korea's next leader?](/news/articles/cgjzdlx983po)\n\n[9\n\n## Deepfake attack: 'Many people could have been cheated'](/news/articles/c0j59vydxj9o)\n\n[10\n\n## Why did US and Israel attack Iran and how long could the war last?](/news/articles/cx2dyz6p3weo)\n\n---\n\n## Sport\n\n[## Reshuffled flights and players stuck - how sport is navigating Middle East crisis\n\nBBC Sport looks at how the ongoing conflict in the Middle East is affecting the staging of sporting events around the world.\n\n2 hrs ago\nSport](/sport/articles/cvg81d4wzexo)\n\n[## 'I knew the risks, I'd do it again' - Moody opens up in new BBC documentary\n\nEx-England captain Lewis Moody tells former team-mate Ben Youngs he was \"very aware\" of the risks posed during his career.\n\n8 hrs ago\nEngland](/sport/rugby-union/articles/c5yqpqjkj95o)\n\n[## New era of Formula 1 - what is changing in 2026?\n\nAs Formula 1 steps into a new era with new rules, cars, engines and the addition of an 11th team, BBC Sport breaks down the changes for 2026.\n\n7 hrs ago\nFormula 1](/sport/formula1/articles/c14mk1vp5vmo)\n\n[## What can players and clubs do about 'AI slop'?\n\nThere is an exponential growth of AI 'slop' involving players and football clubs. Is there anything that can be done to stop it?\n\n6 hrs ago\nFootball](/sport/football/articles/cy8pdr55219o)\n\n[## Set-pieces mean Premier League no longer a joy - Slot\n\nLiverpool manager Arne Slot says his \"football heart doesn't like\" the reliance on set-pieces in this season's Premier League.\n\n2 hrs ago\nLiverpool](/sport/football/articles/c4gjwm99we8o)\n\n[LIVE\n\n## Premier League news conferences: Rosenior - 'Neto has apologised to team-mates'\n\nAll the latest football news, Premier League reaction and news conferences as Arsenal move five points clear at the top of the table.](https://www.bbc.com/sport/football/live/cvg1v9xxw9zt)\n\n[## Why Archer may hold key for England against 'fearsome' India\n\nEngland have some reasons for hope before their T20 World Cup semi-final against India, but other issues show the difficulty of their task.\n\n1 hr ago\nCricket](/sport/cricket/articles/cp8r435nmlvo)\n\n---"
+                  ],
+                  "error": null
+                }
+              },
+              "status_code": 200
+            }
+          ],
+          "if_pass": true,
+          "tool_correctness": true,
+          "parameter_correctness": true
+        }
+      ],
+      "k_results": [
+        true
+      ],
+      "k_tool_correct_results": [
+        true
+      ],
+      "k_parameter_correct_results": [
+        true
+      ],
+      "data_pass": true,
+      "tool_data_pass": true,
+      "parameter_data_pass": true,
+      "num_trials": 1,
+      "num_passed": 1,
+      "num_tool_correct": 1,
+      "num_parameter_correct": 1
+    }
+  ]
+}

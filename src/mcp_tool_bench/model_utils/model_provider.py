@@ -13,10 +13,13 @@ _global_model_provider: Dict[str, Any] = {}
 if settings.ANTHROPIC_API_KEY:
     _global_model_provider[MODEL_SELECTION_CLAUDE_37] = ClaudeModelAPIProvider(MODEL_SELECTION_CLAUDE_37)
     _global_model_provider[MODEL_SELECTION_CLAUDE_OPUS_4] = ClaudeModelAPIProvider(MODEL_SELECTION_CLAUDE_OPUS_4)
+    _global_model_provider[MODEL_SELECTION_CLAUDE_SONNET_46] = ClaudeModelAPIProvider(MODEL_SELECTION_CLAUDE_SONNET_46)
 
 ## OPENAI
 if settings.OPENAI_API_KEY:
     _global_model_provider[MODEL_SELECTION_GPT4O] = OpenAIModelAPIProvider(MODEL_SELECTION_GPT4O)
+    _global_model_provider[MODEL_SELECTION_GPT4O_MINI] = OpenAIModelAPIProvider(MODEL_SELECTION_GPT4O_MINI)
+    _global_model_provider[MODEL_SELECTION_GPT5] = OpenAIModelAPIProvider(MODEL_SELECTION_GPT5)
 
 ## QWEN
 if settings.QWEN_API_KEY:

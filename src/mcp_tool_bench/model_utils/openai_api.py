@@ -78,16 +78,18 @@ class OpenAIModelAPIProvider(BaseModelAPIProvider):
             model = self.model_name
             if not model:
                 model = "gpt-4o" 
-            response = self.client.chat.completions.create(
-                model=model,
-                messages=messages,
-                tools=tools,
-                tool_choice="auto",
-                temperature=kwargs.get("temperature", 0.3),
-                **kwargs
-            )
+            create_kwargs = {
+                "model": model,
+                "messages": messages,
+                "tools": tools,
+                "tool_choice": "auto",
+            }
+            # GPT-5 only supports default temperature (1)
+            if not model.startswith("gpt-5"):
+                create_kwargs["temperature"] = kwargs.get("temperature", 0.3)
+            response = self.client.chat.completions.create(**create_kwargs)
             tool_result = post_process_openai_function_call_response(response)
-            tool_call_mapped, completion, reasoningContent = function_call_result_common_mapper(tool_call)
+            tool_call_mapped, completion, reasoningContent = function_call_result_common_mapper(tool_result)
 
             result = {
                 KEY_FUNCTION_CALL: tool_call_mapped,
