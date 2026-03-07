@@ -1,6 +1,0 @@
-{
-  "project_name": "mcp-tool-bench",
-  "file_name": "test_file_json_1",
-  "context": {"param1": "1", "param2": "2"},
-  "is_locked": false,
-}

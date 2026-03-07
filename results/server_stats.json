@@ -1,0 +1,2802 @@
+{
+  "2511319/context7": {
+    "disliked": 0,
+    "errored": 49,
+    "liked": 6,
+    "mounted": 81,
+    "selected": 7
+  },
+  "AITutor3/icn-mcp": {
+    "disliked": 4,
+    "errored": 33,
+    "liked": 3,
+    "mounted": 26,
+    "selected": 13
+  },
+  "Aas-ee/open-websearch": {
+    "disliked": 0,
+    "errored": 70,
+    "liked": 0,
+    "mounted": 72,
+    "selected": 3
+  },
+  "AgentWings/exa-mcp-server": {
+    "disliked": 1,
+    "errored": 5,
+    "liked": 2,
+    "mounted": 14,
+    "selected": 6
+  },
+  "Aman-Amith-Shastry/scientific_computation": {
+    "disliked": 0,
+    "errored": 13,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Aman-Amith-Shastry/scientific_computation_mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Ami3466/mcp-flowengine-n8n-workflow-builder": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 15,
+    "selected": 0
+  },
+  "AnkitDigitalsherpa/weather_mcp": {
+    "disliked": 0,
+    "errored": 31,
+    "liked": 0,
+    "mounted": 56,
+    "selected": 0
+  },
+  "AsimRauf1997/currency-exchange-mcp": {
+    "disliked": 0,
+    "errored": 98,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "BadRooBot/blacklotus_mcp": {
+    "disliked": 0,
+    "errored": 20,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 0
+  },
+  "BadRooBot/my_test_mcp": {
+    "disliked": 0,
+    "errored": 157,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "BarnacleLabs/chimera-mcp-smithery": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "Boysam2/aidroid": {
+    "disliked": 1,
+    "errored": 25,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 2
+  },
+  "CaullenOmdahl/nextjs-react-tailwind-assistant": {
+    "disliked": 0,
+    "errored": 153,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "CaullenOmdahl/tailwind-svelte-assistant": {
+    "disliked": 0,
+    "errored": 70,
+    "liked": 0,
+    "mounted": 78,
+    "selected": 0
+  },
+  "Composio/Rube": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "DaInfernalCoder/perplexity-mcp": {
+    "disliked": 0,
+    "errored": 35,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "DeniseLewis200081/12306 Train Ticket Search MCP Server": {
+    "disliked": 2,
+    "errored": 0,
+    "liked": 15,
+    "mounted": 132,
+    "selected": 45
+  },
+  "DeniseLewis200081/rail": {
+    "disliked": 0,
+    "errored": 51,
+    "liked": 6,
+    "mounted": 68,
+    "selected": 17
+  },
+  "EthanHenrickson/math-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "ExpertVagabond/solana-mcp-server": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "ExpertVagabond/universal-blockchain-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "FaresYoussef94/aws-knowledge-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "FelixYifeiWang/felix-mcp-smithery": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "Funding-Machine/ghl-mcp-fundingmachine": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "Geralt1983/mcp-todoist": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "GigaChatTester/github": {
+    "disliked": 0,
+    "errored": 32,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "GigaChatTester/hubspot-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "Homelab-Thor/roocode-general-mcp": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "IAmAlexander/readwise-mcp": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "INSIDE-HAIR/mcp-google-meet-and-calendar": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "JAYKIM501/my-mcp-server": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "Joooook/12306-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 39,
+    "selected": 1
+  },
+  "KISOpenAPI/kis-code-assistant-mcp": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "KaranThink41/workday_mcp_server": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Kryptoskatt/mcp-server": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "LAbreuBroadvoice/mcptypescript000": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Leon-Algo/feishu_user_token_mcp": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Liam8/free-coin-price-mcp": {
+    "disliked": 5,
+    "errored": 66,
+    "liked": 24,
+    "mounted": 141,
+    "selected": 38
+  },
+  "Linell/grimoire-mcp": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "LinkupPlatform/linkup-mcp-server": {
+    "disliked": 0,
+    "errored": 382,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "M1Vision/fal-ai-mcp": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "MCP-Foundry/real-estate": {
+    "disliked": 0,
+    "errored": 27,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "MetehanGZL/pokemcp": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "Michael98671/agentbay": {
+    "disliked": 4,
+    "errored": 47,
+    "liked": 3,
+    "mounted": 67,
+    "selected": 12
+  },
+  "Mingxiao300/notion-mcp-server-smithery": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "NOVA-3951/logodev": {
+    "disliked": 0,
+    "errored": 119,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Nekzus/npm-sentinel-mcp": {
+    "disliked": 1,
+    "errored": 20,
+    "liked": 11,
+    "mounted": 40,
+    "selected": 12
+  },
+  "NodeGIS/GeoSpatial MCP Server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 0
+  },
+  "OEvortex/ddg_search": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 28,
+    "mounted": 94,
+    "selected": 44
+  },
+  "Parichay-Pothepalli/financial-research-mcp": {
+    "disliked": 0,
+    "errored": 403,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "PaulGG-Code/kali_mcp-mcp-server": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "Puthin7778/plantops-mcp": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Quegenx/wapulse-whatsapp-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "RealDealCPA-VR/mcp-accounting": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "STUzhy/py_execute_mcp": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 17,
+    "selected": 0
+  },
+  "Sallvainian/ngss-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "SauravPahadia/oura-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "ShresthaAnkit/mcpserver": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "SmartManoj/smithery-fastmcp-quickstart": {
+    "disliked": 0,
+    "errored": 14,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "SongJiangzhou/cpp_guidelines": {
+    "disliked": 0,
+    "errored": 13,
+    "liked": 0,
+    "mounted": 22,
+    "selected": 0
+  },
+  "Stoops0311/legalmcp": {
+    "disliked": 0,
+    "errored": 31,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "Tasfiul-Hedayet/mcp-teat": {
+    "disliked": 0,
+    "errored": 50,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "ThinkFar/clear-thought-mcp": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 0,
+    "mounted": 13,
+    "selected": 0
+  },
+  "ThrownLemon/medical-mcp": {
+    "disliked": 0,
+    "errored": 30,
+    "liked": 8,
+    "mounted": 33,
+    "selected": 11
+  },
+  "TitanSneaker/paper-search-mcp-openai-v2": {
+    "disliked": 1,
+    "errored": 51,
+    "liked": 28,
+    "mounted": 82,
+    "selected": 37
+  },
+  "Travis3699/neo4jmcp": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "Turf-Tech/turf-mcp-server": {
+    "disliked": 1,
+    "errored": 105,
+    "liked": 3,
+    "mounted": 49,
+    "selected": 7
+  },
+  "V-Sekai-fire/minizinc-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "Vivek-k3/modelsplus": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "Waldzell-Agentics/mcp-server": {
+    "disliked": 10,
+    "errored": 91,
+    "liked": 30,
+    "mounted": 98,
+    "selected": 88
+  },
+  "X-McKay/Geocode MCP Server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 13,
+    "selected": 0
+  },
+  "XJTLUmedia/x23": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 0,
+    "mounted": 27,
+    "selected": 0
+  },
+  "Yi-FSA/my-mcp-server": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "ZacharyHampton/homeharvest-mcp": {
+    "disliked": 0,
+    "errored": 29,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "aahl/mcp-aktools": {
+    "disliked": 0,
+    "errored": 151,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "aakashns/sample-mcp-jul20": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "acxelerator/mcp-tenki": {
+    "disliked": 3,
+    "errored": 0,
+    "liked": 3,
+    "mounted": 213,
+    "selected": 13
+  },
+  "adamamer20/paper-search-mcp-openai": {
+    "disliked": 0,
+    "errored": 67,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "advenimus/jw-mcp": {
+    "disliked": 0,
+    "errored": 36,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "afarhadi99/spaces-download-mcp": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "agentmail": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "agonzalez/prueba-mcp-seeker": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 5,
+    "mounted": 48,
+    "selected": 5
+  },
+  "ai-zerolab/mcp-figma": {
+    "disliked": 0,
+    "errored": 14,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "ai.smithery/xinkuang-china-stock-mcp": {
+    "disliked": 11,
+    "errored": 0,
+    "liked": 59,
+    "mounted": 509,
+    "selected": 82
+  },
+  "akilat-spec/tt-leave-manager-mcp": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "alex2zimmermann-ux/yt-transcript-mcp": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 3,
+    "mounted": 30,
+    "selected": 4
+  },
+  "alexcz-a11y/jina-httpstreamable": {
+    "disliked": 14,
+    "errored": 186,
+    "liked": 92,
+    "mounted": 533,
+    "selected": 163
+  },
+  "alperenkocyigit/authorprofilemcp": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "amap-amap-sse": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "anirbanbasu/frankfurtermcp": {
+    "disliked": 5,
+    "errored": 29,
+    "liked": 6,
+    "mounted": 39,
+    "selected": 12
+  },
+  "antoinedelorme/kweenkl": {
+    "disliked": 0,
+    "errored": 14,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 0
+  },
+  "arturwyroslak/ai-agent-generator-mcp": {
+    "disliked": 0,
+    "errored": 29,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "aryankeluskar/polymarket-mcp": {
+    "disliked": 0,
+    "errored": 46,
+    "liked": 0,
+    "mounted": 25,
+    "selected": 0
+  },
+  "atiprashant/buyhatke-mcp": {
+    "disliked": 0,
+    "errored": 30,
+    "liked": 15,
+    "mounted": 67,
+    "selected": 25
+  },
+  "aws/docs": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "baidu-maps-sse": {
+    "disliked": 0,
+    "errored": 77,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "banjtheman/libralm_mcp_server": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "banjtheman/vibe_tide_mcp": {
+    "disliked": 0,
+    "errored": 16,
+    "liked": 0,
+    "mounted": 17,
+    "selected": 0
+  },
+  "bh-rat/context-awesome": {
+    "disliked": 0,
+    "errored": 36,
+    "liked": 0,
+    "mounted": 46,
+    "selected": 0
+  },
+  "big-saltedfish/mcp-browser": {
+    "disliked": 1,
+    "errored": 29,
+    "liked": 2,
+    "mounted": 22,
+    "selected": 6
+  },
+  "blake365/macrostrat-mcp": {
+    "disliked": 0,
+    "errored": 20,
+    "liked": 0,
+    "mounted": 16,
+    "selected": 0
+  },
+  "blockscout/mcp-server": {
+    "disliked": 0,
+    "errored": 14,
+    "liked": 0,
+    "mounted": 8,
+    "selected": 0
+  },
+  "boring/boring": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 8,
+    "selected": 0
+  },
+  "brave": {
+    "disliked": 0,
+    "errored": 57,
+    "liked": 3,
+    "mounted": 54,
+    "selected": 9
+  },
+  "browserbasehq/mcp-browserbase": {
+    "disliked": 0,
+    "errored": 287,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "byronwade/memoria": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 14,
+    "selected": 0
+  },
+  "c-wenlong/reddit-mcp-smithery": {
+    "disliked": 0,
+    "errored": 19,
+    "liked": 0,
+    "mounted": 26,
+    "selected": 0
+  },
+  "calvernaz/alphavantage": {
+    "disliked": 0,
+    "errored": 20,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "cameronapak/free-use-bible-mcp": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "cantian-ai/bazi-mcp": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 2,
+    "mounted": 16,
+    "selected": 12
+  },
+  "cerebralvalley/cv-mcp": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "cfocoder/financial-modeling-prep-mcp-server": {
+    "disliked": 0,
+    "errored": 47,
+    "liked": 0,
+    "mounted": 44,
+    "selected": 0
+  },
+  "chirag127/clear-thought-mcp-server": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "chris/annas-mcp": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "chris/antigravity-jules-orchestration3": {
+    "disliked": 0,
+    "errored": 57,
+    "liked": 0,
+    "mounted": 80,
+    "selected": 0
+  },
+  "chrishayuk/chuk-mcp-geocoder": {
+    "disliked": 2,
+    "errored": 0,
+    "liked": 11,
+    "mounted": 39,
+    "selected": 19
+  },
+  "chuhuoyuan/cloudflare": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "ckbk/subwayinfo-nyc": {
+    "disliked": 0,
+    "errored": 59,
+    "liked": 0,
+    "mounted": 119,
+    "selected": 0
+  },
+  "clay-inc/clay-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "cloud101.kr/cloud101kr": {
+    "disliked": 1,
+    "errored": 48,
+    "liked": 0,
+    "mounted": 39,
+    "selected": 1
+  },
+  "coastli/bazi-mcp": {
+    "disliked": 0,
+    "errored": 22,
+    "liked": 5,
+    "mounted": 22,
+    "selected": 5
+  },
+  "code-rabi/littlesis-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "couchloop/ceq": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "cristianoaredes/mcp-mobile-server": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "cuongpo/rootstock-mcp-test": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "cuongpo/rootstock_mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "data-mindset/sts-faker-mcp": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 0,
+    "mounted": 24,
+    "selected": 0
+  },
+  "dazeb/markdown-downloader": {
+    "disliked": 0,
+    "errored": 42,
+    "liked": 3,
+    "mounted": 42,
+    "selected": 5
+  },
+  "deep-ai-kr/dev-mcp": {
+    "disliked": 3,
+    "errored": 11,
+    "liked": 4,
+    "mounted": 11,
+    "selected": 8
+  },
+  "deeppath-ai/mcp-system-infra": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "demomagic/duckchain-mcp": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "devbrother2024/my-mcp-server-250925": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "devbrother2024/my-mcp-server-251127": {
+    "disliked": 0,
+    "errored": 48,
+    "liked": 0,
+    "mounted": 53,
+    "selected": 0
+  },
+  "devbrother2024/my-mcp-server-251209": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 0,
+    "mounted": 8,
+    "selected": 0
+  },
+  "dmasdfg8/test": {
+    "disliked": 0,
+    "errored": 59,
+    "liked": 0,
+    "mounted": 62,
+    "selected": 0
+  },
+  "docfork/docfork": {
+    "disliked": 1,
+    "errored": 71,
+    "liked": 10,
+    "mounted": 99,
+    "selected": 22
+  },
+  "dot-Justin/poke-image-mcp": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 0,
+    "mounted": 34,
+    "selected": 0
+  },
+  "dravidsajinraj-iex/code-runner-mcp": {
+    "disliked": 1,
+    "errored": 82,
+    "liked": 1,
+    "mounted": 127,
+    "selected": 6
+  },
+  "dynamicendpoints/powershell-exec-mcp-server": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "elijahdev0/mcp-runware": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "emirks/yokatlas-mcp-typescript": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "enji/ai-marketing-agent": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "enriquedlh97/playwright-mcp": {
+    "disliked": 139,
+    "errored": 0,
+    "liked": 227,
+    "mounted": 777,
+    "selected": 526
+  },
+  "etweisberg/mlb-mcp": {
+    "disliked": 0,
+    "errored": 13,
+    "liked": 0,
+    "mounted": 19,
+    "selected": 0
+  },
+  "exa": {
+    "disliked": 0,
+    "errored": 14,
+    "liked": 6,
+    "mounted": 24,
+    "selected": 8
+  },
+  "exa-labs/websets-mcp-server": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "fahadBSTech/clockify-mcp": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "fhl/fhl-mcp-server": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "fiber-ai/mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "finance-agent-mcp-server": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "flight505/mcp_dincoder": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 24,
+    "selected": 0
+  },
+  "flrngel/mcp-painter": {
+    "disliked": 0,
+    "errored": 46,
+    "liked": 4,
+    "mounted": 58,
+    "selected": 20
+  },
+  "fozagtx/somnia-mcp": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "freestylefly/12306-MCP": {
+    "disliked": 3,
+    "errored": 0,
+    "liked": 39,
+    "mounted": 73,
+    "selected": 79
+  },
+  "gamzadongza/danbooru-tags-mcp": {
+    "disliked": 1,
+    "errored": 15,
+    "liked": 1,
+    "mounted": 15,
+    "selected": 2
+  },
+  "garfield-bb/hap_paas2025": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "gen-pdf/mcp": {
+    "disliked": 0,
+    "errored": 36,
+    "liked": 0,
+    "mounted": 32,
+    "selected": 0
+  },
+  "geocoding-ai/Geocoding MCP Server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "gigachadtrey/websimm": {
+    "disliked": 0,
+    "errored": 54,
+    "liked": 0,
+    "mounted": 88,
+    "selected": 0
+  },
+  "glassBead-tc/mcp-docs-server": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 2,
+    "mounted": 6,
+    "selected": 3
+  },
+  "google-maps": {
+    "disliked": 0,
+    "errored": 140,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "google-search": {
+    "disliked": 0,
+    "errored": 160,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "google_maps": {
+    "disliked": 0,
+    "errored": 27,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "googlesuper": {
+    "disliked": 0,
+    "errored": 23,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "guangxiangdebizi/youtube-subtitle-mcp": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "guanqun-yang/mcp-server-char-counter": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "guptabhishek/multi-search-mcp": {
+    "disliked": 0,
+    "errored": 16,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "gvzq/flight-mcp": {
+    "disliked": 0,
+    "errored": 52,
+    "liked": 0,
+    "mounted": 37,
+    "selected": 2
+  },
+  "hahongchul/mcp-server": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "halismertkir/game-trends-mcp": {
+    "disliked": 0,
+    "errored": 166,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "hamcommania-design/my-mcp-server": {
+    "disliked": 0,
+    "errored": 16,
+    "liked": 0,
+    "mounted": 22,
+    "selected": 0
+  },
+  "hamid-vakilzadeh/mcpsemanticscholar": {
+    "disliked": 0,
+    "errored": 47,
+    "liked": 11,
+    "mounted": 51,
+    "selected": 13
+  },
+  "hanweiit007/HotNews MCP Server": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 5,
+    "mounted": 360,
+    "selected": 16
+  },
+  "harshapalnati/raworc-mcpserver": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 1
+  },
+  "hatif03/algorand-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "hellokitty-v/smithery-mcp-servers": {
+    "disliked": 0,
+    "errored": 75,
+    "liked": 1,
+    "mounted": 71,
+    "selected": 2
+  },
+  "hithereiamaliff/mcp-datagovmy": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "hithereiamaliff/mcp-keywords-everywhere": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "hithereiamaliff/mcp-malaysiatransit": {
+    "disliked": 0,
+    "errored": 27,
+    "liked": 2,
+    "mounted": 36,
+    "selected": 7
+  },
+  "hjsh200219/fortuneteller": {
+    "disliked": 0,
+    "errored": 30,
+    "liked": 0,
+    "mounted": 31,
+    "selected": 1
+  },
+  "hollaugo/financial-research-mcp": {
+    "disliked": 0,
+    "errored": 131,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "hollaugo/financial-research-mcp-server": {
+    "disliked": 0,
+    "errored": 126,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "huangtan007/smithery-hello": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "hydavinci/formula-1-schedule": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "hydavinci/uml_diagram": {
+    "disliked": 0,
+    "errored": 19,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "iclickfreedownloads/mcp-server-airbnb": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 16,
+    "mounted": 110,
+    "selected": 19
+  },
+  "icons8community/icons8mcp": {
+    "disliked": 0,
+    "errored": 16,
+    "liked": 12,
+    "mounted": 66,
+    "selected": 14
+  },
+  "icons8community/icons8mpc": {
+    "disliked": 0,
+    "errored": 40,
+    "liked": 4,
+    "mounted": 55,
+    "selected": 5
+  },
+  "ignfab/geocontext": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 10,
+    "mounted": 69,
+    "selected": 14
+  },
+  "ilyashikalov/sls-pg5": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "imleokkkk/mcp-test-test": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 8,
+    "selected": 0
+  },
+  "infobip/plantuml-mcp-server": {
+    "disliked": 0,
+    "errored": 16,
+    "liked": 5,
+    "mounted": 43,
+    "selected": 5
+  },
+  "io.github.copus-io/copus": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 5,
+    "mounted": 86,
+    "selected": 13
+  },
+  "io.github.domdomegg/barcode-scanner-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 0
+  },
+  "io.github.drfccv/mcp-server-12306": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 1,
+    "mounted": 65,
+    "selected": 3
+  },
+  "io.github.iamvibhorsingh/bbox-mcp-server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 27,
+    "selected": 0
+  },
+  "io.github.jasonwilbur/oci-pricing-mcp": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 88,
+    "selected": 1
+  },
+  "io.github.stucchi/italy-opendata": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "isdaniel/mcp_weather_server": {
+    "disliked": 2,
+    "errored": 48,
+    "liked": 7,
+    "mounted": 54,
+    "selected": 9
+  },
+  "isdaniel/pgtuner_mcp": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "jackedelic/mcp-discord": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "jagan-shanmugam/OpenStreetMap MCP Server": {
+    "disliked": 5,
+    "errored": 0,
+    "liked": 20,
+    "mounted": 66,
+    "selected": 34
+  },
+  "jango-blockchained/advanced-homeassistant-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "janwilmake/competitive-analysis-demo": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 0
+  },
+  "janwilmake/x-search-mcp": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 0,
+    "mounted": 26,
+    "selected": 1
+  },
+  "jayozer/outscraper-mcp": {
+    "disliked": 0,
+    "errored": 39,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "jennyyyyyy7528-cell/weathermcpserverhw3": {
+    "disliked": 0,
+    "errored": 166,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "jjlabsio/korea-stock-mcp": {
+    "disliked": 0,
+    "errored": 64,
+    "liked": 0,
+    "mounted": 54,
+    "selected": 0
+  },
+  "junmer/mcp-server-lottiefiles": {
+    "disliked": 1,
+    "errored": 16,
+    "liked": 2,
+    "mounted": 26,
+    "selected": 3
+  },
+  "kamath/anirudh": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "kamath/at-mention": {
+    "disliked": 0,
+    "errored": 3,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "kamath/cli-mcp": {
+    "disliked": 0,
+    "errored": 30,
+    "liked": 0,
+    "mounted": 28,
+    "selected": 2
+  },
+  "kamath/graphing-calculator": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 0,
+    "mounted": 15,
+    "selected": 0
+  },
+  "kamath/sample-python-mcp": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "kawayiYokami/What Happen MCP": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 10,
+    "mounted": 297,
+    "selected": 45
+  },
+  "kbsooo/mcp_atom_of_thoughts": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "kennyckk/mcp_hkbus": {
+    "disliked": 0,
+    "errored": 108,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "keremurat/jsonmcp": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "khizar-anjum/courtlistener-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 3,
+    "selected": 0
+  },
+  "khromov/svelte-llm-mcp": {
+    "disliked": 0,
+    "errored": 42,
+    "liked": 0,
+    "mounted": 60,
+    "selected": 0
+  },
+  "king-of-the-grackles/discourse-mcp": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "kkjdaniel/bgg-mcp": {
+    "disliked": 0,
+    "errored": 29,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "kodey-ai/upload-post-mcp": {
+    "disliked": 0,
+    "errored": 26,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "kongyo2/eve-online-mcp": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 20,
+    "selected": 0
+  },
+  "kongyo2/zod": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 17,
+    "selected": 0
+  },
+  "kwp-lab/rss-reader-mcp": {
+    "disliked": 1,
+    "errored": 69,
+    "liked": 1,
+    "mounted": 68,
+    "selected": 4
+  },
+  "lanonasis/lano-enterprise-mcp": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "leandrogavidia/marinade-finance-mcp-server": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "leandrogavidia/vechain-mcp-server": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "leaper-mcp/leaper-mcp-proxy": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "leegentle/skincare-mcp": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "libralm-ai/libralm_mcp_server": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "lieyanqzu/sbwsz-mcp": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 37,
+    "selected": 0
+  },
+  "livemcpbench/Ant Design Components": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 22,
+    "mounted": 90,
+    "selected": 24
+  },
+  "livemcpbench/Asset_Price_MCP": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 13,
+    "mounted": 42,
+    "selected": 24
+  },
+  "livemcpbench/Bazi": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 3,
+    "mounted": 25,
+    "selected": 14
+  },
+  "livemcpbench/Context7": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 2,
+    "mounted": 50,
+    "selected": 3
+  },
+  "livemcpbench/MetaTagGenie": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 28,
+    "selected": 0
+  },
+  "livemcpbench/biomcp": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 7,
+    "mounted": 40,
+    "selected": 13
+  },
+  "livemcpbench/calculator": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 7,
+    "selected": 0
+  },
+  "livemcpbench/coin-flip": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 10,
+    "mounted": 15,
+    "selected": 15
+  },
+  "livemcpbench/datagov": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 3,
+    "mounted": 33,
+    "selected": 6
+  },
+  "livemcpbench/duckduckgo-search": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 53,
+    "selected": 1
+  },
+  "livemcpbench/exchange-rate-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 6,
+    "mounted": 54,
+    "selected": 7
+  },
+  "livemcpbench/fetch": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 17,
+    "mounted": 155,
+    "selected": 47
+  },
+  "livemcpbench/hackernews": {
+    "disliked": 2,
+    "errored": 0,
+    "liked": 24,
+    "mounted": 104,
+    "selected": 34
+  },
+  "livemcpbench/howtocook-mcp": {
+    "disliked": 2,
+    "errored": 0,
+    "liked": 40,
+    "mounted": 110,
+    "selected": 66
+  },
+  "livemcpbench/hugeicons": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 6,
+    "mounted": 35,
+    "selected": 9
+  },
+  "livemcpbench/image-extractor": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 1,
+    "mounted": 88,
+    "selected": 5
+  },
+  "livemcpbench/investor": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 10,
+    "mounted": 403,
+    "selected": 19
+  },
+  "livemcpbench/magicuidesign_mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 9,
+    "mounted": 229,
+    "selected": 9
+  },
+  "livemcpbench/maven-deps-server": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 13,
+    "mounted": 74,
+    "selected": 36
+  },
+  "livemcpbench/mcp-deepwiki": {
+    "disliked": 22,
+    "errored": 0,
+    "liked": 7,
+    "mounted": 169,
+    "selected": 55
+  },
+  "livemcpbench/mcp-github-trending": {
+    "disliked": 11,
+    "errored": 0,
+    "liked": 23,
+    "mounted": 147,
+    "selected": 53
+  },
+  "livemcpbench/mcp-server-chart": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 2,
+    "mounted": 50,
+    "selected": 2
+  },
+  "livemcpbench/mcp-simple-arxiv": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 25,
+    "mounted": 70,
+    "selected": 43
+  },
+  "livemcpbench/mermaid-validator": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 3,
+    "mounted": 34,
+    "selected": 5
+  },
+  "livemcpbench/met-museum": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 4,
+    "mounted": 55,
+    "selected": 13
+  },
+  "livemcpbench/mindmap": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 19,
+    "selected": 1
+  },
+  "livemcpbench/music-analysis": {
+    "disliked": 1,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 45,
+    "selected": 4
+  },
+  "livemcpbench/npm-sentinel-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 27,
+    "mounted": 87,
+    "selected": 28
+  },
+  "livemcpbench/npx_fetch": {
+    "disliked": 14,
+    "errored": 0,
+    "liked": 52,
+    "mounted": 281,
+    "selected": 87
+  },
+  "livemcpbench/opgg-mcp": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 32,
+    "mounted": 82,
+    "selected": 80
+  },
+  "livemcpbench/painter": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 10,
+    "mounted": 37,
+    "selected": 79
+  },
+  "livemcpbench/pdf-reader-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 0
+  },
+  "livemcpbench/playwright": {
+    "disliked": 200,
+    "errored": 0,
+    "liked": 108,
+    "mounted": 575,
+    "selected": 369
+  },
+  "livemcpbench/ppt": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 44,
+    "mounted": 81,
+    "selected": 92
+  },
+  "livemcpbench/random-number": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 13,
+    "mounted": 25,
+    "selected": 13
+  },
+  "livemcpbench/searxng": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 0
+  },
+  "livemcpbench/sequential-thinking": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 28,
+    "selected": 0
+  },
+  "livemcpbench/shadcn-ui-server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 106,
+    "selected": 0
+  },
+  "livemcpbench/time": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 5,
+    "mounted": 39,
+    "selected": 13
+  },
+  "livemcpbench/trends-hub": {
+    "disliked": 43,
+    "errored": 1,
+    "liked": 238,
+    "mounted": 1041,
+    "selected": 611
+  },
+  "livemcpbench/weather": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 11,
+    "mounted": 38,
+    "selected": 17
+  },
+  "livemcpbench/web3-research-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 1
+  },
+  "livemcpbench/whois": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 1,
+    "mounted": 9,
+    "selected": 1
+  },
+  "livemcpbench/wikipedia": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 26,
+    "mounted": 63,
+    "selected": 36
+  },
+  "livemcpbench/wuwa-mcp": {
+    "disliked": 5,
+    "errored": 0,
+    "liked": 2,
+    "mounted": 17,
+    "selected": 14
+  },
+  "livemcpbench/yahoo-finance": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 265,
+    "mounted": 672,
+    "selected": 297
+  },
+  "livemcpbench/yfmcp": {
+    "disliked": 2,
+    "errored": 0,
+    "liked": 11,
+    "mounted": 161,
+    "selected": 17
+  },
+  "livemcpbench/ygocdb": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 13,
+    "mounted": 39,
+    "selected": 13
+  },
+  "livemcpbench/youtube-transcript": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 125,
+    "selected": 0
+  },
+  "lochmueller/muell-io": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 6,
+    "selected": 0
+  },
+  "lumberjack-so/joemcp": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "luthfirizky777/mcp-test": {
+    "disliked": 0,
+    "errored": 161,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "ma-za-kpe/voicesphere-mcp": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "magenie33/quality-dimension-generator": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 14,
+    "selected": 0
+  },
+  "manasp21/eventhorizon": {
+    "disliked": 0,
+    "errored": 45,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "manasp21/rabi-mcp": {
+    "disliked": 0,
+    "errored": 17,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "matbel91765/LocuSync Server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 5,
+    "mounted": 16,
+    "selected": 10
+  },
+  "maxbeech/instagram-mcp": {
+    "disliked": 0,
+    "errored": 13,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "mborne/geocontext": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 1,
+    "mounted": 34,
+    "selected": 2
+  },
+  "mcp-fortress/mcp-fortress-server": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "microsoft/learn_mcp": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 22,
+    "selected": 0
+  },
+  "midopa-dept/my-mcp-server": {
+    "disliked": 0,
+    "errored": 35,
+    "liked": 0,
+    "mounted": 24,
+    "selected": 0
+  },
+  "mikechao/artic-mcp": {
+    "disliked": 0,
+    "errored": 29,
+    "liked": 4,
+    "mounted": 35,
+    "selected": 9
+  },
+  "minionszyw/bazi": {
+    "disliked": 0,
+    "errored": 50,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "mirinda-cmd/reference-servers-check": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "mnhlt/WebSearch-MCP": {
+    "disliked": 7,
+    "errored": 0,
+    "liked": 19,
+    "mounted": 197,
+    "selected": 57
+  },
+  "mochow13/google-scholar-mcp": {
+    "disliked": 0,
+    "errored": 27,
+    "liked": 1,
+    "mounted": 19,
+    "selected": 1
+  },
+  "mrseanchow/cowsay-mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "nihalxkumar/arch-mcp": {
+    "disliked": 0,
+    "errored": 21,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "ofurkanuygur/tcmb_mcp": {
+    "disliked": 0,
+    "errored": 43,
+    "liked": 4,
+    "mounted": 56,
+    "selected": 4
+  },
+  "openSVM/dflow-mcp": {
+    "disliked": 3,
+    "errored": 36,
+    "liked": 1,
+    "mounted": 19,
+    "selected": 4
+  },
+  "osamah96/bmptest1": {
+    "disliked": 0,
+    "errored": 23,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "paolaalim/testemcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "paypal": {
+    "disliked": 0,
+    "errored": 58,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "pi3ch/secdim": {
+    "disliked": 0,
+    "errored": 58,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "pinkpixel-dev/datetime-mcp": {
+    "disliked": 0,
+    "errored": 28,
+    "liked": 1,
+    "mounted": 17,
+    "selected": 1
+  },
+  "pinkpixel-dev/web-scout-mcp": {
+    "disliked": 0,
+    "errored": 340,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "plainyogurt21/clintrials-mcp": {
+    "disliked": 0,
+    "errored": 22,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "plsreadme/plsrd": {
+    "disliked": 0,
+    "errored": 19,
+    "liked": 0,
+    "mounted": 20,
+    "selected": 0
+  },
+  "punitarani/fli": {
+    "disliked": 0,
+    "errored": 25,
+    "liked": 1,
+    "mounted": 44,
+    "selected": 3
+  },
+  "puppeteer": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "pythondev-pro/egw_writings_mcp_server": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "r6654kumar/bargainbites_restaurant2_mcp": {
+    "disliked": 4,
+    "errored": 57,
+    "liked": 2,
+    "mounted": 76,
+    "selected": 9
+  },
+  "rabqatab/lexlink-ko-mcp": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 10,
+    "selected": 0
+  },
+  "ragalgo/mcp-": {
+    "disliked": 0,
+    "errored": 88,
+    "liked": 0,
+    "mounted": 61,
+    "selected": 0
+  },
+  "ragalgo/server": {
+    "disliked": 0,
+    "errored": 194,
+    "liked": 0,
+    "mounted": 232,
+    "selected": 0
+  },
+  "ramadasmr/networkcalc-mcp": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "rdassignies/openlegi": {
+    "disliked": 1,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 18,
+    "selected": 1
+  },
+  "re-rank/uiux-mcp": {
+    "disliked": 0,
+    "errored": 63,
+    "liked": 0,
+    "mounted": 46,
+    "selected": 0
+  },
+  "refund-decide/notary": {
+    "disliked": 0,
+    "errored": 34,
+    "liked": 0,
+    "mounted": 51,
+    "selected": 0
+  },
+  "ren89752/aidroid": {
+    "disliked": 0,
+    "errored": 18,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 0
+  },
+  "rftsngl/newsmcp_mediastackapi": {
+    "disliked": 38,
+    "errored": 89,
+    "liked": 77,
+    "mounted": 375,
+    "selected": 221
+  },
+  "ronantakizawa/GIS Data Conversion MCP": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 24,
+    "selected": 0
+  },
+  "salrad/code-sentinel": {
+    "disliked": 0,
+    "errored": 56,
+    "liked": 0,
+    "mounted": 73,
+    "selected": 0
+  },
+  "samedii/pixellab": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 24,
+    "selected": 0
+  },
+  "samihalawa/whatsapp-go-mcp": {
+    "disliked": 0,
+    "errored": 37,
+    "liked": 0,
+    "mounted": 55,
+    "selected": 0
+  },
+  "santiago.blanco.vilchez/asd": {
+    "disliked": 0,
+    "errored": 13,
+    "liked": 0,
+    "mounted": 26,
+    "selected": 0
+  },
+  "sasabasara/where_is_my_train_mcp": {
+    "disliked": 2,
+    "errored": 123,
+    "liked": 0,
+    "mounted": 140,
+    "selected": 11
+  },
+  "seahbk1006/seahboonkeong-chat-bnmapi": {
+    "disliked": 0,
+    "errored": 53,
+    "liked": 1,
+    "mounted": 48,
+    "selected": 2
+  },
+  "seizedata/trx-categorization-mcp": {
+    "disliked": 0,
+    "errored": 32,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "sfiorini/youtube-mcp": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 19,
+    "selected": 0
+  },
+  "shelter-money/financial-coach": {
+    "disliked": 0,
+    "errored": 20,
+    "liked": 1,
+    "mounted": 26,
+    "selected": 2
+  },
+  "shuji-bonji/epsg-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 13,
+    "selected": 0
+  },
+  "skavinvarnan/finance-calculator": {
+    "disliked": 0,
+    "errored": 12,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "skymoore/grokipedia-mcp": {
+    "disliked": 0,
+    "errored": 17,
+    "liked": 2,
+    "mounted": 20,
+    "selected": 2
+  },
+  "smithery-ai/fetch": {
+    "disliked": 0,
+    "errored": 174,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "smithery-ai/github": {
+    "disliked": 0,
+    "errored": 63,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "smithery-ai/national-weather-service": {
+    "disliked": 0,
+    "errored": 78,
+    "liked": 6,
+    "mounted": 163,
+    "selected": 11
+  },
+  "spyfree/mingli-mcp": {
+    "disliked": 0,
+    "errored": 22,
+    "liked": 0,
+    "mounted": 35,
+    "selected": 0
+  },
+  "ssdavidai/joeapi": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 5,
+    "selected": 0
+  },
+  "ssuyjk-del/my-mcp-server": {
+    "disliked": 0,
+    "errored": 31,
+    "liked": 0,
+    "mounted": 29,
+    "selected": 0
+  },
+  "stockmcp/Stock Data MCP Server": {
+    "disliked": 17,
+    "errored": 0,
+    "liked": 157,
+    "mounted": 535,
+    "selected": 304
+  },
+  "synthetic-ci/vibe-marketing": {
+    "disliked": 0,
+    "errored": 6,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "syyuan14/Shanghai Disney MCP Server": {
+    "disliked": 1,
+    "errored": 0,
+    "liked": 16,
+    "mounted": 209,
+    "selected": 19
+  },
+  "tacticlaunch/mcp-linear": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "tavily-ai/tavily-mcp": {
+    "disliked": 0,
+    "errored": 168,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "tavily-mcp": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "thirdstrandstudio/mcp-xpath": {
+    "disliked": 0,
+    "errored": 68,
+    "liked": 0,
+    "mounted": 68,
+    "selected": 0
+  },
+  "ticktick": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "translator-mcp/translator": {
+    "disliked": 0,
+    "errored": 20,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "truss44/mcp-crypto-price": {
+    "disliked": 12,
+    "errored": 0,
+    "liked": 21,
+    "mounted": 228,
+    "selected": 60
+  },
+  "turnono/sevenpace-mcp-server": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 11,
+    "selected": 0
+  },
+  "ucpchecker/ucp-checker": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 25,
+    "selected": 0
+  },
+  "upstash/context7-mcp": {
+    "disliked": 0,
+    "errored": 55,
+    "liked": 0,
+    "mounted": 54,
+    "selected": 0
+  },
+  "vimtor/things-3": {
+    "disliked": 0,
+    "errored": 33,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "vinodkrishnan92/my-first-mcp": {
+    "disliked": 0,
+    "errored": 10,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "waldzellai/clear-thought": {
+    "disliked": 0,
+    "errored": 36,
+    "liked": 0,
+    "mounted": 14,
+    "selected": 0
+  },
+  "wangtsiao/pulse-cn-mcp": {
+    "disliked": 5,
+    "errored": 274,
+    "liked": 14,
+    "mounted": 276,
+    "selected": 27
+  },
+  "wgong/sqlite-mcp-server": {
+    "disliked": 0,
+    "errored": 4,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "whit3rabbit/specforged": {
+    "disliked": 0,
+    "errored": 22,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "xiaobenyang-com/airbnb_search": {
+    "disliked": 2,
+    "errored": 44,
+    "liked": 5,
+    "mounted": 24,
+    "selected": 15
+  },
+  "xiaobenyang-com/bazi": {
+    "disliked": 0,
+    "errored": 15,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "xiaobenyang-com/berlin-search-service": {
+    "disliked": 0,
+    "errored": 56,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 0
+  },
+  "xiaobenyang-com/bilibili-api": {
+    "disliked": 0,
+    "errored": 43,
+    "liked": 0,
+    "mounted": 17,
+    "selected": 0
+  },
+  "xiaobenyang-com/calculator": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "xiaobenyang-com/extract-image": {
+    "disliked": 0,
+    "errored": 103,
+    "liked": 0,
+    "mounted": 49,
+    "selected": 0
+  },
+  "xiaobenyang-com/extract_ant_topic": {
+    "disliked": 0,
+    "errored": 52,
+    "liked": 0,
+    "mounted": 21,
+    "selected": 0
+  },
+  "xiaobenyang-com/gsap_animation_generate": {
+    "disliked": 0,
+    "errored": 39,
+    "liked": 0,
+    "mounted": 32,
+    "selected": 0
+  },
+  "xiaobenyang-com/how-to-cook": {
+    "disliked": 2,
+    "errored": 48,
+    "liked": 6,
+    "mounted": 40,
+    "selected": 8
+  },
+  "xiaobenyang-com/logo-analyze": {
+    "disliked": 0,
+    "errored": 71,
+    "liked": 0,
+    "mounted": 36,
+    "selected": 0
+  },
+  "xiaobenyang-com/lookup-domain": {
+    "disliked": 0,
+    "errored": 5,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "xiaobenyang-com/markdown-to-notion": {
+    "disliked": 0,
+    "errored": 30,
+    "liked": 0,
+    "mounted": 12,
+    "selected": 0
+  },
+  "xiaobenyang-com/oecd-search": {
+    "disliked": 2,
+    "errored": 80,
+    "liked": 1,
+    "mounted": 30,
+    "selected": 12
+  },
+  "xiaobenyang-com/prediction-examples": {
+    "disliked": 0,
+    "errored": 47,
+    "liked": 0,
+    "mounted": 4,
+    "selected": 0
+  },
+  "xiaobenyang-com/read-website": {
+    "disliked": 25,
+    "errored": 168,
+    "liked": 19,
+    "mounted": 168,
+    "selected": 61
+  },
+  "xiaobenyang-com/rfc-server": {
+    "disliked": 0,
+    "errored": 7,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "xiaobenyang-com/sbwsz": {
+    "disliked": 0,
+    "errored": 23,
+    "liked": 0,
+    "mounted": 9,
+    "selected": 0
+  },
+  "xiaobenyang-com/search-apple-docs": {
+    "disliked": 0,
+    "errored": 92,
+    "liked": 0,
+    "mounted": 32,
+    "selected": 1
+  },
+  "xiaobenyang-com/taiwan-holiday": {
+    "disliked": 0,
+    "errored": 26,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "xiaobenyang-com/text-toolkit": {
+    "disliked": 0,
+    "errored": 23,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "xiaobenyang-com/text-transformer": {
+    "disliked": 0,
+    "errored": 2,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "xiaobenyang-com/time-mcp": {
+    "disliked": 0,
+    "errored": 11,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "xiaobenyang-com/time-zone": {
+    "disliked": 0,
+    "errored": 71,
+    "liked": 0,
+    "mounted": 30,
+    "selected": 0
+  },
+  "xiaobenyang-com/wikimedia-search-images": {
+    "disliked": 0,
+    "errored": 38,
+    "liked": 1,
+    "mounted": 8,
+    "selected": 2
+  },
+  "xja1023789-collab/hello_servertest": {
+    "disliked": 0,
+    "errored": 44,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "ymyzk/Nagoya Bus MCP": {
+    "disliked": 4,
+    "errored": 0,
+    "liked": 12,
+    "mounted": 143,
+    "selected": 31
+  },
+  "yokingma/time-mcp": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 3,
+    "mounted": 18,
+    "selected": 3
+  },
+  "yoriichi-07/multi_orchestrator_mcp": {
+    "disliked": 0,
+    "errored": 8,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "yuna0x0/anilist-mcp": {
+    "disliked": 0,
+    "errored": 1,
+    "liked": 0,
+    "mounted": 2,
+    "selected": 0
+  },
+  "yushuqiu1/agent": {
+    "disliked": 0,
+    "errored": 72,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "yushuqiu1/ai_agent_new": {
+    "disliked": 0,
+    "errored": 51,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "yushuqiu1/attempt_1": {
+    "disliked": 0,
+    "errored": 78,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "yusufsenyer/augment-agent": {
+    "disliked": 0,
+    "errored": 32,
+    "liked": 11,
+    "mounted": 51,
+    "selected": 12
+  },
+  "zaitrarrio/todo": {
+    "disliked": 0,
+    "errored": 9,
+    "liked": 0,
+    "mounted": 0,
+    "selected": 0
+  },
+  "zero-8848/postgresql-mcp-server": {
+    "disliked": 0,
+    "errored": 0,
+    "liked": 0,
+    "mounted": 1,
+    "selected": 0
+  },
+  "zwldarren/akshare-one-mcp": {
+    "disliked": 11,
+    "errored": 0,
+    "liked": 3,
+    "mounted": 241,
+    "selected": 29
+  }
+}

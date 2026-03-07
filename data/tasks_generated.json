@@ -1,0 +1,1554 @@
+[
+  {
+    "uuid": "cc2a3e66-4266-445b-9961-7327184679e6",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you show me the latest version of the React library?",
+    "subcategory": "npm_version"
+  },
+  {
+    "uuid": "9ebf4571-2a5c-463d-8196-6688f0563685",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the trending repositories in JavaScript right now?",
+    "subcategory": "github_trending"
+  },
+  {
+    "uuid": "740e2de6-759b-4ea0-b126-728e5b1aa5c9",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How do I use the Button component in Ant Design?",
+    "subcategory": "component_docs"
+  },
+  {
+    "uuid": "2cebea95-0635-4aaa-a313-500c782d6df8",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me find the most popular animations for a React project?",
+    "subcategory": "ui_components"
+  },
+  {
+    "uuid": "d7768ddc-71cd-41ae-9f00-efe983de01c1",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are some good LeetCode problems for practicing dynamic programming?",
+    "subcategory": "leetcode_problems"
+  },
+  {
+    "uuid": "5cb2e418-0abd-4a73-9e19-d581e46d0886",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I need the npm dependencies for the latest version of Express.",
+    "subcategory": "npm_deps"
+  },
+  {
+    "uuid": "fb83d878-60b6-4d6d-bffb-5a11c65724ad",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you validate this Mermaid diagram for me?",
+    "subcategory": "mermaid_validation"
+  },
+  {
+    "uuid": "99eb7f23-c718-42f1-b44a-b4fa53ab2f82",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the latest release notes for the Spring framework?",
+    "subcategory": "maven_dependency"
+  },
+  {
+    "uuid": "563be73c-248b-4623-b83e-900bcc15ea22",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Which components are available in Magic UI for a login form?",
+    "subcategory": "ui_components"
+  },
+  {
+    "uuid": "057c585b-57f3-4316-ad52-947ecac73a9d",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How can I search for all available versions of a library in Maven?",
+    "subcategory": "maven_version_lookup"
+  },
+  {
+    "uuid": "05a1946a-d9a5-44e1-bf85-53e96ff0b470",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you list the trending developers on GitHub this week?",
+    "subcategory": "github_trending"
+  },
+  {
+    "uuid": "c0a74fa2-2e6b-41ba-9732-63999c661207",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the latest npm versions for lodash?",
+    "subcategory": "npm_latest"
+  },
+  {
+    "uuid": "4b2a1dc6-61be-4202-b2c0-687a70f48e2e",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you provide documentation on how to use the Card component in Ant Design?",
+    "subcategory": "component_docs"
+  },
+  {
+    "uuid": "1d542e60-a75c-4b23-9e02-34f8655c2b23",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the size of the axios npm package?",
+    "subcategory": "npm_size"
+  },
+  {
+    "uuid": "0546c9ce-cf4b-4e2a-87a3-4c030dc039b3",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you find any LeetCode problems that are tagged with the 'easy' difficulty level?",
+    "subcategory": "leetcode_problems"
+  },
+  {
+    "uuid": "5fafa414-ca20-4f34-ba56-4784a50e7c8a",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are some recommended libraries for state management in React?",
+    "subcategory": "npm_version"
+  },
+  {
+    "uuid": "ef03edc0-5f5d-44d1-8f25-2468cd66dfb3",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you show me the usage examples for the Modal component in Ant Design?",
+    "subcategory": "component_docs"
+  },
+  {
+    "uuid": "d5ba908e-b70f-4a15-a483-036734cf588a",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How do I get started with using animations in my web application?",
+    "subcategory": "ui_components"
+  },
+  {
+    "uuid": "f73eb642-52be-4b02-96ea-331be272b185",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I'm looking for the latest stable version of Angular.",
+    "subcategory": "npm_version"
+  },
+  {
+    "uuid": "c49180a9-5b63-410b-8c74-aaab0f07aa12",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you validate this code snippet in Mermaid for a flowchart?",
+    "subcategory": "mermaid_validation"
+  },
+  {
+    "uuid": "1f1e96e0-248c-4c33-9b85-2d41b9e60b6e",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the recent changes or updates in the Angular documentation?",
+    "subcategory": "query_docs"
+  },
+  {
+    "uuid": "eda8e3be-e268-4fff-b15d-531262b76e12",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find me some trending repositories related to machine learning.",
+    "subcategory": "github_trending"
+  },
+  {
+    "uuid": "2ceb2a69-58ca-4a11-b1b3-de171ef1ed3f",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the best practices for using the DatePicker component in Ant Design?",
+    "subcategory": "component_docs"
+  },
+  {
+    "uuid": "7fce70a9-a1e3-4c4f-a6bf-3b1c6a58fe6c",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you list the npm packages that depend on React?",
+    "subcategory": "npm_deps"
+  },
+  {
+    "uuid": "6a337335-8f78-4034-8344-0c4692a07f36",
+    "category": "code",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What LeetCode problems should I focus on to improve my algorithm skills?",
+    "subcategory": "leetcode_problems"
+  },
+  {
+    "uuid": "ed57d955-5ba2-4507-96f8-4f1d709cc459",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you give me information on the latest release for the Django framework?",
+    "subcategory": "maven_dependency"
+  },
+  {
+    "uuid": "5879d66b-6d3c-4102-9de5-38bd88af3cf2",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the trending open-source projects in Python right now?",
+    "subcategory": "github_trending"
+  },
+  {
+    "uuid": "e9e9fa37-5b94-4048-9d9f-7d3af3f83ecf",
+    "category": "code",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How can I find the size of a specific npm package?",
+    "subcategory": "npm_size"
+  },
+  {
+    "uuid": "ce51dcf0-2398-46f6-8de7-3506bb03304a",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you create a bar chart showing the sales data for the last quarter?",
+    "subcategory": "chart_generation"
+  },
+  {
+    "uuid": "8193c5ca-6eaa-4115-ad44-af1a8ae49911",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What icons are available for representing technology themes?",
+    "subcategory": "icon_search"
+  },
+  {
+    "uuid": "909d3ee2-6022-4692-9a7e-44c78e1ec112",
+    "category": "visualization",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I need a presentation about renewable energy. Can you help make one?",
+    "subcategory": "presentation_creation"
+  },
+  {
+    "uuid": "9afac3a5-670e-465e-9dd8-ec6739d5e5d5",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you convert this text into a mind map?",
+    "subcategory": "mindmap_creation"
+  },
+  {
+    "uuid": "cc8cd5c7-f3fd-4ffd-93ed-27a8426cf7e0",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Show me a boxplot for the test scores of students from different classes.",
+    "subcategory": "chart_generation"
+  },
+  {
+    "uuid": "5027e5a5-0f9b-46ed-ac3f-d21d3eb71997",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find some icons that could represent health and wellness.",
+    "subcategory": "icon_search"
+  },
+  {
+    "uuid": "4552796b-42a5-4094-9cce-24e80b118212",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you create an area chart depicting monthly expenses over the past year?",
+    "subcategory": "chart_generation"
+  },
+  {
+    "uuid": "870e5977-ef76-4857-8512-e38f4c509f86",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I need some images for a project; can you extract one from this URL?",
+    "subcategory": "image_extraction"
+  },
+  {
+    "uuid": "4a96af1d-a35d-4060-98b7-2d8e32d9273f",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me find icons related to education?",
+    "subcategory": "icon_search"
+  },
+  {
+    "uuid": "bc1a912a-ab80-48d3-9b41-24fdf622e03b",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I'd like a drawing of a sunset landscape. Can you make that?",
+    "subcategory": "drawing"
+  },
+  {
+    "uuid": "f18fda4c-5032-4072-88a2-ee1b30e3f537",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you fill a rectangle with a specific color for a design project?",
+    "subcategory": "drawing"
+  },
+  {
+    "uuid": "30e458e7-05cd-4aa4-b202-ed27c1259631",
+    "category": "visualization",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you generate a presentation with slides about climate change?",
+    "subcategory": "presentation_creation"
+  },
+  {
+    "uuid": "f676de26-534c-4356-8b0f-3f1d298c69af",
+    "category": "visualization",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I want to visualize the data from our latest survey. Can you help?",
+    "subcategory": "chart_generation"
+  },
+  {
+    "uuid": "3e1b59e1-1b89-49f0-a730-0c896727c4ed",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you create a simple diagram illustrating the water cycle?",
+    "subcategory": "drawing"
+  },
+  {
+    "uuid": "965c0409-0b35-4323-af45-d880eeb84974",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What icons can you find for social media platforms?",
+    "subcategory": "icon_search"
+  },
+  {
+    "uuid": "2b9d8e7a-388b-40f1-9b78-8ff323960486",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Could you generate a pie chart based on the project budget breakdown?",
+    "subcategory": "chart_generation"
+  },
+  {
+    "uuid": "02cf96ee-05af-4777-a3d0-2ca6b9331286",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me turn these notes into a structured mind map?",
+    "subcategory": "mindmap_creation"
+  },
+  {
+    "uuid": "8be134f2-173e-474b-b319-d96bb982c99a",
+    "category": "visualization",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I need a detailed presentation about the benefits of meditation. Can you create it?",
+    "subcategory": "presentation_creation"
+  },
+  {
+    "uuid": "301de1f5-cf5c-49b3-9c57-4fb6a474f666",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you generate a timeline diagram for our project milestones?",
+    "subcategory": "drawing"
+  },
+  {
+    "uuid": "72a6703e-054f-4937-b5b8-845780d55f4e",
+    "category": "visualization",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you extract an image from this document I found online?",
+    "subcategory": "image_extraction"
+  },
+  {
+    "uuid": "24275a70-f1ac-40e8-b8a4-e8a5f89b2767",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you give me details about the character Kai'Sa in the latest patch of League of Legends?",
+    "subcategory": "game_character_info"
+  },
+  {
+    "uuid": "9e3f1370-6086-45dc-80da-9849617a3e41",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are some fun activities I can do on a rainy day?",
+    "subcategory": "leisure_activities"
+  },
+  {
+    "uuid": "351324c6-f5a7-4ed3-9c28-16cd1fac7bd5",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the best champions to play in the Top lane right now in League of Legends?",
+    "subcategory": "lol_champion_analysis"
+  },
+  {
+    "uuid": "7119cb3c-5c07-4955-b1c0-7a321c4005fe",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Could you suggest a random number between 1 and 100 for my next game move?",
+    "subcategory": "randomization"
+  },
+  {
+    "uuid": "2cbacf06-3eed-4419-8e8f-ef802cf17bc8",
+    "category": "entertainment",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are my fortune readings based on my Chinese zodiac sign?",
+    "subcategory": "fortune_telling"
+  },
+  {
+    "uuid": "045a6a74-6cc7-4271-9c8a-00cdeb2c81f3",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the stats of the new artifact introduced in Wuthering Waves?",
+    "subcategory": "game_artifact_info"
+  },
+  {
+    "uuid": "a83dd633-3678-407b-99c8-fe104d52d384",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you shuffle a set of numbers from 1 to 10 for me?",
+    "subcategory": "randomization"
+  },
+  {
+    "uuid": "fd4fc96f-a55f-4c6f-984b-03a84d54bf3a",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the latest meta for support champions in League of Legends?",
+    "subcategory": "lol_champion_meta"
+  },
+  {
+    "uuid": "4612dee8-5f41-4ec2-a959-99b28868129b",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you recommend a random board game for a family night?",
+    "subcategory": "leisure_activities"
+  },
+  {
+    "uuid": "51af6fd6-5fe7-40e1-b5c6-f8de607edf37",
+    "category": "entertainment",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What is a Bazi reading and how can it affect my daily decisions?",
+    "subcategory": "fortune_telling"
+  },
+  {
+    "uuid": "596e5f6b-1cdf-433c-9ccd-faf20b7afce4",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What champions have the best win rates in the bot lane currently?",
+    "subcategory": "lol_champion_analysis"
+  },
+  {
+    "uuid": "d9d9e489-1f26-4208-b2a1-a35ac8632087",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Please select three random items from this list: apple, banana, orange, grape, and pear.",
+    "subcategory": "randomization"
+  },
+  {
+    "uuid": "68e511e4-c4ee-4def-bad3-009afb60e2dc",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the current trends in Wuthering Waves characters?",
+    "subcategory": "game_character_info"
+  },
+  {
+    "uuid": "590a12ec-5c80-457d-bf9a-344c05da3392",
+    "category": "entertainment",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you predict my luck based on my birth date in the Chinese calendar?",
+    "subcategory": "fortune_telling"
+  },
+  {
+    "uuid": "02b7e9b1-7f41-415f-b72a-31022461ea81",
+    "category": "entertainment",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Who are the top 5 strongest champions in League of Legends at the moment?",
+    "subcategory": "lol_champion_meta"
+  },
+  {
+    "uuid": "d1517a79-1667-4517-972f-b72d6d3c26ae",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are some popular recipes for making sushi?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "bfb849ef-d9ea-49e1-bab9-f311cd07928d",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you tell me the current weather in Tokyo?",
+    "subcategory": "weather"
+  },
+  {
+    "uuid": "a7d87991-2d59-47c3-81cf-45407f88d0a3",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the trending news topics right now?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "2d36fdaf-b997-4803-a8e3-886b42ab34db",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you find me articles about the latest research on climate change?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "686ee93c-89c1-43e5-81af-79b32cb2b1a9",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the history behind the Eiffel Tower?",
+    "subcategory": "wikipedia"
+  },
+  {
+    "uuid": "37c50ab7-4eeb-4c2f-b130-5bd4382f6b01",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I need a recipe for a vegan pasta dish. Can you help?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "2706ca3c-d621-45c8-b9fe-c3450d85c304",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the current time in New York City?",
+    "subcategory": "time_zone"
+  },
+  {
+    "uuid": "a863db2e-839a-4b8b-91b1-b19bb6d42549",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Show me the top trending videos on YouTube right now.",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "60ea55f8-4356-4e32-a76f-ce3825a7d66e",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you provide information on the latest developments in AI research?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "300b517c-298c-46d6-8e2b-91f03b1ac8a7",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the weather forecast for next week in London?",
+    "subcategory": "weather"
+  },
+  {
+    "uuid": "9678e21a-b01a-46b0-8abe-cec5a5c1391c",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find me a recipe for a chocolate cake.",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "fdbc82fb-1afc-480b-8145-4f3eda36d266",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's happening in the tech sector according to Hacker News?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "ed5a9029-c87a-4fa2-9051-50d8dd5aaced",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you give me a summary of a recent TED Talk?",
+    "subcategory": "video_transcript"
+  },
+  {
+    "uuid": "d69e71d4-b554-462f-bf74-5e9a01695df0",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the latest trends in the cryptocurrency market?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "562bd756-a162-4900-8165-0e39f05d5765",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you give me a summary of a popular academic paper on machine learning?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "06cb44e6-934e-440d-af75-d44532fdcdd9",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are some famous paintings in the Metropolitan Museum of Art?",
+    "subcategory": "museums"
+  },
+  {
+    "uuid": "b07aa250-d1be-4940-aa6b-e14f8df67424",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I want to know about the most recent discoveries in space exploration.",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "c95592e7-094d-49b8-9b5d-29ae4602ad19",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you find me the weather in Sydney for the next few days?",
+    "subcategory": "weather"
+  },
+  {
+    "uuid": "0b842ae2-3c6f-41f4-a1e8-f4a3df67e83b",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Which Yu-Gi-Oh cards are currently popular?",
+    "subcategory": "card_database"
+  },
+  {
+    "uuid": "9c408a5a-fe20-40ce-8edf-681817eff0aa",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Tell me the time difference between Shanghai and Los Angeles.",
+    "subcategory": "time_zone"
+  },
+  {
+    "uuid": "dfcf7b50-c317-4694-9284-59635ad87a3a",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are some easy recipes for weeknight dinners?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "f340e4bb-62d2-4c3d-a29b-86d42c828ba5",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the best practices in data visualization according to recent articles?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "f7482816-cd17-41b0-a6a8-584ccb568ef4",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you find trending stories on Bilibili?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "8db6bcc7-49c6-40f5-a392-1793790b9c70",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the forecast for a beach day in Miami tomorrow?",
+    "subcategory": "weather"
+  },
+  {
+    "uuid": "aefccad1-55d6-4548-9f5e-9559fe87214c",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can I get insights into the latest museum exhibitions in New York?",
+    "subcategory": "museums"
+  },
+  {
+    "uuid": "fac0b7b8-5546-414c-adf2-718f88264247",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the notable features of the Mona Lisa?",
+    "subcategory": "museums"
+  },
+  {
+    "uuid": "101a990f-e17b-42a2-842d-418d02520c62",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find a recent news article about electric vehicles.",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "f40716bd-0e23-4af5-a179-8824d0610866",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What academic papers are available on renewable energy sources?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "6c5e0eef-84d1-4fb6-a167-f07e1b5afc88",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you provide me with a recipe for homemade pizza?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "117f4d69-06f6-4f22-8c5c-06b33327060b",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Tell me about the current trends in the fashion industry.",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "315816ac-479c-4248-ac36-e7f83427f21d",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Find me information about recent archaeological digs.",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "d6ad96a4-5d23-481f-bed0-b84ec4018a98",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you get me a list of the best-rated films from last year?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "cb4ef754-5376-4845-adc0-fc8b5f8d24e7",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the main attractions at the Louvre Museum?",
+    "subcategory": "museums"
+  },
+  {
+    "uuid": "c16ee73a-3bf7-459e-9670-31d421a3ccab",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you tell me the latest on COVID-19 research?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "70c03aea-6598-4904-894d-317c85942cbb",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are some healthy smoothie recipes?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "8405fcac-f3cc-4944-b446-7fc18750fa3a",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the top news about climate action today?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "94941240-3cf2-47e8-bdf8-e9a48ffaa75b",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you find any trending datasets in public health?",
+    "subcategory": "data"
+  },
+  {
+    "uuid": "9d8e1646-971e-4890-a4c8-318e46a156a3",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the significance of the Rosetta Stone?",
+    "subcategory": "wikipedia"
+  },
+  {
+    "uuid": "264ca0f6-6616-41e3-894e-022f67176e42",
+    "category": "discovery",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you provide a summary of an important research paper on genetics?",
+    "subcategory": "academic_papers"
+  },
+  {
+    "uuid": "15b9f5b1-6e56-400b-8a33-b526744a1929",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I want to know the current top stories about video games.",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "4cd0a016-da17-431d-9b52-ac618205bd54",
+    "category": "discovery",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What recipes can I try that use quinoa?",
+    "subcategory": "recipe_search"
+  },
+  {
+    "uuid": "5761ef93-0b23-4812-b8d6-95d6c9e3ab8e",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me find nearby coffee shops in downtown Seattle?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "58f6dcef-54d4-47f7-a4ec-4dc52089ddab",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the coordinates for the Eiffel Tower?",
+    "subcategory": "geocode_address"
+  },
+  {
+    "uuid": "75299662-8068-46a5-b48d-2337fecc3c19",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I'd like directions from New York City to Boston. Can you provide that?",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "7da9ed6d-66ac-4743-a3c8-713b1753d32f",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the livability scores for neighborhoods in San Francisco?",
+    "subcategory": "analyze_neighborhood"
+  },
+  {
+    "uuid": "d0fe87a8-a700-4dcd-9b31-9ce1008f30c2",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Are there any electric vehicle charging stations near my current location?",
+    "subcategory": "find_ev_charging_stations"
+  },
+  {
+    "uuid": "76f6ab11-4c02-4d02-96a2-d449df6e12aa",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the distance between Los Angeles and San Diego?",
+    "subcategory": "mcp_geo_calculate_distance"
+  },
+  {
+    "uuid": "841dfbe1-b725-4950-a93a-e9d35afa7380",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find me a good place to meet in central Chicago for four people.",
+    "subcategory": "suggest_meeting_point"
+  },
+  {
+    "uuid": "54cb466a-0254-4ced-a759-86ba32f52020",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you find some parks near Central Park in New York?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "071a6064-d661-4ab9-a84d-6624ef82db73",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can I get a route from my home to the nearest hospital?",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "efea9fb4-8311-4736-8539-aa2862477343",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the boundaries of the downtown area in Austin?",
+    "subcategory": "get_bounds"
+  },
+  {
+    "uuid": "fc8afd9f-3538-441b-b054-2de92d16c34d",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I'd like to know about parking facilities near the airport.",
+    "subcategory": "find_parking_facilities"
+  },
+  {
+    "uuid": "eb4277bf-b356-4c24-ad16-fb14f37cc384",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the area of Lake Michigan in square miles?",
+    "subcategory": "mcp_geo_calculate_area"
+  },
+  {
+    "uuid": "12526d1e-ec51-44a3-8964-33b4b1b38deb",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you reverse geocode these coordinates for me: 37.7749, -122.4194?",
+    "subcategory": "reverse_geocode"
+  },
+  {
+    "uuid": "4e96032f-e72d-4f02-8ed9-bd0824ad3600",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find schools located within 5 miles of my house in Miami.",
+    "subcategory": "find_schools_nearby"
+  },
+  {
+    "uuid": "ce933713-6178-404f-afa4-da772249f392",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are some good restaurants around the Golden Gate Bridge?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "89cc3e4d-2380-4d4f-9788-62838b1a73d3",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you analyze my commute from my apartment to my office?",
+    "subcategory": "analyze_commute"
+  },
+  {
+    "uuid": "79b69f80-82a2-40af-9728-64e48be66b9d",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Get me the best route from Seattle to Portland with minimal traffic.",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "6bd61625-87d3-427f-a057-8bc0db99c2e2",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the amenities available in the Harajuku neighborhood of Tokyo?",
+    "subcategory": "analyze_neighborhood"
+  },
+  {
+    "uuid": "f369840f-e484-4529-a238-bed1e2d310bf",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you find out the distance between these two landmarks in London?",
+    "subcategory": "mcp_geo_calculate_distance"
+  },
+  {
+    "uuid": "65f814b2-1035-4420-a802-859736522640",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the local attractions near the Statue of Liberty?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "dd407daf-bc09-450b-b57e-a5439fba32dd",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I'd like to know the best meeting point for a group of three coming from different locations.",
+    "subcategory": "suggest_meeting_point"
+  },
+  {
+    "uuid": "c2e057ac-d882-4314-a999-24cdb35e67c4",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you convert this GIS data format for me?",
+    "subcategory": "geojson_to_wkt"
+  },
+  {
+    "uuid": "4c84cbd7-179b-4e25-8c24-fd55cb371d2b",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find the nearest grocery store to my location in Denver.",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "f146b683-165f-4065-9ed2-11a6b7d1a3a0",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "How do I get to the nearest train station from here?",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "103f67fb-d104-407e-964b-3d04b0aba0bc",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you show me the boundaries of the Central Business District in Sydney?",
+    "subcategory": "get_bounds"
+  },
+  {
+    "uuid": "ec8cacc0-01a2-42e6-be47-b3ee0b95143a",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What schools are located around the area of the White House?",
+    "subcategory": "find_schools_nearby"
+  },
+  {
+    "uuid": "ab643eb3-cc0f-4ad8-b920-a1160f0d929e",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Is there a park within walking distance of the Louvre?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "2fb16324-79d0-4e6c-ab79-6da268d1827b",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the best route for cycling from Venice Beach to Santa Monica?",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "c5e08f05-5e44-41bb-b59a-a03205cc40b1",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you analyze the livability of a neighborhood in Toronto?",
+    "subcategory": "analyze_neighborhood"
+  },
+  {
+    "uuid": "050f3a11-100c-4352-a46a-cfbae0499e55",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the area in square kilometers of Golden Gate Park?",
+    "subcategory": "mcp_geo_calculate_area"
+  },
+  {
+    "uuid": "ea4914a0-a749-49c8-aedf-9425db386a74",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me find some interesting landmarks in Rome?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "4a73b966-cff1-402c-b769-bb7ac9d9e113",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I need to know the travel distance between Washington D.C. and Richmond.",
+    "subcategory": "mcp_geo_calculate_distance"
+  },
+  {
+    "uuid": "c4f1fbc9-fb9e-4426-9595-423731a8b34f",
+    "category": "geolocation",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you help me find the nearest fire station to my location?",
+    "subcategory": "find_nearby_places"
+  },
+  {
+    "uuid": "76edf7c1-a80b-4575-b6fc-af318b318569",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I'd like to know about the transportation options available in the Soho area of London.",
+    "subcategory": "analyze_neighborhood"
+  },
+  {
+    "uuid": "d6b31dd0-16a0-4bb9-b55f-d184935f361a",
+    "category": "geolocation",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "How do I get from my hotel to the nearest subway station in Tokyo?",
+    "subcategory": "get_route_directions"
+  },
+  {
+    "uuid": "3f1f8f83-6213-4507-a1e8-3ab762658889",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the ticket price for a one-day visit to Shanghai Disneyland?",
+    "subcategory": "theme_park_tickets"
+  },
+  {
+    "uuid": "035ad9d2-01f4-46c0-97e8-3eda40749999",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you find me an Airbnb accommodation in Tokyo for next weekend?",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "62d6fa78-f30f-428b-95c6-8d8bd7fb697c",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the bus schedules for Nagoya station tomorrow?",
+    "subcategory": "bus_schedule"
+  },
+  {
+    "uuid": "c1f9c82c-5cac-4e54-adde-0bbc89f65c10",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How can I transfer from Beijing to Shanghai by train?",
+    "subcategory": "transportation"
+  },
+  {
+    "uuid": "7ccdd0bb-23e8-4ff4-8c11-79c643a07e62",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the two-day ticket price for Shanghai Disneyland?",
+    "subcategory": "theme_park_tickets"
+  },
+  {
+    "uuid": "55372b94-7f49-49d3-8ebc-93f340d45ab7",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Are there any good Airbnbs in Kyoto for the cherry blossom season?",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "6e2f6d1a-009a-40d2-a37d-730c79f9ab73",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What's the bus timetable for trains arriving at Osaka station today?",
+    "subcategory": "bus_schedule"
+  },
+  {
+    "uuid": "d2e8f671-2a6b-4d05-925c-384521f0d523",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you tell me the weather forecast for my travel dates in Japan?",
+    "subcategory": "weather_forecast"
+  },
+  {
+    "uuid": "bbb3cefc-dde6-4484-963d-37eb0fb3c627",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the fastest train option from Guangzhou to Shenzhen?",
+    "subcategory": "transportation"
+  },
+  {
+    "uuid": "b5939039-ffce-422a-9b6f-9bf7411cfd37",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Are there any interesting Airbnbs near the Great Wall of China?",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "916e30c9-5ef8-4298-8547-11c150662ef0",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the current ticket prices for a round trip between Beijing and Shanghai?",
+    "subcategory": "ticket_price"
+  },
+  {
+    "uuid": "9276e353-8bc0-4968-8e1f-6550d8afb23a",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you give me the bus schedule from Kyoto to Nara for tomorrow?",
+    "subcategory": "bus_schedule"
+  },
+  {
+    "uuid": "235aab98-3883-4aaa-a5fa-41be983f1cd5",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What is the best way to get from Narita Airport to Tokyo city center?",
+    "subcategory": "transportation"
+  },
+  {
+    "uuid": "f15dbfbf-5c51-448b-aa31-728f22d141dc",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Find a beachfront Airbnb in Okinawa for next month.",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "acba9452-ad69-41e5-a869-35e249625ae1",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "When does the last bus leave from Nagoya station on weekdays?",
+    "subcategory": "bus_schedule"
+  },
+  {
+    "uuid": "4089f30e-a2bd-4f1b-afdd-8cffc2f9761e",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the ticket price for a fast train from Shanghai to Hangzhou?",
+    "subcategory": "ticket_price"
+  },
+  {
+    "uuid": "6873a24a-5d76-4004-a3f0-d4d11d58d4c3",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the current ticket prices for Suzhou gardens?",
+    "subcategory": "ticket_price"
+  },
+  {
+    "uuid": "d43439b9-56ad-454d-a05c-b034269430bd",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the best time to visit Mount Fuji for good weather?",
+    "subcategory": "weather_forecast"
+  },
+  {
+    "uuid": "da6c2944-2159-4c02-b70f-4291f248135f",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Are there any Airbnbs in Sapporo near the snow festival?",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "9694c3d1-d4a5-44cf-889c-95286afc133d",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How long does it take to travel from Osaka to Hiroshima by train?",
+    "subcategory": "transportation"
+  },
+  {
+    "uuid": "0da820d6-8540-4a11-88a1-4ee457b070d3",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Show me the direct bus schedules from Tokyo to Yokohama.",
+    "subcategory": "bus_schedule"
+  },
+  {
+    "uuid": "265632a8-2355-4991-94ba-3a36e4593d87",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the weather forecast for my trip to Japan in late November?",
+    "subcategory": "weather_forecast"
+  },
+  {
+    "uuid": "b595fcc9-2a44-47cc-a721-7f00e2045177",
+    "category": "travel",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What\u2019s the cost for a family of four to visit Shanghai Disneyland for two days?",
+    "subcategory": "theme_park_tickets"
+  },
+  {
+    "uuid": "11e87d4d-1e63-4738-b47c-b5427f33498e",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Find me the best-rated Airbnbs in Osaka for my family trip.",
+    "subcategory": "accommodation"
+  },
+  {
+    "uuid": "fc92c2fc-1b1a-40e2-a915-dfb7de8fb100",
+    "category": "travel",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What is the train schedule for traveling from Shanghai to Nanjing this weekend?",
+    "subcategory": "transportation"
+  },
+  {
+    "uuid": "75c9d769-957e-48b3-8d6e-31a479ff1d76",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the current stock price of Apple?",
+    "subcategory": "stock_price"
+  },
+  {
+    "uuid": "e0562cf6-10e2-412a-89ce-e85429074439",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "Can you show me the historical stock prices for Tesla over the last month?",
+    "subcategory": "stock_price"
+  },
+  {
+    "uuid": "013db847-d1ab-45c4-9875-b5e92f6b358d",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the recent news articles about Amazon's stock performance?",
+    "subcategory": "news"
+  },
+  {
+    "uuid": "e4d49030-21c3-4f70-a48e-9c2a786de34d",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "How has Bitcoin performed over the last week?",
+    "subcategory": "crypto"
+  },
+  {
+    "uuid": "86e15565-c517-4d4a-89c2-4e8f257b5e88",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the current exchange rate between USD and EUR?",
+    "subcategory": "exchange_rate"
+  },
+  {
+    "uuid": "ad266171-bbd5-477f-8259-9efd34d28414",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Please provide me the dividends history for Microsoft?",
+    "subcategory": "dividends"
+  },
+  {
+    "uuid": "a0c9d231-203e-4d53-bf25-441a1efa866e",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the top gainers and losers in the stock market today?",
+    "subcategory": "market_movers"
+  },
+  {
+    "uuid": "6ba31193-5aa0-412d-b105-f38a11dd3932",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you tell me the current price of Ethereum?",
+    "subcategory": "crypto_price"
+  },
+  {
+    "uuid": "cdc42f7b-2d1b-41b8-a161-77421b1bdb27",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What is the current fear and greed index for the crypto market?",
+    "subcategory": "market_sentiment"
+  },
+  {
+    "uuid": "3e4dd3c9-33bb-4946-87d9-cae9eab697f4",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "How does the price of gold compare to silver currently?",
+    "subcategory": "asset_price"
+  },
+  {
+    "uuid": "a5d9077c-3222-4241-8aff-1acfa7e7486a",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the latest market analysis for the S&P 500?",
+    "subcategory": "market_analysis"
+  },
+  {
+    "uuid": "a05be062-69af-4aa1-b36a-0c3e0e6247ce",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Could you provide the real-time data for Alibaba's stock?",
+    "subcategory": "stock_price"
+  },
+  {
+    "uuid": "6f26a5e5-a5c1-4195-9085-9d68d6a3f98b",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What was the highest price for Netflix stock this year?",
+    "subcategory": "stock_price"
+  },
+  {
+    "uuid": "da0f0143-e7da-427f-bb87-c8966b7c4e7c",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the key financial metrics for Nvidia?",
+    "subcategory": "fundamentals"
+  },
+  {
+    "uuid": "36712516-4fa0-49f6-adfb-c2ec0a0012f9",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you summarize the latest market sentiment for global equities?",
+    "subcategory": "market_sentiment"
+  },
+  {
+    "uuid": "ed58ada6-9190-42b1-9708-ee3c2cb94d60",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What is the average price of Litecoin over the past three months?",
+    "subcategory": "crypto"
+  },
+  {
+    "uuid": "f7c4fbc8-a998-432f-b49c-9c9839e94a12",
+    "category": "finance",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What are the current and historical exchange rates for GBP to JPY?",
+    "subcategory": "exchange_rate"
+  },
+  {
+    "uuid": "ab6f6a7f-4199-4f85-b5e2-00e8e00f71a4",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you list the top three cryptocurrencies by market capitalization?",
+    "subcategory": "crypto"
+  },
+  {
+    "uuid": "e772769a-962f-47f5-bf35-7aa74e9a7295",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What are the current futures prices for crude oil?",
+    "subcategory": "asset_price"
+  },
+  {
+    "uuid": "300da840-8fc7-451a-9197-5d7d7a4ef82b",
+    "category": "finance",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Please provide me the balance sheet for Tencent.",
+    "subcategory": "balance_sheet"
+  },
+  {
+    "uuid": "5b01d8ec-e738-473d-91be-c2b62717dbba",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you tell me how long a specific song is in minutes and seconds?",
+    "subcategory": "get_duration"
+  },
+  {
+    "uuid": "fa894389-9565-445d-b123-902d510160ac",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "I have a song file, can you analyze its tempo?",
+    "subcategory": "tempo"
+  },
+  {
+    "uuid": "2529ed5a-5b22-4703-8585-6b16fb068254",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "What's the musical key of this audio track?",
+    "subcategory": "chroma_cqt"
+  },
+  {
+    "uuid": "d6f865f5-5874-425f-be9a-51740e5fe8df",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you check if I am eligible for a refund on a concert ticket?",
+    "subcategory": "refund_eligibility"
+  },
+  {
+    "uuid": "ae17fc33-485f-41f9-9d6f-87a19032edd1",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "How do I create a barcode for a new album I'm releasing?",
+    "subcategory": "generate_barcode"
+  },
+  {
+    "uuid": "94264134-d7ba-4ab4-8a70-1941155e3f07",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Could you merge several PDF documents of music scores into one file?",
+    "subcategory": "pdf_merger"
+  },
+  {
+    "uuid": "30aa7ba8-683e-4603-9d93-5181aec334bd",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you decode the information from a QR code on an album cover?",
+    "subcategory": "decode_image"
+  },
+  {
+    "uuid": "6c0c9baa-2a6c-4a5d-9ca8-0322967f6cf2",
+    "category": "music_misc",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "What is the average tempo of a selection of songs from the 80s?",
+    "subcategory": "tempo"
+  },
+  {
+    "uuid": "4a13b7c5-022f-4d5a-93e8-c38c9bfc8f0c",
+    "category": "music_misc",
+    "call_type": "single",
+    "source": "generated",
+    "query": "Can you extract the text from this PDF of music lyrics?",
+    "subcategory": "read_pdf"
+  },
+  {
+    "uuid": "a1286c7e-cde4-4679-91b0-cc8cf9a976d9",
+    "category": "music_misc",
+    "call_type": "multi",
+    "source": "generated",
+    "query": "I need to calculate the total duration of a playlist with 10 songs. Can you help?",
+    "subcategory": "calculate"
+  }
+]

@@ -1,1 +1,0 @@
-Test file 1: This is a test file dedicated to the file system server.

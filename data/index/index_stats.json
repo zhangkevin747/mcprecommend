@@ -1,0 +1,36 @@
+{
+  "total_unique_servers": 21134,
+  "raw_counts_per_source": {
+    "smithery": 3713,
+    "official": 7812,
+    "glama": 18058,
+    "official_latest": 2949
+  },
+  "total_raw_listings": 32532,
+  "duplicates_removed": 11398,
+  "source_distribution": {
+    "smithery": 1403,
+    "glama": 17885,
+    "official": 2673
+  },
+  "source_only_counts": {
+    "smithery": 1141,
+    "official": 2091,
+    "glama": 17124
+  },
+  "multi_source_servers": 778,
+  "servers_with_repo": 19563,
+  "servers_with_tools": 306,
+  "tool_count_distribution": {
+    "min": 0,
+    "max": 364,
+    "mean": 0.17,
+    "median": 0
+  },
+  "top_20_categories": {
+    "hosting:remote-capable": 7438,
+    "hosting:hybrid": 4261,
+    "hosting:local-only": 3671,
+    "author:official": 879
+  }
+}

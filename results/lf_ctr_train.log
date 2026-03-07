@@ -1,0 +1,46 @@
+2026-03-05 13:55:14,001 INFO: Loading rollouts from /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/rollouts_train.jsonl
+2026-03-05 13:55:14,038 INFO: Loaded 4000 rollouts
+2026-03-05 13:55:14,039 INFO: Valid rollouts: 3994 (filtered 6 pure errors)
+2026-03-05 13:55:14,039 INFO: Unique tasks with queries: 790
+2026-03-05 13:55:14,061 INFO: Loaded 790 cached embeddings from /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/train_task_emb_cache.npz
+2026-03-05 13:55:14,061 INFO: All task embeddings cached — skipping API calls
+2026-03-05 13:55:14,073 INFO: Training: 3994 rollouts × 100 epochs = 399400 updates
+2026-03-05 13:55:14,074 INFO: Task embedding coverage: 3994/3994 rollouts have embeddings
+2026-03-05 13:55:22,001 INFO: Epoch 10/100 [haiku-4.5]: 13350 obs, 390 servers, beta mean=-0.340 std=0.314, |W| mean=0.00175
+2026-03-05 13:55:22,001 INFO: Epoch 10/100 [gpt-4o-mini]: 13340 obs, 377 servers, beta mean=-0.340 std=0.343, |W| mean=0.00311
+2026-03-05 13:55:22,001 INFO: Epoch 10/100 [gpt-5-mini]: 13250 obs, 376 servers, beta mean=-0.358 std=0.322, |W| mean=0.00184
+2026-03-05 13:55:29,885 INFO: Epoch 20/100 [haiku-4.5]: 26700 obs, 390 servers, beta mean=-0.433 std=0.347, |W| mean=0.00370
+2026-03-05 13:55:29,885 INFO: Epoch 20/100 [gpt-4o-mini]: 26680 obs, 377 servers, beta mean=-0.432 std=0.388, |W| mean=0.00539
+2026-03-05 13:55:29,885 INFO: Epoch 20/100 [gpt-5-mini]: 26500 obs, 376 servers, beta mean=-0.450 std=0.357, |W| mean=0.00382
+2026-03-05 13:55:37,910 INFO: Epoch 30/100 [haiku-4.5]: 40050 obs, 390 servers, beta mean=-0.481 std=0.359, |W| mean=0.00807
+2026-03-05 13:55:37,910 INFO: Epoch 30/100 [gpt-4o-mini]: 40020 obs, 377 servers, beta mean=-0.478 std=0.406, |W| mean=0.00867
+2026-03-05 13:55:37,910 INFO: Epoch 30/100 [gpt-5-mini]: 39750 obs, 376 servers, beta mean=-0.495 std=0.370, |W| mean=0.00734
+2026-03-05 13:55:45,721 INFO: Epoch 40/100 [haiku-4.5]: 53400 obs, 390 servers, beta mean=-0.512 std=0.365, |W| mean=0.01119
+2026-03-05 13:55:45,722 INFO: Epoch 40/100 [gpt-4o-mini]: 53360 obs, 377 servers, beta mean=-0.507 std=0.414, |W| mean=0.01088
+2026-03-05 13:55:45,722 INFO: Epoch 40/100 [gpt-5-mini]: 53000 obs, 376 servers, beta mean=-0.522 std=0.377, |W| mean=0.00981
+2026-03-05 13:55:53,542 INFO: Epoch 50/100 [haiku-4.5]: 66750 obs, 390 servers, beta mean=-0.532 std=0.369, |W| mean=0.01312
+2026-03-05 13:55:53,542 INFO: Epoch 50/100 [gpt-4o-mini]: 66700 obs, 377 servers, beta mean=-0.528 std=0.419, |W| mean=0.01314
+2026-03-05 13:55:53,542 INFO: Epoch 50/100 [gpt-5-mini]: 66250 obs, 376 servers, beta mean=-0.539 std=0.382, |W| mean=0.01144
+2026-03-05 13:56:01,145 INFO: Epoch 60/100 [haiku-4.5]: 80100 obs, 390 servers, beta mean=-0.547 std=0.372, |W| mean=0.01443
+2026-03-05 13:56:01,145 INFO: Epoch 60/100 [gpt-4o-mini]: 80040 obs, 377 servers, beta mean=-0.543 std=0.423, |W| mean=0.01507
+2026-03-05 13:56:01,145 INFO: Epoch 60/100 [gpt-5-mini]: 79500 obs, 376 servers, beta mean=-0.551 std=0.385, |W| mean=0.01279
+2026-03-05 13:56:08,660 INFO: Epoch 70/100 [haiku-4.5]: 93450 obs, 390 servers, beta mean=-0.558 std=0.374, |W| mean=0.01543
+2026-03-05 13:56:08,660 INFO: Epoch 70/100 [gpt-4o-mini]: 93380 obs, 377 servers, beta mean=-0.555 std=0.425, |W| mean=0.01665
+2026-03-05 13:56:08,661 INFO: Epoch 70/100 [gpt-5-mini]: 92750 obs, 376 servers, beta mean=-0.560 std=0.387, |W| mean=0.01402
+2026-03-05 13:56:16,120 INFO: Epoch 80/100 [haiku-4.5]: 106800 obs, 390 servers, beta mean=-0.566 std=0.375, |W| mean=0.01632
+2026-03-05 13:56:16,120 INFO: Epoch 80/100 [gpt-4o-mini]: 106720 obs, 377 servers, beta mean=-0.565 std=0.427, |W| mean=0.01814
+2026-03-05 13:56:16,120 INFO: Epoch 80/100 [gpt-5-mini]: 106000 obs, 376 servers, beta mean=-0.567 std=0.389, |W| mean=0.01519
+2026-03-05 13:56:23,574 INFO: Epoch 90/100 [haiku-4.5]: 120150 obs, 390 servers, beta mean=-0.573 std=0.377, |W| mean=0.01716
+2026-03-05 13:56:23,574 INFO: Epoch 90/100 [gpt-4o-mini]: 120060 obs, 377 servers, beta mean=-0.572 std=0.429, |W| mean=0.01950
+2026-03-05 13:56:23,575 INFO: Epoch 90/100 [gpt-5-mini]: 119250 obs, 376 servers, beta mean=-0.573 std=0.391, |W| mean=0.01633
+2026-03-05 13:56:30,966 INFO: Epoch 100/100 [haiku-4.5]: 133500 obs, 390 servers, beta mean=-0.579 std=0.378, |W| mean=0.01794
+2026-03-05 13:56:30,966 INFO: Epoch 100/100 [gpt-4o-mini]: 133400 obs, 377 servers, beta mean=-0.578 std=0.430, |W| mean=0.02070
+2026-03-05 13:56:30,966 INFO: Epoch 100/100 [gpt-5-mini]: 132500 obs, 376 servers, beta mean=-0.577 std=0.392, |W| mean=0.01744
+2026-03-05 13:56:30,992 INFO: Model saved: 399400 total obs, 3 agents → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_ctr_trained.json
+2026-03-05 13:56:30,992 INFO: Model saved → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_ctr_trained.json
+2026-03-05 13:56:30,992 INFO: [haiku-4.5] Top-5 beta: livemcpbench/coin-flip=0.546, livemcpbench/random-number=0.510, livemcpbench/mcp-simple-arxiv=0.453, chrishayuk/chuk-mcp-geocoder=0.387, livemcpbench/hackernews=0.370
+2026-03-05 13:56:30,992 INFO: [haiku-4.5] Bot-3 beta: MCP-Foundry/real-estate=-1.001, vimtor/things-3=-1.000, google-maps=-0.999
+2026-03-05 13:56:30,992 INFO: [gpt-4o-mini] Top-5 beta: livemcpbench/coin-flip=0.959, livemcpbench/biomcp=0.903, iclickfreedownloads/mcp-server-airbnb=0.787, livemcpbench/npm-sentinel-mcp=0.728, livemcpbench/random-number=0.671
+2026-03-05 13:56:30,992 INFO: [gpt-4o-mini] Bot-3 beta: kennyckk/mcp_hkbus=-1.000, translator-mcp/translator=-0.999, google-maps=-0.999
+2026-03-05 13:56:30,992 INFO: [gpt-5-mini] Top-5 beta: livemcpbench/hugeicons=0.690, livemcpbench/hackernews=0.585, livemcpbench/Asset_Price_MCP=0.547, livemcpbench/weather=0.463, livemcpbench/howtocook-mcp=0.421
+2026-03-05 13:56:30,992 INFO: [gpt-5-mini] Bot-3 beta: MCP-Foundry/real-estate=-1.001, BadRooBot/my_test_mcp=-1.001, google-maps=-1.000

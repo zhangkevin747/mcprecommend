@@ -1,4 +1,20 @@
+# Environment
 .idea/
-.venv
-Claude.md
+.venv/
 .env
+.cache/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Project instructions
+Claude.md
+
+# Archive (old experiments, large raw data, intermediate files)
+archive/
+
+# Large data files (regenerable)
+data/index/embeddings.npy
+data/raw/mcp_zero_tools.json

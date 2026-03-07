@@ -1,0 +1,56 @@
+2026-03-05 13:37:00,041 INFO: Loading rollouts from /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/rollouts_train.jsonl
+2026-03-05 13:37:00,078 INFO: Loaded 4000 rollouts
+2026-03-05 13:37:00,079 INFO: Valid rollouts: 3994 (filtered 6 pure errors)
+2026-03-05 13:37:00,079 INFO: Unique tasks with queries: 790
+2026-03-05 13:37:00,101 INFO: Loaded 790 cached embeddings from /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/train_task_emb_cache.npz
+2026-03-05 13:37:00,101 INFO: All task embeddings cached — skipping API calls
+2026-03-05 13:37:00,148 INFO: Training: 3994 rollouts × 100 epochs = 399400 updates
+2026-03-05 13:37:00,149 INFO: Task embedding coverage: 3994/3994 rollouts
+2026-03-05 13:37:08,547 INFO: Epoch 10/100: 39940 obs, 399 servers, b_s mean=-0.008 std=0.301, |T|=0.02784
+2026-03-05 13:37:08,547 INFO:   [haiku-4.5] n=13350, b_a=-0.608
+2026-03-05 13:37:08,547 INFO:   [gpt-4o-mini] n=13340, b_a=-0.659
+2026-03-05 13:37:08,547 INFO:   [gpt-5-mini] n=13250, b_a=-0.585
+2026-03-05 13:37:17,087 INFO: Epoch 20/100: 79880 obs, 399 servers, b_s mean=-0.011 std=0.316, |T|=0.03977
+2026-03-05 13:37:17,087 INFO:   [haiku-4.5] n=26700, b_a=-0.622
+2026-03-05 13:37:17,087 INFO:   [gpt-4o-mini] n=26680, b_a=-0.663
+2026-03-05 13:37:17,087 INFO:   [gpt-5-mini] n=26500, b_a=-0.590
+2026-03-05 13:37:25,603 INFO: Epoch 30/100: 119820 obs, 399 servers, b_s mean=-0.014 std=0.328, |T|=0.04410
+2026-03-05 13:37:25,603 INFO:   [haiku-4.5] n=40050, b_a=-0.601
+2026-03-05 13:37:25,603 INFO:   [gpt-4o-mini] n=40020, b_a=-0.656
+2026-03-05 13:37:25,603 INFO:   [gpt-5-mini] n=39750, b_a=-0.573
+2026-03-05 13:37:33,884 INFO: Epoch 40/100: 159760 obs, 399 servers, b_s mean=-0.017 std=0.337, |T|=0.04527
+2026-03-05 13:37:33,884 INFO:   [haiku-4.5] n=53400, b_a=-0.583
+2026-03-05 13:37:33,884 INFO:   [gpt-4o-mini] n=53360, b_a=-0.649
+2026-03-05 13:37:33,884 INFO:   [gpt-5-mini] n=53000, b_a=-0.561
+2026-03-05 13:37:42,098 INFO: Epoch 50/100: 199700 obs, 399 servers, b_s mean=-0.020 std=0.342, |T|=0.04578
+2026-03-05 13:37:42,098 INFO:   [haiku-4.5] n=66750, b_a=-0.572
+2026-03-05 13:37:42,098 INFO:   [gpt-4o-mini] n=66700, b_a=-0.644
+2026-03-05 13:37:42,098 INFO:   [gpt-5-mini] n=66250, b_a=-0.554
+2026-03-05 13:37:50,074 INFO: Epoch 60/100: 239640 obs, 399 servers, b_s mean=-0.024 std=0.347, |T|=0.04613
+2026-03-05 13:37:50,074 INFO:   [haiku-4.5] n=80100, b_a=-0.564
+2026-03-05 13:37:50,074 INFO:   [gpt-4o-mini] n=80040, b_a=-0.639
+2026-03-05 13:37:50,074 INFO:   [gpt-5-mini] n=79500, b_a=-0.550
+2026-03-05 13:37:58,468 INFO: Epoch 70/100: 279580 obs, 399 servers, b_s mean=-0.027 std=0.350, |T|=0.04650
+2026-03-05 13:37:58,468 INFO:   [haiku-4.5] n=93450, b_a=-0.560
+2026-03-05 13:37:58,468 INFO:   [gpt-4o-mini] n=93380, b_a=-0.634
+2026-03-05 13:37:58,468 INFO:   [gpt-5-mini] n=92750, b_a=-0.546
+2026-03-05 13:38:06,316 INFO: Epoch 80/100: 319520 obs, 399 servers, b_s mean=-0.030 std=0.353, |T|=0.04691
+2026-03-05 13:38:06,317 INFO:   [haiku-4.5] n=106800, b_a=-0.556
+2026-03-05 13:38:06,317 INFO:   [gpt-4o-mini] n=106720, b_a=-0.630
+2026-03-05 13:38:06,317 INFO:   [gpt-5-mini] n=106000, b_a=-0.544
+2026-03-05 13:38:14,188 INFO: Epoch 90/100: 359460 obs, 399 servers, b_s mean=-0.033 std=0.355, |T|=0.04719
+2026-03-05 13:38:14,189 INFO:   [haiku-4.5] n=120150, b_a=-0.553
+2026-03-05 13:38:14,189 INFO:   [gpt-4o-mini] n=120060, b_a=-0.626
+2026-03-05 13:38:14,189 INFO:   [gpt-5-mini] n=119250, b_a=-0.542
+2026-03-05 13:38:22,027 INFO: Epoch 100/100: 399400 obs, 399 servers, b_s mean=-0.036 std=0.358, |T|=0.04737
+2026-03-05 13:38:22,027 INFO:   [haiku-4.5] n=133500, b_a=-0.548
+2026-03-05 13:38:22,027 INFO:   [gpt-4o-mini] n=133400, b_a=-0.622
+2026-03-05 13:38:22,027 INFO:   [gpt-5-mini] n=132500, b_a=-0.541
+2026-03-05 13:38:22,037 INFO: Tucker model saved: 399400 total obs, 399 servers → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/tucker_ctr_trained.json
+2026-03-05 13:38:22,037 INFO: Model saved → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/tucker_ctr_trained.json
+2026-03-05 13:38:22,037 INFO: Top-5 server bias: livemcpbench/Ant Design Components=0.926, livemcpbench/coin-flip=0.893, livemcpbench/howtocook-mcp=0.841, livemcpbench/Asset_Price_MCP=0.823, livemcpbench/ppt=0.796
+2026-03-05 13:38:22,037 INFO: Bot-3 server bias: xja1023789-collab/hello_servertest=-0.507, SmartManoj/smithery-fastmcp-quickstart=-0.503, Composio/Rube=-0.492
+2026-03-05 13:38:22,037 INFO: [haiku-4.5] b_a=-0.548, u_a_mag=0.3221
+2026-03-05 13:38:22,037 INFO: [gpt-4o-mini] b_a=-0.622, u_a_mag=0.3995
+2026-03-05 13:38:22,037 INFO: [gpt-5-mini] b_a=-0.541, u_a_mag=0.2642
+2026-03-05 13:38:22,037 INFO: |T| row norms: mean=0.22330, max=0.48689
