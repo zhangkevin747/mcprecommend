@@ -35,7 +35,7 @@ class SemanticPopularityRecommender(BaseRecommender):
     def method_name(self) -> str:
         return "semantic_popularity"
 
-    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None) -> list[dict]:
+    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None, epsilon: float = 0.0) -> list[dict]:
         scored = []
         for c in candidates:
             sem = c.get("similarity", 0.0)

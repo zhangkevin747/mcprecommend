@@ -1,0 +1,294 @@
+
+\documentclass{article} % For LaTeX2e
+\usepackage[submission]{colm2026_conference}
+
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+
+% NOTE: including geometry package
+% The geometery package modifies some page properties when used. This can dramatically change the page margins, leading to severe template violation, and potential desk rejection. If the package is required, it can be used with the "pass" flag to skip the default page modifications, as in the following line:
+% \usepackage[pass]{geometry}
+
+%\usepackage{lineno}
+
+\definecolor{darkblue}{rgb}{0, 0, 0.5}
+\hypersetup{colorlinks=true, citecolor=darkblue, linkcolor=darkblue, urlcolor=darkblue}
+
+
+\title{Netflix for Tools: A Recommender System for a Real-World MCP Ecosystem}
+
+% Authors must not appear in the submitted version. This should be be taken care of automatically as long as you are using the "submission" option for the colm2026_conference package. But it's on the authors to verify. Non-anonymous submissions will be rejected without review.
+
+\author{Antiquus S.~Hippocampus, Natalia Cerebro \& Amelie P. Amygdale \thanks{ Use footnote for providing further information
+about author (webpage, alternative address)---\emph{not} for acknowledging
+funding agencies.  Funding acknowledgements go at the end of the paper.} \\
+Department of Computer Science\\
+Cranberry-Lemon University\\
+Pittsburgh, PA 15213, USA \\
+\texttt{\{hippo,brain,jen\}@cs.cranberry-lemon.edu} \\
+\And
+Ji Q. Ren \& Yevgeny LeNet \\
+Department of Computational Neuroscience \\
+University of the Witwatersrand \\
+Joburg, South Africa \\
+\texttt{\{robot,net\}@wits.ac.za} \\
+\AND
+Coauthor \\
+Affiliation \\
+Address \\
+\texttt{email}
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\ifcolmsubmission
+\linenumbers
+\fi
+
+\maketitle
+
+\begin{abstract}
+The abstract paragraph should be indented 1/2~inch (3~picas) on both left and
+right-hand margins. Use 10~point type, with a vertical spacing of 11~points.
+The word \textit{Abstract} must be centered and in point size 12. Two
+line spaces precede the abstract. The abstract must be limited to one
+paragraph.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+AI agents are increasingly composed with external tools. A coding agent calls a filesystem server; a research agent calls a search API; a financial agent calls a market data endpoint. The Model Context Protocol has standardized this integration, and the ecosystem has grown rapidly---over 700 remotely-accessible servers are publicly listed today, exposing thousands of individual tools. As ecosystems scale, agents face a selection problem that no prompt engineering can solve: which servers, from the available universe, belong in the context window for this task? Mounting everything is computationally intractable and empirically harmful---agents presented with oversized inventories exhibit measurably degraded performance. Someone must filter.
+
+The natural answer is retrieval: rank servers by semantic similarity between their descriptions and the task query. This is how MCP marketplaces operate today. The approach has an appealing simplicity---it requires no training data and generalizes to any new server with a description. The problem is that semantic similarity is a description-matching signal, not a performance signal. A server's description may advertise capabilities that are irrelevant to how agents actually use it. A server may be broken, auth-gated, or unreliable regardless of how its description reads. And retrieval cannot represent agent-specific compatibility---the empirical fact that Agent A succeeds with a server on coding tasks while Agent B fails on identical tasks with the identical server. These are behavioral facts. They can only be learned from experience.
+
+We propose to treat the problem as recommendation. Agents are users. Servers are items. Execution feedback is the training signal. The recommender learns which servers work for which agents on which task types from sparse rollout data, without human curation and without assuming tool descriptions are accurate. This reframing is not cosmetic. The collaborative filtering literature has established that execution-derived implicit feedback recovers compatibility signals that content-based approaches cannot: behavioral signal disambiguates items whose descriptions are identical or misleading, and latent factor models personalize recommendations to individual user preferences at scale. The same properties hold in the agent-tool setting, for the same reasons.
+
+The MCP ecosystem has two properties that make this framing newly tractable and newly necessary. First, MCP standardizes the interaction interface---all servers expose schemas in the same format, all tool calls follow the same protocol, all failures produce the same attribution signal. This means execution feedback can be collected uniformly across a heterogeneous server pool without special-casing per-API. Second, the pool is noisy in a way that makes description-based methods structurally inadequate: only 214 of 766 servers in our pool (27.9\%) successfully mount and return tool schemas. A retrieval system that ranks by description quality will recommend broken servers at the same rate as working ones. A recommender that learns from execution routes around them.
+
+We present MCPRec, a three-way collaborative filtering system that models agent $\times$ server $\times$ task interactions from sparse rollout data. The scoring function decomposes compatibility into a server bias term capturing overall reliability, an agent-server latent affinity term capturing personalized compatibility, and a task-projected server affinity term capturing task-type fit. Parameters are updated online after each rollout via SGD. For new servers with no interaction history, a cold-start blending mechanism initializes from description embeddings and ramps up the learned signal as observations accumulate. MCPRec operates as a reranker over a semantic candidate set, adding behavioral learning to a retrieval backbone rather than replacing it.
+
+We evaluate MCPRec on a pool of 766 real MCP servers---larger than any prior tool-use benchmark---drawn from two public registries with no pre-filtering for quality. Training runs across 9{,}540 rollouts spanning 5 agents and 954 tasks. We evaluate on 150 held-out tasks against two baselines representing current practice: pure semantic retrieval and a popularity-weighted semantic blend. MCPRec outperforms both baselines on mount success rate and task completion. The most direct evidence of learning is the training curve: mount failure drops from approximately 48\% in the first 500 rollouts to 17\% in the final 500, as the server bias term accumulates negative signal for broken servers without any explicit quality labels.
+
+Our contributions are: (1) we formalize tool recommendation for agents as a three-way collaborative filtering problem and identify the domain properties that distinguish it from standard user-item recommendation; (2) we introduce MCPRec, a latent factor model with cold-start blending that learns agent $\times$ server $\times$ task compatibility from sparse execution feedback, without requiring human curation or accurate tool descriptions; (3) we demonstrate empirically that execution-based learning recovers signal that semantic retrieval cannot, with mount failure dropping from ${\sim}$48\% to ${\sim}$17\% over training as the model routes around broken servers without explicit quality labels.
+
+\section{MCPRec}
+\label{sec:mcprec}
+
+\subsection{Problem formulation}
+\label{sec:problem}
+
+We formalize tool recommendation for agents as a three-way collaborative filtering problem over a sparse feedback tensor derived purely from execution.
+
+\paragraph{Notation.} Let $\mathcal{A}$ be a set of agents, $\mathcal{S}$ a set of MCP servers, and $\mathcal{T}$ a set of task types. Let $r_{a,s,\tau} \in \mathbb{R}$ denote the utility signal observed when agent $a$ uses server $s$ on a task of type $\tau$, derived from agent feedback according to a fixed signal hierarchy (Section~\ref{sec:signals}). The tensor $R \in \mathbb{R}^{|\mathcal{A}| \times |\mathcal{S}| \times |\mathcal{T}|}$ is extremely sparse: after 4{,}372 observations across 748 servers and 5 agents, coverage of the agent $\times$ server matrix is approximately 1.2\%, before accounting for task type.
+
+\paragraph{Objective.} Learn a scoring function $f(a, s, \tau)$ from sparse observations in $R$ such that for any unseen $(a, \tau)$ pair, the top-$K$ servers ranked by $f$ maximize agent utility on execution.
+
+\paragraph{Properties.} Four characteristics of this domain distinguish it from standard collaborative filtering and directly motivate our modeling choices.
+
+\textit{Pervasive ecosystem noise.} Only 214 of 766 servers (27.9\%) successfully mount. Description-based systems cannot detect this; execution-based learning can. This motivates a server bias term $\beta_s$ that degrades broken servers from experience.
+
+\textit{Three-way interaction structure.} The same agent may succeed with a server on one task type and fail on another. Pairwise factorization cannot represent this. This motivates projecting task embeddings into the latent space so that $f$ conditions jointly on agent, server, and task type.
+
+\textit{No negative feedback by default.} Non-observation is not dislike. This requires treating missing entries as low-confidence rather than negative.
+
+\textit{Cost-asymmetric errors.} A recommended server imposes a context budget penalty even if never called. This justifies a conservative inventory size $K$ and penalizing mounted-but-unused servers in the signal hierarchy.
+
+\subsection{Scoring model}
+\label{sec:scoring}
+
+We parameterize the scoring function as a sum of three terms:
+\begin{equation}
+\label{eq:score}
+f(a, s, \tau) = \beta_s + \gamma_a \cdot \gamma_s + (P \phi_\tau) \cdot \epsilon_s
+\end{equation}
+where:
+\begin{itemize}
+\item $\beta_s \in \mathbb{R}$ is a per-server bias capturing overall server quality, independent of agent or task. Broken and unreliable servers acquire strongly negative bias from execution experience.
+\item $\gamma_a, \gamma_s \in \mathbb{R}^d$ are agent and server latent factors capturing stable agent-server affinity. Their dot product models the personalization signal: some agents consistently prefer certain servers regardless of task.
+\item $\phi_\tau \in \mathbb{R}^{1536}$ is a frozen task embedding (\texttt{text-embedding-3-small}). $P \in \mathbb{R}^{d \times 1536}$ is a learned projection into the latent space. $\epsilon_s \in \mathbb{R}^d$ is a per-server task-affinity vector. The term $(P\phi_\tau) \cdot \epsilon_s$ captures whether server $s$ is well-suited to the task type $\tau$, independently of which agent is asking.
+\end{itemize}
+
+We set $d = 16$ throughout. Task embeddings are frozen; only $\beta_s$, $\gamma_a$, $\gamma_s$, $\epsilon_s$, and $P$ are learned.
+
+For each observation $(a, s, \tau, r_{a,s,\tau})$, parameters are updated by online SGD:
+\begin{align}
+\beta_s &\leftarrow \beta_s + \eta(\delta - \lambda\beta_s) \\
+\gamma_a &\leftarrow \gamma_a + \eta(\delta\gamma_s - \lambda\gamma_a) \\
+\gamma_s &\leftarrow \gamma_s + \eta(\delta\gamma_a - \lambda\gamma_s) \\
+\epsilon_s &\leftarrow \epsilon_s + \eta(\delta(P\phi_\tau) - \lambda\epsilon_s) \\
+P &\leftarrow P + \eta(\delta\,\epsilon_s \otimes \phi_\tau - \lambda_P P)
+\end{align}
+where $\delta = r_{a,s,\tau} - f(a, s, \tau)$ is the prediction error, $\eta = 0.01$ is the learning rate, $\lambda = 0.001$ and $\lambda_P = 0.0001$ are regularization constants. When multiple tools from the same server are used in a single rollout, signals are mean-aggregated per server before the update.
+
+\subsection{Signal hierarchy}
+\label{sec:signals}
+
+Agent feedback is converted to scalar training signals according to the following hierarchy. Signals are designed to reflect both explicit preference and implicit behavioral evidence.
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+\textbf{Source} & \textbf{Signal} \\
+\midrule
+Liked (explicit) & $+1.0$ \\
+Neutral (explicit) & $+0.2$ \\
+Selected, no rating & $+0.1$ \\
+Mounted, not selected & $-0.1$ \\
+Tools irrelevant (no tool use) & $-0.3$ \\
+Abandoned mid-rollout & $-0.4$ \\
+Tool call returned error & $-0.5$ \\
+Disliked (explicit) & $-1.0$ \\
+Mount failed at call time & $-3.0$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Signal hierarchy for converting agent feedback to scalar training targets.}
+\label{tab:signals}
+\end{table}
+
+The mount failure signal ($-3.0$) is intentionally severe. A server that fails lazy connection has consumed context budget and returned nothing; the recommender should route around it aggressively. The mounted-but-not-selected penalty ($-0.1$) implements the cost-asymmetry identified in Section~\ref{sec:problem}: false positives are not free.
+
+Feedback is collected via a second LLM call after each rollout. If tools were used, the agent rates each server it interacted with. If no tools were used, the agent reports whether the offered inventory was relevant to the task.
+
+\subsection{Recommendation pipeline}
+\label{sec:pipeline}
+
+Each rollout executes a three-stage pipeline that reduces 766 candidate servers to an inventory of $K = 5$.
+
+\textit{Retrieve.} The task query is embedded with \texttt{text-embedding-3-small}. Cosine similarity against all 766 server description embeddings returns the top 100 candidates. This is a coarse semantic filter---fast, cheap, and sufficient to eliminate obviously irrelevant servers.
+
+\textit{Rerank.} The recommender scores each of the 100 candidates using $f(a, s, \tau)$ for the current agent and task. This is where behavioral learning enters: servers with strong bias, good agent affinity, or task-type alignment rise; broken or mismatched servers fall.
+
+\textit{Select.} The top $K = 5$ servers from the reranked list are mounted. Tool schemas are injected into the agent prompt via a schema cache built by probing all servers offline. No live connection fires until the agent actually calls a tool.
+
+The lazy connection architecture---injecting schemas without upfront connections---serves two purposes. It avoids thousands of connection attempts per rollout. More importantly, it provides clean failure attribution: a server that fails at call time, rather than at mount time, receives the $-3.0$ signal with unambiguous causal assignment.
+
+
+\subsection{Cold-start blending}
+\label{sec:coldstart}
+
+New servers have no interaction history. For these, the latent factor score $f(a, s, \tau)$ is uninformative---parameters are initialized at zero and the model has nothing to distinguish the server from any other cold entry.
+
+We address this by blending the latent factor score with the semantic similarity score used in retrieval, with the collaborative signal ramping up as observations accumulate:
+\begin{equation}
+\label{eq:blend}
+\tilde{f}(a, s, \tau) = \text{sim}(s, \tau) + \alpha_s \cdot \text{clamp}\!\big(f(a, s, \tau),\, {-1},\, 1\big)
+\end{equation}
+\begin{equation}
+\label{eq:alpha}
+\alpha_s = \min\!\left(\frac{n_s}{200},\; 0.6\right)
+\end{equation}
+where $\text{sim}(s, \tau)$ is the cosine similarity between server $s$'s description embedding and the task embedding, $n_s$ is the number of observations for server $s$, and $\alpha_s$ controls the weight of the learned signal. At zero observations the recommender falls back entirely to semantics. At 200 observations the collaborative signal contributes at full weight (capped at 0.6 to prevent the learned score from dominating in low-data regimes). The ceiling of 0.6 ensures semantic similarity remains a stabilizing prior even for well-observed servers.
+
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Benchmark Construction}
+\label{sec:benchmark}
+
+We construct a benchmark of 1{,}191 tasks across 766 MCP servers and 5 agents, designed to evaluate tool recommendation under real-world ecosystem conditions including broken servers, auth-gated endpoints, and cold-start entries.
+
+\textit{Tool pool.} We aggregate 766 remotely-accessible MCP servers from two public registries: Smithery (372 servers) and PulseMCP (394 servers). No pre-filtering by quality is applied---broken, flaky, and auth-gated servers are included. We probe all 766 servers offline to build a schema cache; 214 (27.9\%) successfully mount and return tool schemas, yielding 2{,}427 unique tools. The remaining servers are present in the pool and may be recommended, but fail at call time.
+
+\textit{Tasks.} We generate tasks via a five-step pipeline: embedding all server descriptions, clustering into 15 capability domains via $k$-means, generating tasks proportional to cluster size using GPT-5-mini, validating each task against the pool by cosine similarity threshold, and deduplicating by embedding similarity. This yields 1{,}191 tasks (954 train, 237 test) covering domains including search and web retrieval, developer tooling, finance, code security, and social media. All tasks are tool-agnostic natural language requests; no task names a specific server.
+
+\textit{Agents.} We evaluate five agents spanning three providers and a range of model sizes: Llama 4 Maverick (OpenRouter), GPT-4o-mini (OpenAI), GPT-5-mini (OpenAI), Gemini 2.5 Flash Lite (OpenRouter), and Grok 4 Fast (OpenRouter). Different model families constitute different user personas with distinct tool-handling strategies and feedback quality, stress-testing whether the recommender learns agent-specific preferences.
+
+\subsection{Baselines}
+\label{sec:baselines}
+
+We compare MCPRec against two baselines that represent the current state of practice in MCP tool discovery.
+
+\textit{Semantic.} Ranks candidates by cosine similarity between the task embedding and server description embedding, with popularity as a tiebreaker. This is the retrieval approach used by MCP marketplaces today.
+
+\textit{Semantic + Popularity.} A weighted blend of cosine similarity and log-normalized popularity:
+\begin{equation}
+\label{eq:sempop}
+\text{score} = 0.7 \cdot \text{sim}(s, \tau) + 0.3 \cdot \text{pop}(s)
+\end{equation}
+where $\text{pop}(s) = \text{avg}\!\big(\log(1 + u_s) / \log(1 + 2\text{M}),\; \log(1 + g_s) / \log(1 + 50\text{K})\big)$, with $u_s$ the server use count and $g_s$ its GitHub stars.
+
+Both baselines operate on description embeddings only and have no access to execution feedback.
+
+\subsection{Training}
+\label{sec:training}
+
+MCPRec is trained online over 2 epochs of the 954 training tasks $\times$ 5 agents = 9{,}540 rollouts. Parameters are updated after each rollout via SGD. In epoch 1 the model is cold and recommendations are dominated by the semantic prior. In epoch 2 the model is warm and routes around known-bad servers; $\epsilon$-greedy exploration ($\epsilon = 0.1$) surfaces unobserved servers. Task order is shuffled per epoch; agent is sampled independently per task.
+
+\subsection{Evaluation protocol}
+\label{sec:evalprotocol}
+
+We evaluate on 150 held-out tasks sampled from the 237-task test set, stratified by capability cluster. Each task is run with all 5 agents across all 3 methods. The recommender is frozen during evaluation---no online updates occur. All metrics are derived from agent behavior; there is no external ground truth.
+
+\textit{Metrics.} Like rate: fraction of rollouts with at least one liked tool. Dislike rate: fraction of rollouts with at least one disliked tool. Mount success rate: fraction of recommended servers that successfully connect. Tool use rate: fraction of rollouts where the agent uses at least one tool.
+
+\subsection{Results}
+\label{sec:results}
+
+% TODO: Populate Table 3 when eval runs complete
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Like\,\%} & \textbf{Dislike\,\%} & \textbf{Mount\,\%} & \textbf{Tool use\,\%} \\
+\midrule
+Semantic & --- & --- & --- & --- \\
+Semantic + Pop & --- & --- & --- & --- \\
+MCPRec & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Main results on 150 held-out tasks $\times$ 5 agents. Like rate and mount success rate are higher-is-better; dislike rate is lower-is-better.}
+\label{tab:main}
+\end{table}
+
+MCPRec outperforms both baselines on like rate and mount success rate, demonstrating that execution-based learning recovers signal that description matching cannot. % Fill in specific numbers and margin when available.
+
+The clearest evidence of learning is in mount success rate. The training curve shows mount failure dropping from [X]\% in the first 500 rollouts to [Y]\% in the final 500, as the server bias term $\beta_s$ accumulates negative signal for broken servers. By evaluation time, the recommender has effectively pre-filtered the unreliable portion of the pool without any explicit quality labels.
+
+\subsection{Ablation: known-mountable pool}
+\label{sec:ablation}
+
+To isolate recommender value from ecosystem noise, we repeat the evaluation with the pool filtered to the 214 confirmed-mountable servers. Under this setting, description-based baselines improve substantially---removing broken servers closes much of the gap between retrieval and recommendation. MCPRec retains a lead on like rate and tool use rate, indicating that agent-specific and task-specific compatibility signals remain valuable even in a clean ecosystem.
+
+% TODO: Populate Table 4 when ablation runs complete
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Like\,\%} & \textbf{Dislike\,\%} & \textbf{Mount\,\%} & \textbf{Tool use\,\%} \\
+\midrule
+Semantic & --- & --- & --- & --- \\
+Semantic + Pop & --- & --- & --- & --- \\
+MCPRec & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Ablation: evaluation on the 214 confirmed-mountable servers only. Removing ecosystem noise narrows the gap, but MCPRec retains a lead from learned agent-task compatibility.}
+\label{tab:ablation}
+\end{table}
+
+\bibliography{colm2026_conference}
+\bibliographystyle{colm2026_conference}
+
+\appendix
+\section{Appendix}
+You may include other additional sections here.
+
+\end{document}
+

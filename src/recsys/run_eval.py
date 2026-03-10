@@ -21,6 +21,7 @@ import numpy as np
 from .config import AGENTS, DEFAULT_K, DEFAULT_RETRIEVE_N
 from .pipeline import run_rollout
 from .recommenders.latent_factor import LatentFactorRecommender
+from .recommenders.latent_factor_mtl import LatentFactorMTLRecommender
 from .recommenders.popularity import PopularityRecommender
 from .recommenders.random_baseline import RandomRecommender
 from .recommenders.semantic import SemanticRecommender
@@ -32,9 +33,12 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parent.parent.parent
 
 COST_TABLE = {
-    "haiku-4.5": {"input": 1.00, "output": 5.00},
+    "llama-4-maverick": {"input": 0.15, "output": 0.60},
     "gpt-4o-mini": {"input": 0.15, "output": 0.60},
-    "gpt-5-mini": {"input": 0.25, "output": 2.00},
+    "gpt-5-mini": {"input": 0.15, "output": 0.60},
+    "gemini-2.5-flash-lite": {"input": 0.10, "output": 0.40},
+    "grok-4-fast": {"input": 0.20, "output": 0.50},
+    "deepseek-v3.2": {"input": 0.30, "output": 0.88},
 }
 
 
@@ -82,16 +86,19 @@ class EvalRunner:
         self.query_embs = None
 
     def _build_recommenders(self) -> dict:
-        """Build all recommender instances."""
-        recs = {
-            "random": RandomRecommender(seed=self.seed),
-            "popularity": PopularityRecommender(),
-            "semantic": SemanticRecommender(),
-            "semantic_popularity": SemanticPopularityRecommender(),
-            "latent_factor": self._load_trained_model(),
-            "tucker": self._load_tucker_model(),
+        """Build only the requested recommender instances."""
+        builders = {
+            "random": lambda: RandomRecommender(seed=self.seed),
+            "popularity": lambda: PopularityRecommender(),
+            "semantic": lambda: SemanticRecommender(),
+            "semantic_popularity": lambda: SemanticPopularityRecommender(),
+            "latent_factor": lambda: self._load_trained_model(),
+            "latent_factor_mtl": lambda: self._load_mtl_model(),
+            "tucker": lambda: self._load_tucker_model(),
         }
-        return recs
+        if self.methods:
+            return {k: builders[k]() for k in self.methods if k in builders}
+        return {k: fn() for k, fn in builders.items()}
 
     def _load_trained_model(self) -> LatentFactorRecommender:
         """Load trained latent factor model from checkpoint."""
@@ -117,6 +124,18 @@ class EvalRunner:
             model_path = ROOT / "results" / "latent_factor_trained.json"
         model = LatentFactorRecommender(seed=self.seed)
         model.load(str(model_path))
+        return model
+
+    def _load_mtl_model(self) -> LatentFactorMTLRecommender:
+        """Load trained MTL model from checkpoint."""
+        model_path = ROOT / "results" / "latent_factor_mtl_trained.json"
+        if not model_path.exists():
+            model_path = ROOT / "results" / "train" / "mtl_checkpoint.json"
+        model = LatentFactorMTLRecommender(seed=self.seed)
+        if model_path.exists():
+            model.load(str(model_path))
+        else:
+            log.warning(f"MTL model not found at {model_path} — using untrained model")
         return model
 
     def _load_tucker_model(self) -> TuckerRecommender:

@@ -1,0 +1,19 @@
+date,product,region,units_sold,revenue_usd,rating
+2024-01-15,Widget A,North America,150,4500.00,4.2
+2024-01-15,Widget B,Europe,89,2670.00,3.8
+2024-01-15,Widget C,Asia,210,4200.00,4.5
+2024-02-15,Widget A,North America,175,5250.00,4.3
+2024-02-15,Widget B,Europe,102,3060.00,3.9
+2024-02-15,Widget C,Asia,195,3900.00,4.4
+2024-03-15,Widget A,North America,160,4800.00,4.1
+2024-03-15,Widget B,Europe,115,3450.00,4.0
+2024-03-15,Widget C,Asia,230,4600.00,4.6
+2024-04-15,Widget A,North America,190,5700.00,4.4
+2024-04-15,Widget B,Europe,98,2940.00,3.7
+2024-04-15,Widget C,Asia,245,4900.00,4.7
+2024-05-15,Widget A,North America,205,6150.00,4.5
+2024-05-15,Widget B,Europe,130,3900.00,4.1
+2024-05-15,Widget C,Asia,260,5200.00,4.8
+2024-06-15,Widget A,North America,180,5400.00,4.3
+2024-06-15,Widget B,Europe,110,3300.00,3.9
+2024-06-15,Widget C,Asia,275,5500.00,4.9

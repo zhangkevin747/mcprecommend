@@ -183,7 +183,7 @@ def precompute_query_embeddings(tasks: list[dict]) -> dict[str, np.ndarray]:
     client = _get_client()
     # Truncate long queries to avoid exceeding embedding model token limit
     queries = [t.get("query", t.get("question", ""))[:2000] for t in tasks]
-    uuids = [t["uuid"] for t in tasks]
+    uuids = [t.get("uuid") or t.get("task_id", str(i)) for i, t in enumerate(tasks)]
 
     result = {}
     for i in range(0, len(queries), 256):

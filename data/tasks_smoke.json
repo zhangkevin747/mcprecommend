@@ -1,0 +1,26 @@
+[
+  {
+    "query": "Return Netflix, Inc. (NFLX) trailing twelve months (TTM) EPS and the date that TTM was calculated.",
+    "cluster_id": 5,
+    "cluster_size": 112,
+    "top_mcp_similarity": 0.34430402517318726,
+    "task_id": "test_0103",
+    "uuid": "test_0103"
+  },
+  {
+    "query": "Get the current real-time price, bid/ask, and percent change for AAPL (Apple Inc.) as of now.",
+    "cluster_id": 5,
+    "cluster_size": 112,
+    "top_mcp_similarity": 0.4145333468914032,
+    "task_id": "test_0097",
+    "uuid": "test_0097"
+  },
+  {
+    "query": "Retrieve the latest published version and release date for the npm package \"tailwindcss\", and the package's current GitHub star count.",
+    "cluster_id": 2,
+    "cluster_size": 88,
+    "top_mcp_similarity": 0.48212629556655884,
+    "task_id": "test_0051",
+    "uuid": "test_0051"
+  }
+]

@@ -1,0 +1,365 @@
+2026-03-09 21:45:40,435 INFO root: 
+============================================================
+2026-03-09 21:45:40,435 INFO root: Q: On ScienceDirect, what is the difference to 3 decimal places in the sample standard deviations of th
+2026-03-09 21:45:40,435 INFO root: Curated servers: ['pulse/tavily-search', 'exa', 'pulse/scrapi', 'pulse/youcom', 'OEvortex/ddg_search']
+2026-03-09 21:45:40,436 INFO root: Ground truth: 0.269
+2026-03-09 21:45:41,001 INFO root: [0b260a57] 5 servers mounted, 18 tools
+2026-03-09 21:45:42,667 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:45:46,420 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:45:47,012 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:45:47,013 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=albatross-CJqa)
+2026-03-09 21:45:47,380 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/albatross-CJqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:45:47,712 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/albatross-CJqa/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:45:48,094 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/albatross-CJqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:45:48,095 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:45:48,505 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/albatross-CJqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:45:50,043 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:45:53,322 INFO root: Lazy-connecting to exa...
+2026-03-09 21:45:54,034 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:45:54,035 INFO src.recsys.mcp_client: Smithery connected: exa (conn=owl-2Wuf)
+2026-03-09 21:45:55,095 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:45:55,458 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:45:55,813 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:45:55,815 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:45:56,286 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:08,371 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:46:12,160 INFO root: Lazy-connecting to pulse/youcom...
+2026-03-09 21:46:12,625 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:46:12,626 INFO src.recsys.mcp_client: Smithery connected: pulse/youcom (conn=chameleon-fUPp)
+2026-03-09 21:46:12,978 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chameleon-fUPp/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:13,285 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chameleon-fUPp/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:46:13,528 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chameleon-fUPp/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:13,530 INFO src.recsys.mcp_client: pulse/youcom: 3 tools (via Smithery Connect)
+2026-03-09 21:46:14,833 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chameleon-fUPp/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:16,973 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:46:20,845 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:24,653 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:46:27,936 INFO root: Lazy-connecting to pulse/scrapi...
+2026-03-09 21:46:28,953 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:46:28,955 INFO src.recsys.mcp_client: Smithery connected: pulse/scrapi (conn=locust-THjp)
+2026-03-09 21:46:29,434 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/locust-THjp/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:29,832 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/locust-THjp/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:46:30,223 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/locust-THjp/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:30,225 INFO src.recsys.mcp_client: pulse/scrapi: 5 tools (via Smithery Connect)
+2026-03-09 21:46:30,976 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/locust-THjp/mcp "HTTP/1.1 401 Unauthorized"
+2026-03-09 21:46:32,831 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:46:36,841 INFO root: Lazy-connecting to OEvortex/ddg_search...
+2026-03-09 21:46:37,455 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:46:37,456 INFO src.recsys.mcp_client: Smithery connected: OEvortex/ddg_search (conn=cat-CPpW)
+2026-03-09 21:46:37,760 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cat-CPpW/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:38,169 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cat-CPpW/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:46:38,581 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cat-CPpW/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:38,583 INFO src.recsys.mcp_client: OEvortex/ddg_search: 3 tools (via Smithery Connect)
+2026-03-09 21:46:39,817 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cat-CPpW/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:46:41,138 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:46:45,299 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/owl-2Wuf/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:06,744 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:12,271 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cat-CPpW/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:13,601 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:22,613 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:29,758 INFO root: Answer: Based on my searches, I'm unable to find the specific statistical data needed to answer your question about the difference in sample standard deviations of the number of Reference Works in Life Scienc
+2026-03-09 21:47:29,758 INFO root: GT:     0.269
+2026-03-09 21:47:29,758 INFO root: Latency: 108.75s
+2026-03-09 21:47:29,758 INFO root: 
+============================================================
+2026-03-09 21:47:29,758 INFO root: Q: Who are the pitchers with the number before and after Taishō Tamai's number as of July 2023? Give th
+2026-03-09 21:47:29,758 INFO root: Curated servers: ['pulse/tavily-search', 'exa', 'OEvortex/ddg_search', 'pulse/youcom', 'pulse/scrapi']
+2026-03-09 21:47:29,758 INFO root: Ground truth: Yoshida, Uehara
+2026-03-09 21:47:29,759 INFO root: [a0c07678] 5 servers mounted, 18 tools
+2026-03-09 21:47:31,521 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:34,775 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:47:35,279 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:47:35,280 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=catshark-5ZQ6)
+2026-03-09 21:47:35,585 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catshark-5ZQ6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:35,894 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catshark-5ZQ6/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:47:36,201 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catshark-5ZQ6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:36,202 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:47:36,544 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catshark-5ZQ6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:38,137 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:42,659 INFO root: Lazy-connecting to exa...
+2026-03-09 21:47:43,317 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:47:43,318 INFO src.recsys.mcp_client: Smithery connected: exa (conn=anaconda-ACOZ)
+2026-03-09 21:47:43,668 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:44,109 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:47:44,508 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:44,508 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:47:44,849 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:48,774 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:47:53,829 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:47:57,192 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:03,678 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:09,921 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:12,994 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anaconda-ACOZ/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:25,314 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:30,712 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:39,013 INFO root: Answer: Perfect! I have confirmed the information. Based on the 2023 Hokkaido Nippon-Ham Fighters roster:
+
+- Taishō Tamai wears number 19
+- The pitcher with number 18 (before Tamai) is **Kōsei Yoshida** (吉田 輝
+2026-03-09 21:48:39,013 INFO root: GT:     Yoshida, Uehara
+2026-03-09 21:48:39,013 INFO root: Latency: 69.25s
+2026-03-09 21:48:39,013 INFO root: 
+============================================================
+2026-03-09 21:48:39,013 INFO root: Q: I’m researching species that became invasive after people who kept them as pets released them. There
+2026-03-09 21:48:39,013 INFO root: Curated servers: ['pulse/tavily-search', 'exa', 'OEvortex/ddg_search', 'pulse/youcom', 'pulse/scrapi']
+2026-03-09 21:48:39,013 INFO root: Ground truth: 34689
+2026-03-09 21:48:39,013 INFO root: [17b5a6a3] 5 servers mounted, 18 tools
+2026-03-09 21:48:39,318 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:47,506 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:48:48,034 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:48:48,035 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=fowl-O90o)
+2026-03-09 21:48:48,369 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-O90o/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:48,835 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-O90o/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:48:49,248 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-O90o/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:49,249 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:48:49,657 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-O90o/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:49,810 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:48:56,456 INFO root: Lazy-connecting to exa...
+2026-03-09 21:48:57,442 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:48:57,443 INFO src.recsys.mcp_client: Smithery connected: exa (conn=wildfowl-POP7)
+2026-03-09 21:48:57,847 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:58,257 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:48:58,670 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:48:58,672 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:48:59,078 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:00,153 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:49:08,193 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:15,384 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:49:18,686 INFO root: Lazy-connecting to OEvortex/ddg_search...
+2026-03-09 21:49:19,251 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:49:19,252 INFO src.recsys.mcp_client: Smithery connected: OEvortex/ddg_search (conn=swift-RcTq)
+2026-03-09 21:49:19,523 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:19,818 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:49:20,476 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:20,477 INFO src.recsys.mcp_client: OEvortex/ddg_search: 3 tools (via Smithery Connect)
+2026-03-09 21:49:20,990 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:22,578 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:49:25,311 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:49:26,599 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:49:59,612 WARNING src.recsys.mcp_client: Smithery call_tool failed on OEvortex/ddg_search/iask-search: 
+2026-03-09 21:50:01,030 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:03,693 INFO root: Lazy-connecting to pulse/youcom...
+2026-03-09 21:50:04,308 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:50:04,309 INFO src.recsys.mcp_client: Smithery connected: pulse/youcom (conn=jay-Wn7J)
+2026-03-09 21:50:04,562 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-Wn7J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:04,920 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-Wn7J/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:50:05,175 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-Wn7J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:05,176 INFO src.recsys.mcp_client: pulse/youcom: 3 tools (via Smithery Connect)
+2026-03-09 21:50:06,439 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-Wn7J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:08,019 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:21,328 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/swift-RcTq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:23,388 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:27,039 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-POP7/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:29,292 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:32,008 INFO root: Lazy-connecting to pulse/scrapi...
+2026-03-09 21:50:33,016 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:50:33,017 INFO src.recsys.mcp_client: Smithery connected: pulse/scrapi (conn=salamander-JT9I)
+2026-03-09 21:50:33,492 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/salamander-JT9I/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:34,004 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/salamander-JT9I/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:50:34,527 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/salamander-JT9I/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:34,528 INFO src.recsys.mcp_client: pulse/scrapi: 5 tools (via Smithery Connect)
+2026-03-09 21:50:35,028 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/salamander-JT9I/mcp "HTTP/1.1 401 Unauthorized"
+2026-03-09 21:50:36,462 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:44,622 INFO root: Answer: (max turns reached)
+2026-03-09 21:50:44,622 INFO root: GT:     34689
+2026-03-09 21:50:44,622 INFO root: Latency: 125.61s
+2026-03-09 21:50:44,622 INFO root: 
+============================================================
+2026-03-09 21:50:44,622 INFO root: Q: What are the EC numbers of the two most commonly used chemicals for the virus testing method in the 
+2026-03-09 21:50:44,622 INFO root: Curated servers: ['adamamer20/paper-search-mcp-openai', 'pulse/tavily-search', 'exa', 'hamid-vakilzadeh/mcpsemanticscholar', 'OEvortex/ddg_search']
+2026-03-09 21:50:44,622 INFO root: Ground truth: 3.1.3.1; 1.11.1.7
+2026-03-09 21:50:44,622 INFO root: [2a649bb1] 5 servers mounted, 47 tools
+2026-03-09 21:50:46,828 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:50:50,447 INFO root: Lazy-connecting to adamamer20/paper-search-mcp-openai...
+2026-03-09 21:50:51,438 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:50:51,439 INFO src.recsys.mcp_client: Smithery connected: adamamer20/paper-search-mcp-openai (conn=haddock-8Uri)
+2026-03-09 21:50:51,762 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:52,154 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:50:52,564 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:50:52,566 INFO src.recsys.mcp_client: adamamer20/paper-search-mcp-openai: 25 tools (via Smithery Connect)
+2026-03-09 21:51:11,510 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:13,864 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:51:19,394 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:19,700 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:51:27,572 INFO root: Lazy-connecting to hamid-vakilzadeh/mcpsemanticscholar...
+2026-03-09 21:51:28,964 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:51:28,965 INFO src.recsys.mcp_client: Smithery connected: hamid-vakilzadeh/mcpsemanticscholar (conn=cow-MWu4)
+2026-03-09 21:51:29,242 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cow-MWu4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:32,602 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cow-MWu4/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:51:33,425 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cow-MWu4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:33,427 INFO src.recsys.mcp_client: hamid-vakilzadeh/mcpsemanticscholar: 12 tools (via Smithery Connect)
+2026-03-09 21:51:36,927 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cow-MWu4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:37,312 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:51:48,065 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cow-MWu4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:48,474 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:51:56,886 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:51:57,218 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:52:07,149 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:52:17,347 INFO root: Lazy-connecting to exa...
+2026-03-09 21:52:17,970 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:52:17,971 INFO src.recsys.mcp_client: Smithery connected: exa (conn=llama-Gsrn)
+2026-03-09 21:52:18,376 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/llama-Gsrn/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:18,706 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/llama-Gsrn/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:52:19,800 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/llama-Gsrn/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:19,802 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:52:20,220 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/llama-Gsrn/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:39,063 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:52:45,383 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/haddock-8Uri/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:47,152 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:52:50,530 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/llama-Gsrn/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:53,465 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:52:57,741 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:52:58,416 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:52:58,417 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=iguana-Ndln)
+2026-03-09 21:52:58,825 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/iguana-Ndln/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:59,170 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/iguana-Ndln/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:52:59,506 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/iguana-Ndln/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:52:59,508 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:53:01,297 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/iguana-Ndln/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:53:02,311 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:53:43,068 INFO root: Answer: (max turns reached)
+2026-03-09 21:53:43,068 INFO root: GT:     3.1.3.1; 1.11.1.7
+2026-03-09 21:53:43,068 INFO root: Latency: 178.44s
+2026-03-09 21:53:43,068 INFO root: 
+============================================================
+2026-03-09 21:53:43,068 INFO root: Q: Of the authors (First M. Last) that worked on the paper "Pie Menus or Linear Menus, Which Is Better?
+2026-03-09 21:53:43,068 INFO root: Curated servers: ['adamamer20/paper-search-mcp-openai', 'pulse/tavily-search', 'exa', 'hamid-vakilzadeh/mcpsemanticscholar', 'OEvortex/ddg_search']
+2026-03-09 21:53:43,068 INFO root: Ground truth: Mapping Human Oriented Information to Software Agents for Online Systems Usage
+2026-03-09 21:53:43,068 INFO root: [46719c30] 5 servers mounted, 47 tools
+2026-03-09 21:53:44,992 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:53:48,935 INFO root: Lazy-connecting to hamid-vakilzadeh/mcpsemanticscholar...
+2026-03-09 21:53:49,453 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:53:49,453 INFO src.recsys.mcp_client: Smithery connected: hamid-vakilzadeh/mcpsemanticscholar (conn=nightingale-PrhC)
+2026-03-09 21:53:49,820 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nightingale-PrhC/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:53:50,128 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nightingale-PrhC/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:53:50,951 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nightingale-PrhC/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:53:50,953 INFO src.recsys.mcp_client: hamid-vakilzadeh/mcpsemanticscholar: 12 tools (via Smithery Connect)
+2026-03-09 21:53:53,369 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nightingale-PrhC/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:53:54,121 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:54:04,084 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nightingale-PrhC/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:04,791 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:54:12,338 INFO root: Lazy-connecting to adamamer20/paper-search-mcp-openai...
+2026-03-09 21:54:12,763 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:54:12,764 INFO src.recsys.mcp_client: Smithery connected: adamamer20/paper-search-mcp-openai (conn=beetle-MgN0)
+2026-03-09 21:54:13,170 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beetle-MgN0/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:13,476 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beetle-MgN0/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:54:13,770 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beetle-MgN0/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:13,772 INFO src.recsys.mcp_client: adamamer20/paper-search-mcp-openai: 25 tools (via Smithery Connect)
+2026-03-09 21:54:14,511 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beetle-MgN0/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:14,946 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:54:22,281 INFO root: Lazy-connecting to exa...
+2026-03-09 21:54:22,867 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:54:22,869 INFO src.recsys.mcp_client: Smithery connected: exa (conn=antlion-INJz)
+2026-03-09 21:54:23,306 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:23,824 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:54:24,228 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:24,230 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:54:24,592 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:26,114 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:54:36,415 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:54:49,114 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:54:51,569 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:55:17,170 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:55:26,547 INFO root: Lazy-connecting to OEvortex/ddg_search...
+2026-03-09 21:55:27,148 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:55:27,149 INFO src.recsys.mcp_client: Smithery connected: OEvortex/ddg_search (conn=partridge-vS0x)
+2026-03-09 21:55:27,514 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/partridge-vS0x/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:55:27,923 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/partridge-vS0x/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:55:28,317 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/partridge-vS0x/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:55:28,318 INFO src.recsys.mcp_client: OEvortex/ddg_search: 3 tools (via Smithery Connect)
+2026-03-09 21:55:29,460 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/partridge-vS0x/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:55:30,277 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:55:37,755 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/partridge-vS0x/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:55:47,995 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:56:02,454 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-INJz/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:21,068 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:56:29,915 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:56:30,901 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:56:30,902 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=jellyfish-VxqM)
+2026-03-09 21:56:31,207 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-VxqM/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:31,615 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-VxqM/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:56:31,919 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-VxqM/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:31,921 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:56:32,245 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-VxqM/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:33,823 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:56:42,220 INFO root: Answer: (max turns reached)
+2026-03-09 21:56:42,220 INFO root: GT:     Mapping Human Oriented Information to Software Agents for Online Systems Usage
+2026-03-09 21:56:42,220 INFO root: Latency: 179.14s
+2026-03-09 21:56:42,220 INFO root: 
+============================================================
+2026-03-09 21:56:42,220 INFO root: Q: This is a secret message my friend gave me. It says where we should meet for our picnic on Friday. T
+2026-03-09 21:56:42,220 INFO root: Curated servers: ['STUzhy/py_execute_mcp', 'pulse/tavily-search', 'exa', 'EthanHenrickson/math-mcp', 'OEvortex/ddg_search']
+2026-03-09 21:56:42,220 INFO root: Ground truth: Picnic is in Ploybius Plaza.
+2026-03-09 21:56:42,221 INFO root: [ded28325] 5 servers mounted, 33 tools
+2026-03-09 21:56:44,063 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:56:52,676 INFO root: Lazy-connecting to STUzhy/py_execute_mcp...
+2026-03-09 21:56:53,372 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:56:53,374 INFO src.recsys.mcp_client: Smithery connected: STUzhy/py_execute_mcp (conn=gopher-rJh6)
+2026-03-09 21:56:53,679 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gopher-rJh6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:53,999 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gopher-rJh6/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:56:54,381 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gopher-rJh6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:54,382 INFO src.recsys.mcp_client: STUzhy/py_execute_mcp: 1 tools (via Smithery Connect)
+2026-03-09 21:56:54,654 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gopher-rJh6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:56:55,826 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:08,433 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gopher-rJh6/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:09,774 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:22,698 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:24,926 INFO root: Answer: Let me manually decode using shift 10:
+
+**Decoding with shift 10:**
+- Z → P (Z - 10 = P)
+- s → i (s - 10 = i)
+- m → c (m - 10 = c)
+- x → n (x - 10 = n)
+- s → i (s - 10 = i)
+- m → c (m - 10 = c)
+
+So "Z
+2026-03-09 21:57:24,926 INFO root: GT:     Picnic is in Ploybius Plaza.
+2026-03-09 21:57:24,927 INFO root: Latency: 42.7s
+2026-03-09 21:57:24,927 INFO root: 
+============================================================
+2026-03-09 21:57:24,927 INFO root: Q: According to Girls Who Code, how long did it take in years for the percentage of computer scientists
+2026-03-09 21:57:24,927 INFO root: Curated servers: ['pulse/tavily-search', 'exa', 'OEvortex/ddg_search', 'pulse/youcom', 'pulse/scrapi']
+2026-03-09 21:57:24,927 INFO root: Ground truth: 22
+2026-03-09 21:57:24,927 INFO root: [7d4a7d1d] 5 servers mounted, 18 tools
+2026-03-09 21:57:27,462 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:30,700 INFO root: Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:57:32,075 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:57:32,077 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=constrictor-JNK9)
+2026-03-09 21:57:32,617 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/constrictor-JNK9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:32,957 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/constrictor-JNK9/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:57:33,319 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/constrictor-JNK9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:33,321 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:57:33,665 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/constrictor-JNK9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:35,059 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:38,336 INFO root: Lazy-connecting to OEvortex/ddg_search...
+2026-03-09 21:57:39,371 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:57:39,371 INFO src.recsys.mcp_client: Smithery connected: OEvortex/ddg_search (conn=cockroach-EAhL)
+2026-03-09 21:57:39,872 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cockroach-EAhL/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:40,281 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cockroach-EAhL/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:57:40,752 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cockroach-EAhL/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:40,753 INFO src.recsys.mcp_client: OEvortex/ddg_search: 3 tools (via Smithery Connect)
+2026-03-09 21:57:41,666 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cockroach-EAhL/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:43,099 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:45,733 INFO root: Lazy-connecting to exa...
+2026-03-09 21:57:46,324 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:57:46,325 INFO src.recsys.mcp_client: Smithery connected: exa (conn=bee-F1w9)
+2026-03-09 21:57:46,721 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bee-F1w9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:47,143 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bee-F1w9/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:57:47,555 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bee-F1w9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:47,556 INFO src.recsys.mcp_client: exa: 2 tools (via Smithery Connect)
+2026-03-09 21:57:47,962 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bee-F1w9/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:51,389 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:57:53,934 INFO root: Lazy-connecting to pulse/youcom...
+2026-03-09 21:57:54,618 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:57:54,619 INFO src.recsys.mcp_client: Smithery connected: pulse/youcom (conn=opossum-exgU)
+2026-03-09 21:57:54,988 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/opossum-exgU/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:55,397 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/opossum-exgU/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:57:55,756 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/opossum-exgU/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:55,758 INFO src.recsys.mcp_client: pulse/youcom: 3 tools (via Smithery Connect)
+2026-03-09 21:57:57,076 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/opossum-exgU/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:57:59,612 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:58:32,714 WARNING src.recsys.mcp_client: Smithery call_tool failed on OEvortex/ddg_search/iask-search: 
+2026-03-09 21:58:34,967 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:58:38,448 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bee-F1w9/mcp "HTTP/1.1 200 OK"

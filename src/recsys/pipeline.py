@@ -1,8 +1,11 @@
 """Rollout orchestrator: runs one complete recommendation → execution → feedback cycle."""
 
 import asyncio
+import functools
+import json
 import logging
 import time
+from pathlib import Path
 
 from .agent_client import run_agent
 from .feedback import collect_feedback
@@ -13,10 +16,68 @@ from .mcp_client import (
     derive_npx_command,
     get_smithery_mcp_url,
 )
+import numpy as np
+
 from .recommenders.base import BaseRecommender
-from .retriever import retrieve, retrieve_from_pool, retrieve_from_pool_fast
+from .retriever import embed_query, retrieve, retrieve_from_pool, retrieve_from_pool_fast
 
 log = logging.getLogger(__name__)
+
+MAX_TOOLS_FOR_AGENT = 50
+
+_ROOT = Path(__file__).resolve().parent.parent.parent
+
+
+@functools.lru_cache(maxsize=1)
+def _load_schema_cache() -> dict:
+    """Load precomputed tool schema cache from data/pool_schema_cache.json."""
+    cache_path = _ROOT / "data" / "pool_schema_cache.json"
+    if not cache_path.exists():
+        log.warning("Schema cache not found at %s — will use live connections", cache_path)
+        return {}
+    data = json.loads(cache_path.read_text())
+    servers = data.get("servers", {})
+    mountable = sum(1 for s in servers.values() if s.get("mountable"))
+    log.info("Schema cache loaded: %d/%d mountable servers", mountable, len(servers))
+    return servers
+
+
+def _select_relevant_tools(all_tools: list[dict], query_emb: np.ndarray | None, task_query: str, max_tools: int = MAX_TOOLS_FOR_AGENT) -> list[dict]:
+    """Select the most task-relevant tools by cosine similarity of tool descriptions to the task."""
+    if len(all_tools) <= max_tools:
+        return all_tools
+
+    if query_emb is None:
+        query_emb = embed_query(task_query)
+
+    from .retriever import _get_client
+    from .config import EMBEDDING_MODEL
+    client = _get_client()
+
+    # Embed tool descriptions
+    texts = []
+    for t in all_tools:
+        desc = f"{t.get('name', '')}. {t.get('description', '')}"[:500]
+        texts.append(desc)
+
+    tool_embs = []
+    for i in range(0, len(texts), 256):
+        chunk = texts[i:i + 256]
+        resp = client.embeddings.create(input=chunk, model=EMBEDDING_MODEL)
+        for item in sorted(resp.data, key=lambda x: x.index):
+            tool_embs.append(np.array(item.embedding, dtype=np.float32))
+
+    tool_matrix = np.array(tool_embs)
+    norms = np.linalg.norm(tool_matrix, axis=1, keepdims=True) + 1e-9
+    tool_matrix = tool_matrix / norms
+
+    q_norm = query_emb / (np.linalg.norm(query_emb) + 1e-9)
+    sims = tool_matrix @ q_norm
+    top_indices = np.argsort(sims)[::-1][:max_tools]
+
+    selected = [all_tools[i] for i in sorted(top_indices)]
+    log.info(f"Tool selection: {len(all_tools)} → {len(selected)} (by task relevance)")
+    return selected
 
 
 def _is_mcp_remote(server: dict) -> bool:
@@ -28,12 +89,53 @@ def _is_mcp_remote(server: dict) -> bool:
 async def _try_connect(server: dict) -> tuple[MCPServerConnection | SmitheryConnection | None, dict]:
     """Try to connect to an MCP server. Returns (connection, tool_list) or (None, []).
 
-    For Smithery servers: uses Smithery Connect REST API (no OAuth, no browser popups).
-    For npx servers: spins up via stdio as before.
+    Handles three connection methods:
+    - smithery: Smithery Connect REST API (no OAuth)
+    - remote_endpoint: mcp-remote over stdio
+    - npx: direct npx command
     """
     server_id = server["id"]
+    connection = server.get("connection", {})
+    method = connection.get("method", "")
 
     # Smithery servers: connect via Smithery Connect REST API
+    if method == "smithery":
+        slug = connection.get("slug", "")
+        smithery_url = f"https://server.smithery.ai/{slug}/mcp" if slug else get_smithery_mcp_url(server)
+        if not smithery_url:
+            log.debug(f"Smithery server {server_id} has no slug or URL")
+            return None, {}
+        conn = SmitheryConnection(server_id, smithery_url)
+        ok = await conn.connect()
+        if not ok:
+            await conn.close()
+            return None, {}
+        tools = await conn.list_tools()
+        if not tools:
+            log.info(f"{server_id}: Smithery connected but no tools")
+            await conn.close()
+            return None, {}
+        return conn, tools
+
+    # Remote endpoint servers: proxy through Smithery Connect (avoids OAuth hangs)
+    if method == "remote_endpoint":
+        endpoints = connection.get("endpoints", [])
+        if not endpoints:
+            log.debug(f"Remote endpoint server {server_id} has no endpoints")
+            return None, {}
+        conn = SmitheryConnection(server_id, endpoints[0])
+        ok = await conn.connect()
+        if not ok:
+            await conn.close()
+            return None, {}
+        tools = await conn.list_tools()
+        if not tools:
+            log.info(f"{server_id}: Smithery-proxied but no tools")
+            await conn.close()
+            return None, {}
+        return conn, tools
+
+    # Legacy: check for mcp-remote in args (old format)
     smithery_url = get_smithery_mcp_url(server)
     if _is_mcp_remote(server) and smithery_url:
         conn = SmitheryConnection(server_id, smithery_url)
@@ -87,6 +189,7 @@ async def run_rollout(
     pool_entries: list[dict] | None = None,
     query_emb=None,
     task_category: str = "",
+    epsilon: float = 0.0,
 ) -> dict:
     """Execute one complete rollout.
 
@@ -110,54 +213,88 @@ async def run_rollout(
         log.info(f"[Rollout {rollout_id}] Retrieving top {retrieve_n} candidates from full index...")
         candidates = retrieve(task_query, top_n=retrieve_n)
 
-    # Stage 2: Rerank / select top K + buffer for fallback substitution.
-    # Each method ranks all candidates; we try k + buffer in parallel, then
-    # take the first k that successfully mount (in ranked order).
-    # This ensures all methods get k working servers when available, so mount
-    # failures don't unfairly advantage methods that learned to avoid broken servers.
+    # Stage 2: Rerank / select top K. No buffer — if a recommended server
+    # fails to mount, that's a real signal about the recommender's quality.
     rerank_method = recommender.method_name
-    buffer = k  # try up to 2k; each method uses its own ordering for the buffer
-    n_to_try = min(k + buffer, len(candidates))
-    ranked = recommender.recommend(agent_name, task_query, candidates, n_to_try, task_category=task_category, task_emb=query_emb)
-    selected = ranked[:k]  # what the recommender chose as top-k (for logging)
-    log.info(f"[Rollout {rollout_id}] Selected {len(selected)} servers (+ {len(ranked)-len(selected)} buffer) ({rerank_method})")
+    ranked = recommender.recommend(agent_name, task_query, candidates, k, task_category=task_category, task_emb=query_emb, epsilon=epsilon)
+    selected = ranked[:k]
+    log.info(f"[Rollout {rollout_id}] Selected {len(selected)} servers ({rerank_method})")
 
-    # Add fallback servers if requested (eval disables this)
+    # Build server list for this rollout
     servers_to_try = list(ranked)
     if use_fallbacks:
         for fb in FALLBACK_SERVERS:
             if not any(s["id"] == fb["id"] for s in servers_to_try):
                 servers_to_try.append(fb)
 
-    # Stage 3: Spin up servers in parallel
-    log.info(f"[Rollout {rollout_id}] Connecting to {len(servers_to_try)} servers...")
-    connect_tasks = [_try_connect(s) for s in servers_to_try]
-    results = await asyncio.gather(*connect_tasks, return_exceptions=True)
-
+    # Stage 3: Build tool list from schema cache; connect lazily on first tool call
+    schema_cache = _load_schema_cache()
     connections: dict[str, MCPServerConnection | SmitheryConnection] = {}
     all_tools: list[dict] = []
     servers_mounted = []
     servers_failed = []
 
-    for server, result in zip(servers_to_try, results):
-        if isinstance(result, Exception):
-            log.warning(f"Exception connecting to {server['id']}: {result}")
-            servers_failed.append(server["id"])
-            continue
-        conn, tools = result
-        if not tools:
-            servers_failed.append(server["id"])
-            continue
-        if len(servers_mounted) < k:
-            # Accept this server (top-k or fallback substitute)
+    # Map server_id → server dict for lazy lookup
+    server_by_id = {s["id"]: s for s in servers_to_try}
+
+    for server in servers_to_try:
+        sid = server["id"]
+        is_fallback = sid.startswith("__fallback_")
+
+        if is_fallback:
+            # Fallback servers: eagerly connect (not in pool schema cache)
+            try:
+                conn, tools = await _try_connect(server)
+            except Exception as e:
+                log.warning(f"Exception connecting to fallback {sid}: {e}")
+                servers_failed.append(sid)
+                continue
+            if not tools:
+                servers_failed.append(sid)
+                continue
             if conn:
-                connections[server["id"]] = conn
+                connections[sid] = conn
             all_tools.extend(tools)
-            servers_mounted.append(server["id"])
+            servers_mounted.append(sid)
         else:
-            # Already have k mounted — close excess connection, don't count as failed
-            if conn:
-                await conn.close()
+            # Pool servers: use cached schemas if available, defer live connection
+            cached = schema_cache.get(sid)
+            if cached and cached.get("mountable") and cached.get("tools"):
+                all_tools.extend(cached["tools"])
+                servers_mounted.append(sid)
+                log.debug(f"[Rollout {rollout_id}] {sid}: {len(cached['tools'])} tools from cache")
+            else:
+                # Not probed as mountable → immediate failure signal
+                servers_failed.append(sid)
+                log.debug(f"[Rollout {rollout_id}] {sid}: not in schema cache, skipping")
+
+    # Lazy connect: called by agent when it first calls a tool on a pool server
+    async def lazy_connect(server_id: str) -> MCPServerConnection | SmitheryConnection | None:
+        if server_id in connections:
+            return connections[server_id]
+        server = server_by_id.get(server_id)
+        if not server:
+            return None
+        log.info(f"[Rollout {rollout_id}] Lazy-connecting to {server_id}...")
+        try:
+            conn, tools = await _try_connect(server)
+        except Exception as e:
+            log.warning(f"[Rollout {rollout_id}] Lazy connect failed for {server_id}: {e}")
+            conn, tools = None, []
+        if tools:
+            connections[server_id] = conn
+            return conn
+        # Connection failed at call time: demote from mounted → failed
+        if conn:
+            await conn.close()
+        if server_id in servers_mounted:
+            servers_mounted.remove(server_id)
+        if server_id not in servers_failed:
+            servers_failed.append(server_id)
+        return None
+
+    # Select most relevant tools by semantic similarity to task
+    all_tools = _select_relevant_tools(all_tools, query_emb, task_query)
 
     log.info(f"[Rollout {rollout_id}] {len(servers_mounted)} servers up, {len(servers_failed)} failed, {len(all_tools)} tools available")
 
@@ -179,7 +316,7 @@ async def run_rollout(
     # Stage 4: Agent executes
     log.info(f"[Rollout {rollout_id}] Running agent {agent_name}...")
     try:
-        agent_result = await run_agent(agent_name, task_query, all_tools, connections)
+        agent_result = await run_agent(agent_name, task_query, all_tools, connections, lazy_connect_fn=lazy_connect)
     except Exception as e:
         log.error(f"[Rollout {rollout_id}] Agent failed: {e}")
         agent_result = {"answer": f"Error: {e}", "tools_selected": [], "tools_results": [],

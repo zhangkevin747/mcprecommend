@@ -3,12 +3,15 @@
 import json
 import logging
 import time
+from typing import Awaitable, Callable
 
 import anthropic
 import openai
 
-from .config import AGENTS, ANTHROPIC_API_KEY, OPENAI_API_KEY
+from .config import AGENTS, ANTHROPIC_API_KEY, OPENAI_API_KEY, OPENROUTER_API_KEY
 from .mcp_client import MCPServerConnection
+
+LazyConnectFn = Callable[[str], Awaitable[object | None]]
 
 log = logging.getLogger(__name__)
 
@@ -32,8 +35,6 @@ def _compact_schema(schema: dict) -> dict:
         return {"type": "object", "properties": {}}
     result = {}
     for k, v in schema.items():
-        if k == "$schema":
-            continue
         if k == "properties" and isinstance(v, dict):
             result["properties"] = {}
             for prop_name, prop_val in v.items():
@@ -106,7 +107,7 @@ class ToolRegistry:
                 "function": {
                     "name": api_name,
                     "description": short_desc,
-                    "parameters": {k: v for k, v in compact.items() if k != "$schema"},
+                    "parameters": compact,
                 },
             })
 
@@ -121,7 +122,7 @@ class ToolRegistry:
                 "function": {
                     "name": api_name,
                     "description": full_desc,
-                    "parameters": {k: v for k, v in schema.items() if k != "$schema"},
+                    "parameters": schema,
                 },
             })
 
@@ -151,6 +152,7 @@ async def run_agent(
     task: str,
     tools: list[dict],
     connections: dict[str, MCPServerConnection],
+    lazy_connect_fn: LazyConnectFn | None = None,
 ) -> dict:
     """Run an agent on a task with available tools.
 
@@ -174,11 +176,21 @@ async def run_agent(
         result = await _run_anthropic(
             model, task, registry, connections,
             tools_selected, tools_results, tools_abandoned, tools_errored,
+            lazy_connect_fn=lazy_connect_fn,
+        )
+    elif provider == "openrouter":
+        result = await _run_openai(
+            model, task, registry, connections,
+            tools_selected, tools_results, tools_abandoned, tools_errored,
+            base_url="https://openrouter.ai/api/v1",
+            api_key=OPENROUTER_API_KEY,
+            lazy_connect_fn=lazy_connect_fn,
         )
     else:
         result = await _run_openai(
             model, task, registry, connections,
             tools_selected, tools_results, tools_abandoned, tools_errored,
+            lazy_connect_fn=lazy_connect_fn,
         )
 
     answer = result["answer"]
@@ -203,16 +215,27 @@ async def run_agent(
     }
 
 
+async def _get_conn(server_id, connections, lazy_connect_fn):
+    """Get or lazily establish a connection for a server."""
+    conn = connections.get(server_id)
+    if conn is not None:
+        return conn
+    if lazy_connect_fn is not None:
+        return await lazy_connect_fn(server_id)
+    return None
+
+
 async def _run_anthropic(
     model, task, registry, connections,
     tools_selected, tools_results, tools_abandoned, tools_errored,
+    lazy_connect_fn=None,
 ):
     client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
     messages = [{"role": "user", "content": task}]
     total_in = 0
     total_out = 0
 
-    for turn in range(3):
+    for turn in range(15):
         resp = await client.messages.create(
             model=model,
             system=SYSTEM_PROMPT,
@@ -234,11 +257,11 @@ async def _run_anthropic(
             server_id, tool_name = registry.resolve(tu.name)
             tools_selected.append({"server_id": server_id, "tool_name": tool_name, "args": tu.input})
 
-            conn = connections.get(server_id)
+            conn = await _get_conn(server_id, connections, lazy_connect_fn)
             if conn:
                 result = await conn.call_tool(tool_name, tu.input)
             else:
-                result = {"content": None, "error": f"No connection for server {server_id}"}
+                result = {"content": None, "error": f"Server {server_id} failed to connect"}
 
             tools_results.append({
                 "server_id": server_id, "tool_name": tool_name,
@@ -262,8 +285,12 @@ async def _run_anthropic(
 async def _run_openai(
     model, task, registry, connections,
     tools_selected, tools_results, tools_abandoned, tools_errored,
+    base_url=None, api_key=None, lazy_connect_fn=None,
 ):
-    client = openai.AsyncOpenAI(api_key=OPENAI_API_KEY)
+    client = openai.AsyncOpenAI(
+        api_key=api_key or OPENAI_API_KEY,
+        **({"base_url": base_url} if base_url else {}),
+    )
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": task},
@@ -271,7 +298,7 @@ async def _run_openai(
     total_in = 0
     total_out = 0
 
-    for turn in range(3):
+    for turn in range(15):
         resp = await client.chat.completions.create(
             model=model,
             messages=messages,
@@ -292,11 +319,11 @@ async def _run_openai(
             args = json.loads(tc.function.arguments) if tc.function.arguments else {}
             tools_selected.append({"server_id": server_id, "tool_name": tool_name, "args": args})
 
-            conn = connections.get(server_id)
+            conn = await _get_conn(server_id, connections, lazy_connect_fn)
             if conn:
                 result = await conn.call_tool(tool_name, args)
             else:
-                result = {"content": None, "error": f"No connection for server {server_id}"}
+                result = {"content": None, "error": f"Server {server_id} failed to connect"}
 
             tools_results.append({
                 "server_id": server_id, "tool_name": tool_name,

@@ -7,7 +7,7 @@ from .base import BaseRecommender
 
 
 class SemanticRecommender(BaseRecommender):
-    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None) -> list[dict]:
+    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None, epsilon: float = 0.0) -> list[dict]:
         # Already sorted by similarity from retriever, but re-sort with popularity tiebreak
         def score(c):
             sim = c.get("similarity", 0)

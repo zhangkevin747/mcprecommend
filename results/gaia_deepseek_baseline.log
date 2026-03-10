@@ -1,0 +1,284 @@
+2026-03-09 21:34:09,018 INFO __main__: Pool: 214 servers (no functional filter)
+2026-03-09 21:34:09,018 INFO __main__: Test tasks: 108
+2026-03-09 21:34:09,019 INFO __main__: Precomputing pool embeddings...
+2026-03-09 21:34:09,023 INFO src.recsys.retriever: Pool embeddings: 214 servers (214 cached, 0 embedded)
+2026-03-09 21:34:09,023 INFO __main__: Precomputing query embeddings...
+2026-03-09 21:34:10,076 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 21:34:10,214 INFO src.recsys.retriever: Precomputed 108 query embeddings
+2026-03-09 21:34:10,215 INFO __main__: Eval schedule: 108 rollouts per recommender (108 tasks × 1 agents)
+2026-03-09 21:34:10,215 INFO __main__: Running methods: ['semantic_popularity']
+2026-03-09 21:34:10,216 INFO __main__: [semantic_popularity] Running 107 eval rollouts (existing=1, method=semantic_popularity)
+2026-03-09 21:34:10,216 INFO src.recsys.pipeline: [Rollout 0] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:10,219 INFO src.recsys.pipeline: [Rollout 0] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:10,238 INFO src.recsys.pipeline: Schema cache loaded: 214/766 mountable servers
+2026-03-09 21:34:10,238 INFO src.recsys.pipeline: [Rollout 0] 5 servers up, 0 failed, 20 tools available
+2026-03-09 21:34:10,238 INFO src.recsys.pipeline: [Rollout 0] Running agent deepseek-v3.2...
+2026-03-09 21:34:10,248 INFO src.recsys.pipeline: [Rollout 1] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:10,248 INFO src.recsys.pipeline: [Rollout 1] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:10,248 INFO src.recsys.pipeline: [Rollout 1] 5 servers up, 0 failed, 16 tools available
+2026-03-09 21:34:10,248 INFO src.recsys.pipeline: [Rollout 1] Running agent deepseek-v3.2...
+2026-03-09 21:34:10,253 INFO src.recsys.pipeline: [Rollout 2] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:10,254 INFO src.recsys.pipeline: [Rollout 2] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:10,254 INFO src.recsys.pipeline: [Rollout 2] 5 servers up, 0 failed, 17 tools available
+2026-03-09 21:34:10,254 INFO src.recsys.pipeline: [Rollout 2] Running agent deepseek-v3.2...
+2026-03-09 21:34:10,259 INFO src.recsys.pipeline: [Rollout 4] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:10,259 INFO src.recsys.pipeline: [Rollout 4] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:10,259 INFO src.recsys.pipeline: [Rollout 4] 5 servers up, 0 failed, 22 tools available
+2026-03-09 21:34:10,259 INFO src.recsys.pipeline: [Rollout 4] Running agent deepseek-v3.2...
+2026-03-09 21:34:11,717 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:11,798 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:12,122 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:13,458 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:15,260 INFO src.recsys.pipeline: [Rollout 2] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:34:15,709 INFO src.recsys.pipeline: [Rollout 1] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:34:15,788 INFO src.recsys.pipeline: [Rollout 0] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:34:15,797 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:15,798 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=whale-fA2J)
+2026-03-09 21:34:16,219 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/whale-fA2J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:16,543 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/whale-fA2J/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:16,598 INFO src.recsys.pipeline: [Rollout 4] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:34:16,766 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:16,766 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=newt-HD7r)
+2026-03-09 21:34:16,879 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/whale-fA2J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:16,881 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:34:17,245 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-HD7r/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:17,248 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:17,249 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=leopard-KObq)
+2026-03-09 21:34:17,250 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/whale-fA2J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:17,364 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:17,366 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=wildebeest-eYvb)
+2026-03-09 21:34:17,962 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-HD7r/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:18,267 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leopard-KObq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:18,337 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:18,376 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-HD7r/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:18,378 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:34:18,583 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leopard-KObq/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:18,675 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:18,871 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:18,909 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leopard-KObq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:18,911 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:34:19,291 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leopard-KObq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:19,306 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-HD7r/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:19,650 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:19,650 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:34:20,024 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:21,333 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:21,551 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:23,294 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/whale-fA2J/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:24,443 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:24,925 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-HD7r/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:25,289 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:25,690 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:27,053 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:28,364 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:29,951 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildebeest-eYvb/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:30,160 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:31,372 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:34,315 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:34,521 INFO src.recsys.pipeline: [Rollout 1] Lazy-connecting to pulse/koreal6803-finlab-ai...
+2026-03-09 21:34:35,064 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:35,065 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leopard-KObq/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:35,065 INFO src.recsys.mcp_client: Smithery connected: pulse/koreal6803-finlab-ai (conn=newt-GPlP)
+2026-03-09 21:34:35,340 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-GPlP/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:35,605 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-GPlP/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:35,883 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-GPlP/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:35,884 INFO src.recsys.mcp_client: pulse/koreal6803-finlab-ai: 4 tools (via Smithery Connect)
+2026-03-09 21:34:36,420 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/newt-GPlP/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:37,971 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:38,195 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:39,987 INFO src.recsys.pipeline: [Rollout 2] Lazy-connecting to pulse/aquaview...
+2026-03-09 21:34:40,460 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:40,462 INFO src.recsys.mcp_client: Smithery connected: pulse/aquaview (conn=wildfowl-Pwf2)
+2026-03-09 21:34:40,784 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-Pwf2/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:41,135 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-Pwf2/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:41,453 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-Pwf2/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:41,455 INFO src.recsys.mcp_client: pulse/aquaview: 4 tools (via Smithery Connect)
+2026-03-09 21:34:42,048 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wildfowl-Pwf2/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:42,050 INFO src.recsys.pipeline: [Rollout 2] Collecting feedback...
+2026-03-09 21:34:42,519 INFO src.recsys.pipeline: [Rollout 4] Collecting feedback...
+2026-03-09 21:34:43,758 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:44,790 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:48,476 INFO src.recsys.pipeline: [Rollout 4] Done in 38.22s
+2026-03-09 21:34:48,478 INFO src.recsys.pipeline: [Rollout 5] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:48,478 INFO src.recsys.pipeline: [Rollout 5] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:48,478 INFO src.recsys.pipeline: [Rollout 5] 5 servers up, 0 failed, 14 tools available
+2026-03-09 21:34:48,478 INFO src.recsys.pipeline: [Rollout 5] Running agent deepseek-v3.2...
+2026-03-09 21:34:48,565 INFO src.recsys.pipeline: [Rollout 1] Collecting feedback...
+2026-03-09 21:34:49,877 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:50,033 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:50,713 INFO src.recsys.pipeline: [Rollout 2] Done in 40.46s
+2026-03-09 21:34:50,716 INFO src.recsys.pipeline: [Rollout 6] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:50,716 INFO src.recsys.pipeline: [Rollout 6] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:50,716 INFO src.recsys.pipeline: [Rollout 6] 5 servers up, 0 failed, 23 tools available
+2026-03-09 21:34:50,716 INFO src.recsys.pipeline: [Rollout 6] Running agent deepseek-v3.2...
+2026-03-09 21:34:52,169 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:54,766 INFO src.recsys.pipeline: [Rollout 1] Done in 44.52s
+2026-03-09 21:34:54,768 INFO src.recsys.pipeline: [Rollout 7] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:54,769 INFO src.recsys.pipeline: [Rollout 7] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:54,769 INFO src.recsys.pipeline: [Rollout 7] 5 servers up, 0 failed, 23 tools available
+2026-03-09 21:34:54,769 INFO src.recsys.pipeline: [Rollout 7] Running agent deepseek-v3.2...
+2026-03-09 21:34:55,651 INFO src.recsys.pipeline: [Rollout 6] Lazy-connecting to pulse/twelve-data...
+2026-03-09 21:34:56,056 INFO src.recsys.pipeline: [Rollout 5] Collecting feedback...
+2026-03-09 21:34:56,165 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:56,874 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:56,876 INFO src.recsys.mcp_client: Smithery connected: pulse/twelve-data (conn=impala-WMxK)
+2026-03-09 21:34:57,097 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/impala-WMxK/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:57,356 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/impala-WMxK/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:34:57,950 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:34:58,347 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/impala-WMxK/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:58,348 INFO src.recsys.mcp_client: pulse/twelve-data: 2 tools (via Smithery Connect)
+2026-03-09 21:34:58,718 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/impala-WMxK/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:34:59,195 INFO src.recsys.pipeline: [Rollout 7] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:34:59,675 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:34:59,676 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=shrimp-OEMd)
+2026-03-09 21:34:59,807 INFO src.recsys.pipeline: [Rollout 0] Collecting feedback...
+2026-03-09 21:34:59,840 INFO src.recsys.pipeline: [Rollout 5] Done in 11.36s
+2026-03-09 21:34:59,841 INFO src.recsys.pipeline: [Rollout 8] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:34:59,841 INFO src.recsys.pipeline: [Rollout 8] Selected 5 servers (semantic_popularity)
+2026-03-09 21:34:59,841 INFO src.recsys.pipeline: [Rollout 8] 5 servers up, 0 failed, 13 tools available
+2026-03-09 21:34:59,841 INFO src.recsys.pipeline: [Rollout 8] Running agent deepseek-v3.2...
+2026-03-09 21:35:00,042 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/shrimp-OEMd/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:00,308 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:00,650 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/shrimp-OEMd/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:00,972 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/shrimp-OEMd/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:00,974 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:35:01,277 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:01,288 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:01,297 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/shrimp-OEMd/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:03,096 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/impala-WMxK/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:03,245 INFO src.recsys.pipeline: [Rollout 0] Done in 53.03s
+2026-03-09 21:35:03,249 INFO src.recsys.pipeline: [Rollout 9] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:03,250 INFO src.recsys.pipeline: [Rollout 9] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:03,250 INFO src.recsys.pipeline: [Rollout 9] 5 servers up, 0 failed, 14 tools available
+2026-03-09 21:35:03,250 INFO src.recsys.pipeline: [Rollout 9] Running agent deepseek-v3.2...
+2026-03-09 21:35:03,377 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:04,656 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:04,964 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:05,831 INFO src.recsys.pipeline: [Rollout 8] Collecting feedback...
+2026-03-09 21:35:06,176 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/shrimp-OEMd/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:07,004 INFO src.recsys.pipeline: [Rollout 6] Lazy-connecting to seahbk1006/seahboonkeong-chat-opendosm...
+2026-03-09 21:35:08,240 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:08,331 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:11,868 INFO src.recsys.pipeline: [Rollout 7] Lazy-connecting to pulse/upstash-context7...
+2026-03-09 21:35:11,881 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:11,882 INFO src.recsys.mcp_client: Smithery connected: seahbk1006/seahboonkeong-chat-opendosm (conn=gamefowl-t92C)
+2026-03-09 21:35:12,100 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-t92C/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:12,336 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-t92C/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:12,806 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:12,806 INFO src.recsys.mcp_client: Smithery connected: pulse/upstash-context7 (conn=ostrich-hVqN)
+2026-03-09 21:35:13,155 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:13,757 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:13,769 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-t92C/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:13,769 INFO src.recsys.mcp_client: seahbk1006/seahboonkeong-chat-opendosm: 6 tools (via Smithery Connect)
+2026-03-09 21:35:14,086 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:14,088 INFO src.recsys.mcp_client: pulse/upstash-context7: 2 tools (via Smithery Connect)
+2026-03-09 21:35:14,464 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-t92C/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:15,397 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:17,101 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:17,199 INFO src.recsys.pipeline: [Rollout 8] Done in 17.36s
+2026-03-09 21:35:17,200 INFO src.recsys.pipeline: [Rollout 10] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:17,201 INFO src.recsys.pipeline: [Rollout 10] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:17,201 INFO src.recsys.pipeline: [Rollout 10] 5 servers up, 0 failed, 14 tools available
+2026-03-09 21:35:17,201 INFO src.recsys.pipeline: [Rollout 10] Running agent deepseek-v3.2...
+2026-03-09 21:35:17,333 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:18,851 INFO src.recsys.pipeline: [Rollout 9] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:35:18,950 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:19,462 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:19,463 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=horse-WKx8)
+2026-03-09 21:35:20,193 INFO src.recsys.pipeline: [Rollout 6] Lazy-connecting to pulse/koreal6803-finlab-ai...
+2026-03-09 21:35:20,377 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:20,679 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:20,680 INFO src.recsys.mcp_client: Smithery connected: pulse/koreal6803-finlab-ai (conn=rat-54JX)
+2026-03-09 21:35:20,742 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:20,980 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rat-54JX/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:21,175 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:21,177 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:35:21,217 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rat-54JX/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:21,439 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rat-54JX/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:21,441 INFO src.recsys.mcp_client: pulse/koreal6803-finlab-ai: 4 tools (via Smithery Connect)
+2026-03-09 21:35:21,528 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:22,063 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rat-54JX/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:22,070 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:22,166 INFO src.recsys.pipeline: [Rollout 10] Lazy-connecting to pulse/twelve-data...
+2026-03-09 21:35:22,951 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:23,478 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:23,637 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:23,638 INFO src.recsys.mcp_client: Smithery connected: pulse/twelve-data (conn=penguin-M9g4)
+2026-03-09 21:35:23,945 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:24,221 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:24,229 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:24,740 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:24,741 INFO src.recsys.mcp_client: pulse/twelve-data: 2 tools (via Smithery Connect)
+2026-03-09 21:35:26,222 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:26,317 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rat-54JX/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:26,319 INFO src.recsys.pipeline: [Rollout 6] Collecting feedback...
+2026-03-09 21:35:27,421 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:27,427 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:28,312 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:28,822 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ostrich-hVqN/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:28,823 INFO src.recsys.pipeline: [Rollout 7] Collecting feedback...
+2026-03-09 21:35:29,767 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:30,386 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:31,731 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:33,006 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:34,288 INFO src.recsys.pipeline: [Rollout 7] Done in 39.52s
+2026-03-09 21:35:34,291 INFO src.recsys.pipeline: [Rollout 11] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:34,292 INFO src.recsys.pipeline: [Rollout 11] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:34,292 INFO src.recsys.pipeline: [Rollout 11] 5 servers up, 0 failed, 20 tools available
+2026-03-09 21:35:34,292 INFO src.recsys.pipeline: [Rollout 11] Running agent deepseek-v3.2...
+2026-03-09 21:35:35,300 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-WKx8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:35,588 INFO src.recsys.pipeline: [Rollout 6] Done in 44.87s
+2026-03-09 21:35:35,590 INFO src.recsys.pipeline: [Rollout 12] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:35,591 INFO src.recsys.pipeline: [Rollout 12] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:35,591 INFO src.recsys.pipeline: [Rollout 12] 5 servers up, 0 failed, 19 tools available
+2026-03-09 21:35:35,591 INFO src.recsys.pipeline: [Rollout 12] Running agent deepseek-v3.2...
+2026-03-09 21:35:35,635 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:36,197 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:36,461 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:36,765 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:38,072 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:39,331 INFO src.recsys.pipeline: [Rollout 9] Lazy-connecting to pulse/la-rebelion-labs-registry...
+2026-03-09 21:35:39,986 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:39,987 INFO src.recsys.mcp_client: Smithery connected: pulse/la-rebelion-labs-registry (conn=vulture-4Ayx)
+2026-03-09 21:35:40,229 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/vulture-4Ayx/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:40,503 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/vulture-4Ayx/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:40,771 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/vulture-4Ayx/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:40,771 INFO src.recsys.mcp_client: pulse/la-rebelion-labs-registry: 3 tools (via Smithery Connect)
+2026-03-09 21:35:41,320 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/vulture-4Ayx/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:41,626 INFO src.recsys.pipeline: [Rollout 9] Collecting feedback...
+2026-03-09 21:35:42,625 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:43,487 INFO src.recsys.pipeline: [Rollout 11] Collecting feedback...
+2026-03-09 21:35:44,286 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:46,314 INFO src.recsys.pipeline: [Rollout 9] Done in 43.07s
+2026-03-09 21:35:46,317 INFO src.recsys.pipeline: [Rollout 13] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:46,318 INFO src.recsys.pipeline: [Rollout 13] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:46,318 INFO src.recsys.pipeline: [Rollout 13] 5 servers up, 0 failed, 15 tools available
+2026-03-09 21:35:46,318 INFO src.recsys.pipeline: [Rollout 13] Running agent deepseek-v3.2...
+2026-03-09 21:35:47,114 INFO src.recsys.pipeline: [Rollout 11] Done in 12.82s
+2026-03-09 21:35:47,115 INFO src.recsys.pipeline: [Rollout 14] Fast retrieval (precomputed embeddings)...
+2026-03-09 21:35:47,115 INFO src.recsys.pipeline: [Rollout 14] Selected 5 servers (semantic_popularity)
+2026-03-09 21:35:47,115 INFO src.recsys.pipeline: [Rollout 14] 5 servers up, 0 failed, 22 tools available
+2026-03-09 21:35:47,115 INFO src.recsys.pipeline: [Rollout 14] Running agent deepseek-v3.2...
+2026-03-09 21:35:47,543 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:49,099 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:50,062 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/penguin-M9g4/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:50,785 INFO src.recsys.pipeline: [Rollout 13] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:35:51,576 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:51,577 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=gibbon-o0JI)
+2026-03-09 21:35:51,967 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:51,969 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gibbon-o0JI/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:52,338 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gibbon-o0JI/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:52,694 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gibbon-o0JI/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:52,696 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:35:52,934 INFO src.recsys.pipeline: [Rollout 14] Lazy-connecting to pulse/tavily-search...
+2026-03-09 21:35:53,144 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gibbon-o0JI/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:53,439 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 21:35:53,440 INFO src.recsys.mcp_client: Smithery connected: pulse/tavily-search (conn=snipe-15Y8)
+2026-03-09 21:35:53,907 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/snipe-15Y8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:54,290 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/snipe-15Y8/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 21:35:54,370 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:54,635 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/snipe-15Y8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:54,637 INFO src.recsys.mcp_client: pulse/tavily-search: 5 tools (via Smithery Connect)
+2026-03-09 21:35:55,042 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/snipe-15Y8/mcp "HTTP/1.1 200 OK"
+2026-03-09 21:35:57,049 INFO httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 21:35:57,177 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gibbon-o0JI/mcp "HTTP/1.1 200 OK"

@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 
 class BaseRecommender(ABC):
     @abstractmethod
-    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None) -> list[dict]:
+    def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int, task_category: str = "", task_emb=None, epsilon: float = 0.0) -> list[dict]:
         """Select top K candidates from the candidate list.
 
         Args:
@@ -21,7 +21,7 @@ class BaseRecommender(ABC):
         """
         ...
 
-    def update(self, rollout: dict) -> None:
+    def update(self, rollout: dict, task_emb=None) -> None:
         """Online learning hook. Called after each rollout. Default no-op."""
         pass
 

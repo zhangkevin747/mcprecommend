@@ -12,6 +12,7 @@ load_dotenv(ROOT / ".env")
 # API keys
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 
 def _load_smithery_key() -> str:
@@ -50,11 +51,14 @@ MCP_CALL_TIMEOUT = 30     # seconds to wait for tool call
 
 # Agent models
 AGENTS = {
-    "haiku-4.5": {"provider": "anthropic", "model": "claude-haiku-4-5-20251001"},
+    "llama-4-maverick": {"provider": "openrouter", "model": "meta-llama/llama-4-maverick"},
     "gpt-4o-mini": {"provider": "openai", "model": "gpt-4o-mini"},
     "gpt-5-mini": {"provider": "openai", "model": "gpt-5-mini"},
+    "gemini-2.5-flash-lite": {"provider": "openrouter", "model": "google/gemini-2.5-flash-lite"},
+    "grok-4-fast": {"provider": "openrouter", "model": "x-ai/grok-4-fast"},
+    "deepseek-v3.2": {"provider": "openrouter", "model": "deepseek/deepseek-v3.2"},
 }
 
 # Default experiment params
-DEFAULT_K = 10
+DEFAULT_K = 5
 DEFAULT_RETRIEVE_N = 100

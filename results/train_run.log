@@ -1,0 +1,267 @@
+2026-03-09 09:45:01,496 INFO __main__: Pool: 766 servers
+2026-03-09 09:45:01,498 INFO __main__: Training tasks: 954
+2026-03-09 09:45:01,504 INFO __main__: Precomputing pool embeddings...
+2026-03-09 09:45:01,507 INFO src.recsys.retriever: Pool embeddings: 766 servers (766 cached, 0 embedded)
+2026-03-09 09:45:01,507 INFO __main__: Precomputing query embeddings...
+2026-03-09 09:45:02,852 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:45:05,832 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:45:09,791 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:45:10,570 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:45:10,729 INFO src.recsys.retriever: Precomputed 954 query embeddings
+2026-03-09 09:45:10,748 INFO __main__: Resuming from 1917 completed rollouts
+2026-03-09 09:45:10,758 INFO src.recsys.recommenders.latent_factor: Model loaded: 1800 obs, 5 agents, 649 servers from /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/train/model_checkpoint.json
+2026-03-09 09:45:10,758 INFO __main__: Loaded model checkpoint: 1800 obs
+2026-03-09 09:45:10,760 INFO __main__: Epoch 1/2: 2853 rollouts (1917 already done), epsilon=0.1
+2026-03-09 09:45:10,764 INFO src.recsys.pipeline: [Rollout 9] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,766 INFO src.recsys.pipeline: [Rollout 9] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,766 INFO src.recsys.pipeline: [Rollout 9] Connecting to 5 servers...
+2026-03-09 09:45:10,766 INFO src.recsys.pipeline: [Rollout 37] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 37] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 37] Connecting to 5 servers...
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 62] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 62] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 62] Connecting to 5 servers...
+2026-03-09 09:45:10,767 INFO src.recsys.pipeline: [Rollout 115] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 115] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 115] Connecting to 5 servers...
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 122] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 122] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 122] Connecting to 5 servers...
+2026-03-09 09:45:10,768 INFO src.recsys.pipeline: [Rollout 157] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 157] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 157] Connecting to 5 servers...
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 174] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 174] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 174] Connecting to 5 servers...
+2026-03-09 09:45:10,769 INFO src.recsys.pipeline: [Rollout 202] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:45:10,770 INFO src.recsys.pipeline: [Rollout 202] Selected 5 servers (latent_factor_n1800)
+2026-03-09 09:45:10,770 INFO src.recsys.pipeline: [Rollout 202] Connecting to 5 servers...
+2026-03-09 09:45:11,695 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,695 INFO src.recsys.mcp_client: Smithery connected: gilberth/mcp-cloudflare (conn=leech-mC67)
+2026-03-09 09:45:11,706 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,707 INFO src.recsys.mcp_client: Smithery connected: gilberth/mcp-cloudflare (conn=fowl-Erxq)
+2026-03-09 09:45:11,712 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,712 INFO src.recsys.mcp_client: Smithery connected: gilberth/mcp-cloudflare (conn=chipmunk-i5hN)
+2026-03-09 09:45:11,777 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,777 INFO src.recsys.mcp_client: Smithery connected: aarya-rapid/namecheap-mcp (conn=tiglon-bPOB)
+2026-03-09 09:45:11,787 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,787 INFO src.recsys.mcp_client: Smithery connected: chohi22/mcp (conn=cardinal-HesY)
+2026-03-09 09:45:11,887 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,887 INFO src.recsys.mcp_client: Smithery connected: pulse/domainkits (conn=antlion-wqX7)
+2026-03-09 09:45:11,889 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,889 INFO src.recsys.mcp_client: Smithery connected: gigachadtrey/websimm (conn=jay-pkot)
+2026-03-09 09:45:11,962 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,963 INFO src.recsys.mcp_client: Smithery connected: pulse/dialer (conn=firefly-e4J5)
+2026-03-09 09:45:11,963 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,964 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,964 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,964 INFO src.recsys.mcp_client: Smithery connected: isdaniel/mcp_weather_server (conn=aardwolf-SSKi)
+2026-03-09 09:45:11,965 INFO src.recsys.mcp_client: Smithery connected: pulse/khalidsaidi-a2abench (conn=egret-kOIN)
+2026-03-09 09:45:11,965 INFO src.recsys.mcp_client: Smithery connected: pulse/la-rebelion-labs-registry (conn=canidae-qQsd)
+2026-03-09 09:45:11,978 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,978 INFO src.recsys.mcp_client: pulse/cloudflare-dns-analytics: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:11,988 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:11,988 INFO src.recsys.mcp_client: Smithery connected: pulse/aquaview (conn=crow-D05N)
+2026-03-09 09:45:12,035 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,036 INFO src.recsys.mcp_client: Smithery connected: pulse/khalidsaidi-a2abench (conn=horse-wU75)
+2026-03-09 09:45:12,064 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,064 INFO src.recsys.mcp_client: Smithery connected: pulse/currenttimeutc (conn=mole-Ueip)
+2026-03-09 09:45:12,192 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,193 INFO src.recsys.mcp_client: Smithery connected: pulse/pga (conn=heron-mBpS)
+2026-03-09 09:45:12,218 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chipmunk-i5hN/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,263 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,264 INFO src.recsys.mcp_client: Smithery connected: pulse/uidriver (conn=pelican-ZXif)
+2026-03-09 09:45:12,305 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-pkot/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,313 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-wqX7/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:12,316 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,317 INFO src.recsys.mcp_client: Smithery connected: Trashwbin/streamable-demo (conn=hamster-Q4u8)
+2026-03-09 09:45:12,320 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/firefly-e4J5/mcp "HTTP/1.1 405 Method Not Allowed"
+2026-03-09 09:45:12,347 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cardinal-HesY/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,353 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tiglon-bPOB/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,356 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,357 INFO src.recsys.mcp_client: Smithery connected: pulse/domainkits (conn=catfish-voxC)
+2026-03-09 09:45:12,383 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,384 INFO src.recsys.mcp_client: Smithery connected: pulse/domainkits (conn=wolf-E5Xn)
+2026-03-09 09:45:12,428 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,429 INFO src.recsys.mcp_client: Smithery connected: pulse/khalidsaidi-a2abench (conn=stoat-igXh)
+2026-03-09 09:45:12,437 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/aardwolf-SSKi/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,444 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leech-mC67/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,491 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-Erxq/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,526 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,527 INFO src.recsys.mcp_client: pulse/cloudflare-dns-analytics: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:12,534 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,534 INFO src.recsys.mcp_client: Smithery connected: fletton/cut_text (conn=badger-tOOp)
+2026-03-09 09:45:12,544 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/crow-D05N/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,545 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/egret-kOIN/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,577 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,578 INFO src.recsys.mcp_client: Smithery connected: pulse/ohmyposh (conn=pig-tiqa)
+2026-03-09 09:45:12,607 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chipmunk-i5hN/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,608 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,608 INFO src.recsys.mcp_client: Smithery connected: pulse/domainkits (conn=rhinoceros-EmGP)
+2026-03-09 09:45:12,609 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-wqX7/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:12,642 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,642 INFO src.recsys.mcp_client: Smithery connected: infobip/plantuml-mcp-server (conn=beaver-9yGN)
+2026-03-09 09:45:12,667 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-wU75/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,718 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,718 INFO src.recsys.mcp_client: Smithery connected: hellokitty-v/smithery-mcp-servers (conn=anteater-jAYS)
+2026-03-09 09:45:12,729 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/firefly-e4J5/mcp "HTTP/1.1 405 Method Not Allowed"
+2026-03-09 09:45:12,729 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-pkot/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:12,755 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wolf-E5Xn/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:12,756 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,756 INFO src.recsys.mcp_client: pulse/cloudflare-dns-analytics: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:12,764 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catfish-voxC/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:12,772 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,773 INFO src.recsys.mcp_client: Smithery connected: devbrother2024/my-mcp-server-251209 (conn=pigeon-G2Bp)
+2026-03-09 09:45:12,779 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,780 INFO src.recsys.mcp_client: pulse/axiomhq-mcp-server-axiom: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:12,787 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pelican-ZXif/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,789 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/mole-Ueip/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:12,797 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:12,797 INFO src.recsys.mcp_client: pulse/axiomhq-mcp-server-axiom: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:12,864 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leech-mC67/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,902 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/antlion-wqX7/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:12,903 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/domainkits: 403
+2026-03-09 09:45:12,903 INFO src.recsys.pipeline: pulse/domainkits: Smithery-proxied but no tools
+2026-03-09 09:45:12,906 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cardinal-HesY/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:12,915 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/hamster-Q4u8/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,010 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/chipmunk-i5hN/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,010 WARNING src.recsys.mcp_client: Smithery list_tools failed for gilberth/mcp-cloudflare: 404
+2026-03-09 09:45:13,011 INFO src.recsys.pipeline: gilberth/mcp-cloudflare: Smithery connected but no tools
+2026-03-09 09:45:13,014 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-Erxq/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,023 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/badger-tOOp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,046 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/crow-D05N/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,073 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/egret-kOIN/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,082 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beaver-9yGN/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,094 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/aardwolf-SSKi/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,114 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stoat-igXh/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,125 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/firefly-e4J5/mcp "HTTP/1.1 405 Method Not Allowed"
+2026-03-09 09:45:13,125 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/dialer: 405
+2026-03-09 09:45:13,125 INFO src.recsys.pipeline: pulse/dialer: Smithery-proxied but no tools
+2026-03-09 09:45:13,150 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,150 INFO src.recsys.mcp_client: pulse/axiomhq-mcp-server-axiom: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:45:13,154 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jay-pkot/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,156 INFO src.recsys.mcp_client: gigachadtrey/websimm: 25 tools (via Smithery Connect)
+2026-03-09 09:45:13,169 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anteater-jAYS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,190 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wolf-E5Xn/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,202 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catfish-voxC/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,218 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,218 INFO src.recsys.mcp_client: Smithery connected: pulse/remote-mcp-registry (conn=flea-lLtD)
+2026-03-09 09:45:13,235 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rhinoceros-EmGP/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,262 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/mole-Ueip/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,275 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-wU75/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,276 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/heron-mBpS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,285 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/leech-mC67/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,286 WARNING src.recsys.mcp_client: Smithery list_tools failed for gilberth/mcp-cloudflare: 404
+2026-03-09 09:45:13,286 INFO src.recsys.pipeline: gilberth/mcp-cloudflare: Smithery connected but no tools
+2026-03-09 09:45:13,291 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,291 INFO src.recsys.mcp_client: Smithery connected: pulse/123elec (conn=flamingo-HAc4)
+2026-03-09 09:45:13,302 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,303 INFO src.recsys.mcp_client: Smithery connected: pulse/domainkits (conn=tarsier-h4ZF)
+2026-03-09 09:45:13,362 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pelican-ZXif/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,368 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-G2Bp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,469 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/cardinal-HesY/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,469 WARNING src.recsys.mcp_client: Smithery list_tools failed for chohi22/mcp: 404
+2026-03-09 09:45:13,469 INFO src.recsys.pipeline: chohi22/mcp: Smithery connected but no tools
+2026-03-09 09:45:13,497 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beaver-9yGN/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,505 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-Erxq/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,505 WARNING src.recsys.mcp_client: Smithery list_tools failed for gilberth/mcp-cloudflare: 404
+2026-03-09 09:45:13,505 INFO src.recsys.pipeline: gilberth/mcp-cloudflare: Smithery connected but no tools
+2026-03-09 09:45:13,506 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/canidae-qQsd/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,532 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,533 INFO src.recsys.mcp_client: Smithery connected: pulse/remote-mcp-registry (conn=wombat-3N5d)
+2026-03-09 09:45:13,552 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/hamster-Q4u8/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,556 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wolf-E5Xn/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,557 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/domainkits: 403
+2026-03-09 09:45:13,557 INFO src.recsys.pipeline: pulse/domainkits: Smithery-proxied but no tools
+2026-03-09 09:45:13,567 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flea-lLtD/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,594 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/catfish-voxC/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,598 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/domainkits: 403
+2026-03-09 09:45:13,598 INFO src.recsys.pipeline: pulse/domainkits: Smithery-proxied but no tools
+2026-03-09 09:45:13,605 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/badger-tOOp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,637 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/aardwolf-SSKi/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,638 INFO src.recsys.mcp_client: isdaniel/mcp_weather_server: 8 tools (via Smithery Connect)
+2026-03-09 09:45:13,639 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anteater-jAYS/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,641 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pig-tiqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,655 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,655 INFO src.recsys.mcp_client: Smithery connected: pulse/oeradio (conn=bobcat-48L2)
+2026-03-09 09:45:13,673 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/crow-D05N/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,674 INFO src.recsys.mcp_client: pulse/aquaview: 4 tools (via Smithery Connect)
+2026-03-09 09:45:13,735 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/egret-kOIN/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,736 INFO src.recsys.mcp_client: pulse/khalidsaidi-a2abench: 5 tools (via Smithery Connect)
+2026-03-09 09:45:13,736 INFO src.recsys.pipeline: [Rollout 9] 1 servers up, 4 failed, 5 tools available
+2026-03-09 09:45:13,736 INFO src.recsys.pipeline: [Rollout 9] Running agent gpt-5-mini...
+2026-03-09 09:45:13,764 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rhinoceros-EmGP/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:13,764 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stoat-igXh/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,794 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/mole-Ueip/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,795 INFO src.recsys.mcp_client: pulse/currenttimeutc: 3 tools (via Smithery Connect)
+2026-03-09 09:45:13,831 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wombat-3N5d/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,860 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/beaver-9yGN/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,860 INFO src.recsys.mcp_client: infobip/plantuml-mcp-server: 3 tools (via Smithery Connect)
+2026-03-09 09:45:13,894 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:13,894 INFO src.recsys.mcp_client: Smithery connected: pulse/remote-mcp-registry (conn=stoat-YIeQ)
+2026-03-09 09:45:13,900 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pelican-ZXif/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,900 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flea-lLtD/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,910 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/horse-wU75/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,910 INFO src.recsys.mcp_client: pulse/khalidsaidi-a2abench: 5 tools (via Smithery Connect)
+2026-03-09 09:45:13,910 INFO src.recsys.pipeline: [Rollout 115] 1 servers up, 4 failed, 5 tools available
+2026-03-09 09:45:13,910 INFO src.recsys.pipeline: [Rollout 115] Running agent gpt-5-mini...
+2026-03-09 09:45:13,917 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/heron-mBpS/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,930 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-G2Bp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:13,936 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bobcat-48L2/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,955 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/canidae-qQsd/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:13,977 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flamingo-HAc4/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:13,980 INFO src.recsys.mcp_client: pulse/uidriver: 6 tools (via Smithery Connect)
+2026-03-09 09:45:14,019 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tiglon-bPOB/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:14,021 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/anteater-jAYS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,021 INFO src.recsys.mcp_client: hellokitty-v/smithery-mcp-servers: 6 tools (via Smithery Connect)
+2026-03-09 09:45:14,031 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/hamster-Q4u8/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:14,031 WARNING src.recsys.mcp_client: Smithery list_tools failed for Trashwbin/streamable-demo: 404
+2026-03-09 09:45:14,031 INFO src.recsys.pipeline: Trashwbin/streamable-demo: Smithery connected but no tools
+2026-03-09 09:45:14,065 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/badger-tOOp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:14,065 WARNING src.recsys.mcp_client: Smithery list_tools failed for fletton/cut_text: 404
+2026-03-09 09:45:14,065 INFO src.recsys.pipeline: fletton/cut_text: Smithery connected but no tools
+2026-03-09 09:45:14,104 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tarsier-h4ZF/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:14,127 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wombat-3N5d/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:14,150 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stoat-YIeQ/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,217 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bobcat-48L2/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:14,357 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:14,357 INFO src.recsys.mcp_client: Smithery connected: dhanyyudi/bmkg-id (conn=bobcat-Z5zj)
+2026-03-09 09:45:14,390 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stoat-YIeQ/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:14,395 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flea-lLtD/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,461 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tiglon-bPOB/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:14,461 WARNING src.recsys.mcp_client: Smithery list_tools failed for aarya-rapid/namecheap-mcp: 404
+2026-03-09 09:45:14,461 INFO src.recsys.pipeline: aarya-rapid/namecheap-mcp: Smithery connected but no tools
+2026-03-09 09:45:14,467 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-G2Bp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:45:14,467 WARNING src.recsys.mcp_client: Smithery list_tools failed for devbrother2024/my-mcp-server-251209: 404
+2026-03-09 09:45:14,467 INFO src.recsys.pipeline: devbrother2024/my-mcp-server-251209: Smithery connected but no tools
+2026-03-09 09:45:14,487 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stoat-igXh/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,488 INFO src.recsys.mcp_client: pulse/khalidsaidi-a2abench: 5 tools (via Smithery Connect)
+2026-03-09 09:45:14,503 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pig-tiqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,562 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/wombat-3N5d/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,576 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/rhinoceros-EmGP/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:14,578 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/domainkits: 403
+2026-03-09 09:45:14,578 INFO src.recsys.pipeline: pulse/domainkits: Smithery-proxied but no tools
+2026-03-09 09:45:14,580 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flamingo-HAc4/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:14,583 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/heron-mBpS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,583 INFO src.recsys.mcp_client: pulse/pga: 3 tools (via Smithery Connect)
+2026-03-09 09:45:14,594 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tarsier-h4ZF/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:14,681 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bobcat-Z5zj/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,767 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/canidae-qQsd/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:14,768 INFO src.recsys.mcp_client: pulse/la-rebelion-labs-registry: 3 tools (via Smithery Connect)
+2026-03-09 09:45:14,844 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:45:14,845 INFO src.recsys.mcp_client: Smithery connected: pulse/cycloid (conn=primate-wQi8)
+2026-03-09 09:45:15,032 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bobcat-Z5zj/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:45:15,068 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/tarsier-h4ZF/mcp "HTTP/1.1 403 Forbidden"
+2026-03-09 09:45:15,068 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/domainkits: 403
+2026-03-09 09:45:15,068 INFO src.recsys.pipeline: pulse/domainkits: Smithery-proxied but no tools
+2026-03-09 09:45:15,069 INFO src.recsys.pipeline: [Rollout 122] 1 servers up, 4 failed, 5 tools available
+2026-03-09 09:45:15,069 INFO src.recsys.pipeline: [Rollout 122] Running agent llama-4-maverick...
+2026-03-09 09:45:15,183 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bobcat-48L2/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:15,184 INFO src.recsys.mcp_client: pulse/oeradio: 17 tools (via Smithery Connect)
+2026-03-09 09:45:15,195 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pig-tiqa/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:15,195 INFO src.recsys.mcp_client: pulse/ohmyposh: 2 tools (via Smithery Connect)
+2026-03-09 09:45:15,195 INFO src.recsys.pipeline: [Rollout 202] 3 servers up, 2 failed, 11 tools available
+2026-03-09 09:45:15,195 INFO src.recsys.pipeline: [Rollout 202] Running agent llama-4-maverick...
+2026-03-09 09:45:15,209 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/primate-wQi8/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:15,233 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/flamingo-HAc4/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:45:15,233 INFO src.recsys.mcp_client: pulse/123elec: 5 tools (via Smithery Connect)

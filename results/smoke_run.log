@@ -1,0 +1,142 @@
+2026-03-09 09:44:21,226 INFO __main__: Pool: 766 servers
+2026-03-09 09:44:21,226 INFO __main__: Training tasks: 3
+2026-03-09 09:44:21,238 INFO __main__: Precomputing pool embeddings...
+2026-03-09 09:44:21,242 INFO src.recsys.retriever: Pool embeddings: 766 servers (766 cached, 0 embedded)
+2026-03-09 09:44:21,242 INFO __main__: Precomputing query embeddings...
+2026-03-09 09:44:22,811 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:44:22,816 INFO src.recsys.retriever: Precomputed 3 query embeddings
+2026-03-09 09:44:22,816 INFO __main__: Resuming from 0 completed rollouts
+2026-03-09 09:44:22,817 INFO __main__: Epoch 1/1: 3 rollouts (0 already done), epsilon=0.1
+2026-03-09 09:44:22,817 INFO src.recsys.pipeline: [Rollout 0] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 0] Selected 5 servers (latent_factor_n0)
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 0] Connecting to 5 servers...
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 1] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 1] Selected 5 servers (latent_factor_n0)
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 1] Connecting to 5 servers...
+2026-03-09 09:44:22,823 INFO src.recsys.pipeline: [Rollout 2] Fast retrieval (precomputed embeddings)...
+2026-03-09 09:44:22,824 INFO src.recsys.pipeline: [Rollout 2] Selected 5 servers (latent_factor_n0)
+2026-03-09 09:44:22,824 INFO src.recsys.pipeline: [Rollout 2] Connecting to 5 servers...
+2026-03-09 09:44:23,571 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:23,571 INFO src.recsys.mcp_client: Smithery connected: hollaugo/financial-research-mcp-server (conn=sturgeon-ormT)
+2026-03-09 09:44:23,621 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:23,621 INFO src.recsys.mcp_client: Smithery connected: pulse/coinapi-historical-exchange-rates (conn=worm-D8GP)
+2026-03-09 09:44:23,747 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:23,747 INFO src.recsys.mcp_client: Smithery connected: Jeetinida/stocknews-mcp (conn=stocknews-mcp)
+2026-03-09 09:44:23,823 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:23,823 INFO src.recsys.mcp_client: Smithery connected: CaullenOmdahl/nextjs-react-tailwind-assistant (conn=nextjs-react-tailwind-assistant)
+2026-03-09 09:44:23,976 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/sturgeon-ormT/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:23,997 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:23,997 INFO src.recsys.mcp_client: Smithery connected: Nekzus/npm-sentinel-mcp (conn=gamefowl-lO17)
+2026-03-09 09:44:24,127 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/worm-D8GP/mcp "HTTP/1.1 530 <none>"
+2026-03-09 09:44:24,293 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stocknews-mcp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:24,346 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,346 INFO src.recsys.mcp_client: Smithery connected: refund-decide/notary (conn=kangaroo-ObjH)
+2026-03-09 09:44:24,391 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/sturgeon-ormT/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:24,587 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-lO17/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:24,620 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,621 INFO src.recsys.mcp_client: Smithery connected: devbrother2024/typescript-mcp-server-boilerplate (conn=ocelot-xPgb)
+2026-03-09 09:44:24,640 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,640 INFO src.recsys.mcp_client: pulse/earningsfeed: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:44:24,666 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,666 INFO src.recsys.mcp_client: Smithery connected: ragalgo/ragalgo-mcp-server-v1 (conn=carp-y3Av)
+2026-03-09 09:44:24,734 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/worm-D8GP/mcp "HTTP/1.1 530 <none>"
+2026-03-09 09:44:24,933 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,933 INFO src.recsys.mcp_client: Smithery connected: pulse/finfeed-realtime-financial-data (conn=pigeon-arij)
+2026-03-09 09:44:24,974 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:24,975 INFO src.recsys.mcp_client: Smithery connected: cfocoder/financial-modeling-prep-mcp-server (conn=fowl-UMje)
+2026-03-09 09:44:25,003 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nextjs-react-tailwind-assistant/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,060 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-lO17/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:25,194 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/worm-D8GP/mcp "HTTP/1.1 530 <none>"
+2026-03-09 09:44:25,195 WARNING src.recsys.mcp_client: Smithery list_tools failed for pulse/coinapi-historical-exchange-rates: 530
+2026-03-09 09:44:25,195 INFO src.recsys.pipeline: pulse/coinapi-historical-exchange-rates: Smithery-proxied but no tools
+2026-03-09 09:44:25,196 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-arij/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,202 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/sturgeon-ormT/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:25,202 WARNING src.recsys.mcp_client: Smithery list_tools failed for hollaugo/financial-research-mcp-server: 404
+2026-03-09 09:44:25,202 INFO src.recsys.pipeline: hollaugo/financial-research-mcp-server: Smithery connected but no tools
+2026-03-09 09:44:25,217 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:25,217 INFO src.recsys.mcp_client: Smithery connected: pulse/twelve-data (conn=jellyfish-HO6W)
+2026-03-09 09:44:25,219 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-UMje/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,293 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/carp-y3Av/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,444 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-arij/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:25,462 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stocknews-mcp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:25,484 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-UMje/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:25,499 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:25,499 INFO src.recsys.mcp_client: Smithery connected: MShekow/package-version-check-mcp (conn=bear-CmPS)
+2026-03-09 09:44:25,553 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-HO6W/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,584 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/kangaroo-ObjH/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,615 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-lO17/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,616 INFO src.recsys.mcp_client: Nekzus/npm-sentinel-mcp: 19 tools (via Smithery Connect)
+2026-03-09 09:44:25,741 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ocelot-xPgb/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:25,780 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nextjs-react-tailwind-assistant/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:25,861 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/carp-y3Av/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,874 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bear-CmPS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:25,964 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/stocknews-mcp/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:25,964 WARNING src.recsys.mcp_client: Smithery list_tools failed for Jeetinida/stocknews-mcp: 404
+2026-03-09 09:44:25,964 INFO src.recsys.pipeline: Jeetinida/stocknews-mcp: Smithery connected but no tools
+2026-03-09 09:44:26,025 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-UMje/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,233 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/kangaroo-ObjH/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,263 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ocelot-xPgb/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:26,288 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bear-CmPS/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:26,304 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-HO6W/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:26,346 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/nextjs-react-tailwind-assistant/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,350 INFO src.recsys.mcp_client: CaullenOmdahl/nextjs-react-tailwind-assistant: 16 tools (via Smithery Connect)
+2026-03-09 09:44:26,527 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/carp-y3Av/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,528 INFO src.recsys.mcp_client: ragalgo/ragalgo-mcp-server-v1: 11 tools (via Smithery Connect)
+2026-03-09 09:44:26,728 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/ocelot-xPgb/mcp "HTTP/1.1 404 Not Found"
+2026-03-09 09:44:26,730 WARNING src.recsys.mcp_client: Smithery list_tools failed for devbrother2024/typescript-mcp-server-boilerplate: 404
+2026-03-09 09:44:26,730 INFO src.recsys.pipeline: devbrother2024/typescript-mcp-server-boilerplate: Smithery connected but no tools
+2026-03-09 09:44:26,764 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/jellyfish-HO6W/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,765 INFO src.recsys.mcp_client: pulse/twelve-data: 2 tools (via Smithery Connect)
+2026-03-09 09:44:26,810 INFO src.recsys.mcp_client: cfocoder/financial-modeling-prep-mcp-server: 253 tools (via Smithery Connect)
+2026-03-09 09:44:26,844 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bear-CmPS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,852 INFO src.recsys.mcp_client: MShekow/package-version-check-mcp: 4 tools (via Smithery Connect)
+2026-03-09 09:44:26,873 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/kangaroo-ObjH/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:26,874 INFO src.recsys.mcp_client: refund-decide/notary: 1 tools (via Smithery Connect)
+2026-03-09 09:44:28,236 INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-09 09:44:29,414 INFO src.recsys.pipeline: Tool selection: 256 → 50 (by task relevance)
+2026-03-09 09:44:29,417 INFO src.recsys.pipeline: [Rollout 1] 3 servers up, 2 failed, 50 tools available
+2026-03-09 09:44:29,417 INFO src.recsys.pipeline: [Rollout 1] Running agent gpt-4o-mini...
+2026-03-09 09:44:29,426 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:29,426 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-arij/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:29,427 INFO src.recsys.mcp_client: Smithery connected: CaullenOmdahl/tailwind-svelte-assistant (conn=toucan-4el8)
+2026-03-09 09:44:29,427 INFO src.recsys.mcp_client: pulse/finfeed-realtime-financial-data: 5 tools (via Smithery Connect)
+2026-03-09 09:44:29,613 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq "HTTP/1.1 201 Created"
+2026-03-09 09:44:29,614 INFO src.recsys.mcp_client: pulse/apple-search-ads-mcp: Smithery auth_required (needs OAuth grant), skipping
+2026-03-09 09:44:29,614 INFO src.recsys.pipeline: [Rollout 0] 2 servers up, 3 failed, 16 tools available
+2026-03-09 09:44:29,615 INFO src.recsys.pipeline: [Rollout 0] Running agent gpt-4o-mini...
+2026-03-09 09:44:30,590 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/toucan-4el8/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:32,475 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:32,536 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:32,949 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/pigeon-arij/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:32,997 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/toucan-4el8/mcp "HTTP/1.1 202 Accepted"
+2026-03-09 09:44:33,089 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-UMje/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:33,494 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/toucan-4el8/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:33,497 INFO src.recsys.mcp_client: CaullenOmdahl/tailwind-svelte-assistant: 11 tools (via Smithery Connect)
+2026-03-09 09:44:33,497 INFO src.recsys.pipeline: [Rollout 2] 4 servers up, 1 failed, 50 tools available
+2026-03-09 09:44:33,498 INFO src.recsys.pipeline: [Rollout 2] Running agent gpt-4o-mini...
+2026-03-09 09:44:33,708 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/fowl-UMje/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:34,944 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/carp-y3Av/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:36,327 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:36,941 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:36,943 INFO src.recsys.pipeline: [Rollout 1] Collecting feedback...
+2026-03-09 09:44:36,955 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:37,554 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/bear-CmPS/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:37,921 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/carp-y3Av/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:38,906 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:38,912 INFO src.recsys.pipeline: [Rollout 1] Done in 16.09s
+2026-03-09 09:44:39,398 INFO httpx: HTTP Request: POST https://api.smithery.ai/connect/leech-AuZq/gamefowl-lO17/mcp "HTTP/1.1 200 OK"
+2026-03-09 09:44:40,421 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:40,422 INFO src.recsys.pipeline: [Rollout 0] Collecting feedback...
+2026-03-09 09:44:43,267 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:43,272 INFO src.recsys.pipeline: [Rollout 0] Done in 20.46s
+2026-03-09 09:44:43,498 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:43,504 INFO src.recsys.pipeline: [Rollout 2] Collecting feedback...
+2026-03-09 09:44:45,543 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 09:44:45,546 INFO src.recsys.pipeline: [Rollout 2] Done in 22.72s
+2026-03-09 09:44:45,551 INFO __main__: Epoch 1 done in 0.4min | model obs=3 | cost so far: $0.00
+2026-03-09 09:44:45,577 INFO src.recsys.recommenders.latent_factor: Model saved: 3 obs, 1 agents, 11 servers → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_epoch1.json
+2026-03-09 09:44:45,594 INFO src.recsys.recommenders.latent_factor: Model saved: 3 obs, 1 agents, 11 servers → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/train_smoke/model_checkpoint.json
+2026-03-09 09:44:45,595 INFO __main__: Checkpoint saved: /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_epoch1.json
+2026-03-09 09:44:45,609 INFO src.recsys.recommenders.latent_factor: Model saved: 3 obs, 1 agents, 11 servers → /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_trained.json
+2026-03-09 09:44:45,610 INFO __main__: Training complete. Final model: /Users/kevinzhang/Documents/GitHub/MCPToolBenchPP/results/latent_factor_trained.json
+2026-03-09 09:44:45,610 INFO __main__: Total cost: $0.00 | Total observations: 3

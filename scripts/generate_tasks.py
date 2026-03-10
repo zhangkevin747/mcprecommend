@@ -1,286 +1,359 @@
-"""Generate benchmark tasks targeting underserved MCP server categories.
+"""
+Task Generation Pipeline for MCP Tool Recommender Experiment.
 
-Uses GPT-4o-mini to generate realistic one-shot tasks that exercise servers
-in categories with insufficient existing tasks (code, visualization,
-entertainment, discovery, geolocation, travel, finance, music, documents).
+Steps:
+1. Embed 766 MCP descriptions (combined Smithery + PulseMCP pool)
+2. Cluster into 15 capability clusters
+3. Generate tasks proportional to cluster size
+4. Validate each task has retrievable MCPs
+5. Deduplicate by embedding similarity
 """
 
 import json
-import uuid
+import os
+import time
+import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from dotenv import load_dotenv
 from openai import OpenAI
 
-ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env")
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-# Category → (target count, description, example tools for the prompt)
-CATEGORIES = {
-    "code": {
-        "count": 25,
-        "description": "Software development, package management, library documentation, code generation",
-        "example_tools": [
-            "resolve-library-id / query-docs (Context7 — library documentation lookup)",
-            "get_github_trending_repositories / get_github_trending_developers (GitHub Trending)",
-            "validateMermaid (Mermaid diagram validation)",
-            "get-component-docs / list-components (Ant Design component docs)",
-            "getUIComponents / getAnimations (Magic UI design components)",
-            "npmVersions / npmLatest / npmDeps / npmSize (NPM package info)",
-            "get_latest_release / list_maven_versions (Maven dependency lookup)",
-            "get-problem / search-problems / get-user-profile (LeetCode problems)",
-        ],
-    },
-    "visualization": {
-        "count": 20,
-        "description": "Charts, diagrams, presentations, icons, image processing",
-        "example_tools": [
-            "generate_bar_chart / generate_area_chart / generate_boxplot_chart (Chart generation)",
-            "convert_markdown_to_mindmap (Mindmap creation)",
-            "list_icons / search_icons (Hugeicons icon search)",
-            "create_presentation / get_presentation_info (PowerPoint creation)",
-            "drawing_generateCanvas / drawing_fillRectangle (Drawing/painting)",
-            "extract_image_from_url / extract_image_from_file (Image extraction)",
-        ],
-    },
-    "entertainment": {
-        "count": 15,
-        "description": "Games, fortune telling, randomization, leisure activities",
-        "example_tools": [
-            "getBaziDetail / getChineseCalendar (Chinese fortune telling / Bazi)",
-            "get_character_info / get_artifact_info (Wuthering Waves game data)",
-            "lol_search_champion_meta / lol_get_champion_analysis / lol_get_lane_matchup_guide (League of Legends stats)",
-            "random_int / random_choices / random_shuffle (Random number generation)",
-        ],
-    },
-    "discovery": {
-        "count": 40,
-        "description": "Information retrieval, news, recipes, academic papers, museums, weather, domain lookups",
-        "example_tools": [
-            "mcp_howtocook_getAllRecipes / mcp_howtocook_recommendMeals (Chinese recipe lookup)",
-            "get_current_time / convert_time (Time zone queries)",
-            "get-36kr-trending / get-bbc-news / get-bilibili-rank (Trending news aggregation)",
-            "get_transcript (YouTube video transcript extraction)",
-            "search / article_searcher / article_getter (Biomedical paper search — BioMCP)",
-            "search_wikipedia / get_article (Wikipedia article lookup)",
-            "package_search / package_show (Data.gov dataset search)",
-            "search / getStory / getStoryWithComments (Hacker News stories)",
-            "whois_domain / whois_ip (WHOIS domain/IP lookups)",
-            "search_cards / get_card_by_id (Yu-Gi-Oh card database)",
-            "search_papers / get_paper_data (ArXiv paper search)",
-            "search-museum-objects / get-museum-object / list-departments (Met Museum collection)",
-            "get_weather / get_weather_by_city (Weather forecasts)",
-            "deepwiki_fetch (Deepwiki repository documentation)",
-            "fetch_html / fetch_markdown (Web content fetching)",
-        ],
-    },
-    "geolocation": {
-        "count": 35,
-        "description": "Maps, geocoding, routing, nearby places, neighborhood analysis, GIS",
-        "example_tools": [
-            "geocode_address / reverse_geocode (Address ↔ coordinates conversion)",
-            "find_nearby_places / search_category (POI search near location)",
-            "get_route_directions (Turn-by-turn navigation between locations)",
-            "suggest_meeting_point (Optimal meeting point for multiple people)",
-            "analyze_neighborhood / explore_area (Area livability analysis)",
-            "find_schools_nearby / find_ev_charging_stations / find_parking_facilities (Nearby amenity search)",
-            "analyze_commute (Commute analysis between home and work)",
-            "wkt_to_geojson / geojson_to_wkt / csv_to_geojson (GIS data format conversion)",
-            "mcp_geo_calculate_distance / mcp_geo_calculate_area (Geospatial calculations)",
-            "get_bounds / search_overpass (Bounding box and OpenStreetMap queries)",
-        ],
-    },
-    "travel": {
-        "count": 25,
-        "description": "Transportation, accommodation, tickets, bus schedules, theme parks",
-        "example_tools": [
-            "query-tickets / query-ticket-price / query-transfer (China train ticket search — 12306)",
-            "airbnb_search / airbnb_listing_details (Airbnb accommodation search)",
-            "getOneDayTicketPrice / getTwoDayTicketPrice (Shanghai Disney ticket prices)",
-            "get_timetable / get_approach_for_station (Nagoya bus schedules)",
-            "get_forecast (Japanese weather forecast for travel planning)",
-        ],
-    },
-    "finance_extra": {
-        "count": 20,
-        "description": "Stock market, crypto, exchange rates, market analysis, financial data",
-        "example_tools": [
-            "get_current_stock_price / get_stock_price_date_range / get_dividends (Yahoo Finance stock data)",
-            "load_all_tickers / get_stock_ohlcv / get_stock_fundamental (Korean KOSPI/KOSDAQ market data)",
-            "get_asset_price / list_assets (Asset price lookup)",
-            "yfinance_get_ticker_info / yfinance_get_ticker_news / yfinance_get_top (Yahoo Finance ticker info)",
-            "get_market_movers / get_cnn_fear_greed_index / get_crypto_fear_greed_index (Market sentiment)",
-            "exchange_rate (Currency exchange rate conversion)",
-            "get-crypto-price / get-market-analysis / get-historical-analysis (Crypto price and analysis)",
-            "get_hist_data / get_realtime_data / get_balance_sheet (China A-share stock data)",
-        ],
-    },
-    "music_misc": {
-        "count": 10,
-        "description": "Music analysis, calculations, barcodes, refund checking, document processing",
-        "example_tools": [
-            "load / get_duration / tempo / chroma_cqt / mfcc (Audio/music analysis)",
-            "calculate (Mathematical calculations)",
-            "decode_image / generate_qr / generate_barcode (Barcode/QR code operations)",
-            "refund_eligibility (Consumer refund eligibility check)",
-            "create_document / get_document_text (Word document operations)",
-            "read_pdf / pdf_merger / pdf_splitter (PDF operations)",
-        ],
-    },
-}
+DATA_DIR = Path("data")
+MCP_FILE = DATA_DIR / "combined_server_pool.json"
+EMBEDDINGS_FILE = DATA_DIR / "mcp_embeddings.npz"
+CLUSTERS_FILE = DATA_DIR / "mcp_clusters.json"
+TASKS_RAW_FILE = DATA_DIR / "tasks_raw.json"
+TASKS_FINAL_FILE = DATA_DIR / "tasks.json"
 
-SYSTEM_PROMPT = """You are a benchmark task generator for an MCP (Model Context Protocol) tool recommendation system.
-
-Generate realistic, diverse, one-shot questions that a user might ask an AI assistant that would require using external tools to answer. Each question should be answerable with 1-3 tool calls.
-
-Rules:
-- Questions should be natural language, like a real user would ask
-- Questions should be specific enough to have a concrete answer
-- Questions should NOT reference any specific tool name or API
-- Questions should be varied — different phrasings, different sub-topics within the category
-- Each question should be independent (not building on previous questions)
-- Mix difficulty: some simple lookups, some requiring combining information
-- Include questions that require real-time or current data where applicable
-- Do NOT include questions that need local file access or user-specific data
-
-Output format: JSON array of objects with fields:
-- "query": the question text
-- "call_type": "single" if answerable with 1 tool call, "multi" if 2-3 needed
-- "subcategory": a short label for the sub-topic (e.g., "stock_price", "recipe_search")
-"""
+EMBEDDING_MODEL = "text-embedding-3-small"
+TASK_GEN_MODEL = "gpt-5-mini"
+N_CLUSTERS = 15
+TARGET_TASKS = 2500
+MIN_TASKS_PER_CLUSTER = 10
 
 
-def generate_for_category(client: OpenAI, category: str, info: dict) -> list[dict]:
-    """Generate tasks for one category."""
-    user_prompt = f"""Generate exactly {info['count']} benchmark questions for the category: {category}
+# ── Step 1: Embed MCP descriptions ──────────────────────────────────────────
 
-Category description: {info['description']}
+def load_mcps():
+    with open(MCP_FILE) as f:
+        data = json.load(f)
+    return data["servers"]
 
-These are the kinds of tools available (for context only — do NOT mention tool names in questions):
-{chr(10).join(f"  - {t}" for t in info['example_tools'])}
 
-Generate {info['count']} diverse questions. Return a JSON array."""
+def embed_descriptions(mcps, batch_size=100):
+    """Embed MCP descriptions. Cache to disk."""
+    if EMBEDDINGS_FILE.exists():
+        print(f"Loading cached embeddings from {EMBEDDINGS_FILE}")
+        npz = np.load(EMBEDDINGS_FILE)
+        return npz["embeddings"], npz["ids"]
+
+    texts = []
+    ids = []
+    for m in mcps:
+        name = m.get("name", m.get("displayName", ""))
+        desc = f"{name}. {m.get('description', '')}"
+        texts.append(desc[:8000])
+        ids.append(m.get("id", m.get("qualifiedName", name)))
+
+    print(f"Embedding {len(texts)} MCP descriptions...")
+    all_embeddings = []
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i:i + batch_size]
+        resp = client.embeddings.create(model=EMBEDDING_MODEL, input=batch)
+        batch_embs = [e.embedding for e in resp.data]
+        all_embeddings.extend(batch_embs)
+        print(f"  Embedded {min(i + batch_size, len(texts))}/{len(texts)}")
+        time.sleep(0.1)
+
+    embeddings = np.array(all_embeddings, dtype=np.float32)
+    ids = np.array(ids)
+    np.savez(EMBEDDINGS_FILE, embeddings=embeddings, ids=ids)
+    print(f"Saved embeddings to {EMBEDDINGS_FILE}")
+    return embeddings, ids
+
+
+# ── Step 2: Cluster ─────────────────────────────────────────────────────────
+
+def cluster_mcps(embeddings, ids, mcps, n_clusters=N_CLUSTERS):
+    """K-means clustering of MCP embeddings."""
+    from sklearn.cluster import KMeans
+
+    if CLUSTERS_FILE.exists():
+        print(f"Loading cached clusters from {CLUSTERS_FILE}")
+        with open(CLUSTERS_FILE) as f:
+            return json.load(f)
+
+    print(f"Clustering {len(embeddings)} MCPs into {n_clusters} clusters...")
+    km = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
+    labels = km.fit_predict(embeddings)
+
+    # Build cluster info
+    mcp_lookup = {}
+    for m in mcps:
+        key = m.get("id", m.get("qualifiedName", m.get("name", "")))
+        mcp_lookup[key] = m
+    clusters = {}
+    for i, (mcp_id, label) in enumerate(zip(ids, labels)):
+        label = int(label)
+        if label not in clusters:
+            clusters[label] = {"mcps": [], "descriptions": []}
+        m = mcp_lookup.get(mcp_id, {})
+        name = m.get("name", m.get("displayName", mcp_id))
+        clusters[label]["mcps"].append(str(mcp_id))
+        clusters[label]["descriptions"].append(
+            f"{name}: {m.get('description', 'N/A')[:200]}"
+        )
+
+    # Summarize each cluster
+    for label, info in clusters.items():
+        info["size"] = len(info["mcps"])
+
+    with open(CLUSTERS_FILE, "w") as f:
+        json.dump(clusters, f, indent=2)
+    print(f"Saved {n_clusters} clusters to {CLUSTERS_FILE}")
+
+    sizes = sorted([c["size"] for c in clusters.values()], reverse=True)
+    print(f"Cluster sizes: max={sizes[0]}, min={sizes[-1]}, median={sizes[len(sizes)//2]}")
+    return clusters
+
+
+# ── Step 3: Generate tasks ──────────────────────────────────────────────────
+
+def compute_tasks_per_cluster(clusters, target_total=TARGET_TASKS, min_per=MIN_TASKS_PER_CLUSTER):
+    """Allocate tasks proportional to cluster size with a minimum floor."""
+    total_mcps = sum(c["size"] for c in clusters.values())
+    allocations = {}
+    for label, info in clusters.items():
+        raw = (info["size"] / total_mcps) * target_total
+        allocations[label] = max(min_per, round(raw))
+
+    # Scale to hit target
+    current_total = sum(allocations.values())
+    if current_total > target_total * 1.2:
+        # Reduce proportionally from large clusters
+        excess = current_total - target_total
+        large = {k: v for k, v in allocations.items() if v > min_per}
+        large_total = sum(large.values())
+        for k in large:
+            reduction = round((large[k] / large_total) * excess)
+            allocations[k] = max(min_per, allocations[k] - reduction)
+
+    print(f"Task allocation: {sum(allocations.values())} tasks across {len(allocations)} clusters")
+    return allocations
+
+
+def generate_tasks_for_cluster(cluster_label, cluster_info, num_tasks):
+    """Generate tasks for a single cluster using LLM."""
+    # Pick representative descriptions (up to 20)
+    descs = cluster_info["descriptions"][:20]
+    desc_block = "\n".join(f"- {d}" for d in descs)
+
+    prompt = f"""You are generating evaluation tasks for an AI tool recommender system.
+
+These are MCP tool servers in a capability cluster:
+
+{desc_block}
+
+Generate exactly {num_tasks} tasks. Each task is a natural language request (1-2 sentences) that an AI agent would need an external tool to answer.
+
+STRICT RULES — every task MUST satisfy ALL of these:
+
+1. REQUIRES A TOOL: The task needs live/external data that an LLM cannot answer from memory. Good: "What is the current price of Bitcoin?" Bad: "Explain how Bitcoin mining works."
+
+2. SINGLE ROLLOUT: Completable with one tool call. No multi-step chains, no "first do X then Y."
+
+3. NO PERSONAL STATE: Do not assume the user has accounts, files, repos, databases, projects, teams, calendars, inboxes, or any pre-existing data. Do not use "my", "our", or assume authenticated access. Good: "Find the top trending GitHub repos today." Bad: "List the open issues in my GitHub repo."
+
+4. TOOL-AGNOSTIC: Do not name specific tools, APIs, or services. The task should describe WHAT the user wants, not HOW to get it.
+
+5. CONCRETE & SPECIFIC: Include specific entities, dates, locations, or parameters. Good: "What's the weather forecast for Tokyo this weekend?" Bad: "Get some weather data."
+
+6. NO FABRICATED REFERENCES: Only reference real, publicly accessible entities (real companies, real cities, real GitHub repos, real stock tickers). NEVER invent URLs, IDs, template names, project names, or endpoints that don't exist. The agent will actually try to use these — fake references cause false errors.
+
+7. DIVERSE: Vary the topic, complexity, and phrasing. Mix questions, commands, and requests.
+
+Return a JSON array of strings. No other text."""
 
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
-        temperature=0.9,
-        max_tokens=4000,
+        model=TASK_GEN_MODEL,
+        messages=[{"role": "user", "content": prompt}],
         response_format={"type": "json_object"},
     )
 
-    content = resp.choices[0].message.content
-    parsed = json.loads(content)
-
-    # Handle various JSON formats the model might return
-    if isinstance(parsed, list):
-        tasks = parsed
-    elif isinstance(parsed, dict):
-        # Try common keys
-        for key in ("tasks", "questions", "data", "results", "items", "benchmarks"):
-            if key in parsed and isinstance(parsed[key], list):
-                tasks = parsed[key]
-                break
+    try:
+        content = resp.choices[0].message.content
+        parsed = json.loads(content)
+        # Handle {"tasks": [...]} or just [...]
+        if isinstance(parsed, dict):
+            tasks = parsed.get("tasks", parsed.get("questions", list(parsed.values())[0]))
         else:
-            # Use first list value found
-            tasks = []
-            for v in parsed.values():
-                if isinstance(v, list):
-                    tasks = v
-                    break
-    else:
-        tasks = []
-
-    # Normalize and add metadata
-    result = []
-    for t in tasks:
-        if not isinstance(t, dict):
-            continue
-        # Find the query text — try multiple field names
-        query = t.get("query") or t.get("question") or t.get("text") or t.get("prompt") or ""
-        if not query:
-            continue
-        call_type = t.get("call_type", "single")
-        if call_type not in ("single", "multi"):
-            call_type = "single"
-        result.append({
-            "uuid": str(uuid.uuid4()),
-            "category": category if category != "finance_extra" else "finance",
-            "call_type": call_type,
-            "source": "generated",
-            "query": query,
-            "subcategory": t.get("subcategory", ""),
-        })
-
-    print(f"  {category}: {len(result)} tasks generated (requested {info['count']})")
-    return result
+            tasks = parsed
+        return [t for t in tasks if isinstance(t, str)]
+    except (json.JSONDecodeError, KeyError, IndexError) as e:
+        print(f"  Failed to parse response for cluster {cluster_label}: {e}")
+        return []
 
 
-def main():
-    client = OpenAI()
+CONCURRENCY = 32
+MAX_PER_CALL = 40
+
+
+def generate_all_tasks(clusters, allocations):
+    """Generate tasks for all clusters with concurrent LLM calls."""
+    if TASKS_RAW_FILE.exists():
+        print(f"Loading cached raw tasks from {TASKS_RAW_FILE}")
+        with open(TASKS_RAW_FILE) as f:
+            return json.load(f)
+
+    # Build all work items: (cluster_label, batch_count)
+    work_items = []
+    for label, num_tasks in allocations.items():
+        remaining = num_tasks
+        while remaining > 0:
+            batch_count = min(remaining, MAX_PER_CALL)
+            work_items.append((label, batch_count))
+            remaining -= batch_count
+
+    print(f"  {len(work_items)} LLM calls across {len(allocations)} clusters (concurrency={CONCURRENCY})")
 
     all_tasks = []
-    for category, info in CATEGORIES.items():
-        print(f"Generating {info['count']} tasks for {category}...")
-        tasks = generate_for_category(client, category, info)
-        all_tasks.extend(tasks)
+    completed = 0
 
-    print(f"\nTotal generated: {len(all_tasks)} tasks")
+    def do_batch(item):
+        label, batch_count = item
+        tasks = generate_tasks_for_cluster(label, clusters[label], batch_count)
+        return label, tasks
 
-    # Category breakdown
-    from collections import Counter
-    cats = Counter(t["category"] for t in all_tasks)
-    print(f"By category: {dict(cats)}")
-
-    # Save
-    out = ROOT / "data" / "tasks_generated.json"
-    with open(out, "w") as f:
-        json.dump(all_tasks, f, indent=2)
-    print(f"Saved to {out}")
-
-    # Also rebuild the combined task file
-    print("\nRebuilding combined task file...")
-
-    # Load existing MCPToolBench++ tasks
-    existing_tasks = []
-    task_files = {
-        "search": ROOT / "data" / "search" / "search_0725_single_v2.json",
-        "browser": ROOT / "data" / "browser" / "browser_0724_single_v3.json",
-        "finance": ROOT / "data" / "finance" / "finance_0724_single_v3.json",
-    }
-    for domain, path in task_files.items():
-        if path.exists():
-            with open(path) as f:
-                tasks = json.load(f)
+    with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
+        futures = {executor.submit(do_batch, item): item for item in work_items}
+        for future in as_completed(futures):
+            label, tasks = future.result()
             for t in tasks:
-                t["source"] = "mcptoolbench"
-                if "query" not in t:
-                    t["query"] = t.get("question", t.get("instruction", ""))
-            existing_tasks.extend(tasks)
-            print(f"  {domain}: {len(tasks)} existing tasks")
+                all_tasks.append({
+                    "query": t,
+                    "cluster_id": int(label),
+                    "cluster_size": clusters[label]["size"],
+                })
+            completed += 1
+            if completed % 5 == 0 or completed == len(work_items):
+                print(f"  {completed}/{len(work_items)} batches done ({len(all_tasks)} tasks)")
 
-    # Load LiveMCPBench tasks
-    lmcb_path = ROOT / "data" / "tasks_livemcpbench.json"
-    if lmcb_path.exists():
-        with open(lmcb_path) as f:
-            lmcb_tasks = json.load(f)
-        existing_tasks.extend(lmcb_tasks)
-        print(f"  livemcpbench: {len(lmcb_tasks)} tasks")
+    print(f"Generated {len(all_tasks)} raw tasks")
+    with open(TASKS_RAW_FILE, "w") as f:
+        json.dump(all_tasks, f, indent=2)
+    return all_tasks
 
-    combined = existing_tasks + all_tasks
-    cats_combined = Counter(t.get("category", "unknown") for t in combined)
-    sources = Counter(t.get("source", "unknown") for t in combined)
-    print(f"\nCombined: {len(combined)} tasks")
-    print(f"By source: {dict(sources)}")
-    print(f"By category: {dict(cats_combined)}")
 
-    out_combined = ROOT / "data" / "tasks_combined.json"
-    with open(out_combined, "w") as f:
-        json.dump(combined, f, indent=2, default=str)
-    print(f"Saved to {out_combined}")
+# ── Step 4: Validate retrievability ─────────────────────────────────────────
+
+def validate_tasks(tasks, embeddings, ids, top_k=10, min_similarity=0.3):
+    """Check each task has at least one retrievable MCP above similarity threshold."""
+    print(f"Validating {len(tasks)} tasks against MCP pool...")
+
+    # Normalize MCP embeddings
+    norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+    emb_normed = embeddings / norms
+
+    # Embed all task queries
+    queries = [t["query"] for t in tasks]
+    task_embeddings = []
+    for i in range(0, len(queries), 100):
+        batch = queries[i:i + 100]
+        resp = client.embeddings.create(model=EMBEDDING_MODEL, input=batch)
+        task_embeddings.extend([e.embedding for e in resp.data])
+        time.sleep(0.1)
+
+    task_emb = np.array(task_embeddings, dtype=np.float32)
+    task_norms = np.linalg.norm(task_emb, axis=1, keepdims=True)
+    task_emb_normed = task_emb / task_norms
+
+    # Cosine similarity: tasks × MCPs
+    sims = task_emb_normed @ emb_normed.T  # (n_tasks, n_mcps)
+
+    valid_tasks = []
+    dropped = 0
+    for i, task in enumerate(tasks):
+        top_sims = np.sort(sims[i])[-top_k:]
+        if top_sims[-1] >= min_similarity:
+            task["top_mcp_similarity"] = float(top_sims[-1])
+            task["embedding_index"] = i
+            valid_tasks.append(task)
+        else:
+            dropped += 1
+
+    print(f"Valid: {len(valid_tasks)}, Dropped: {dropped} (max sim < {min_similarity})")
+    return valid_tasks, task_emb
+
+
+# ── Step 5: Deduplicate ─────────────────────────────────────────────────────
+
+def deduplicate_tasks(tasks, task_embeddings, similarity_threshold=0.92):
+    """Remove near-duplicate tasks by embedding similarity."""
+    print(f"Deduplicating {len(tasks)} tasks (threshold={similarity_threshold})...")
+
+    indices = [t["embedding_index"] for t in tasks]
+    embs = task_embeddings[indices]
+    norms = np.linalg.norm(embs, axis=1, keepdims=True)
+    embs_normed = embs / norms
+
+    # Pairwise similarity (chunked to avoid memory issues)
+    keep = set(range(len(tasks)))
+    for i in range(len(tasks)):
+        if i not in keep:
+            continue
+        sims = embs_normed[i] @ embs_normed.T
+        for j in range(i + 1, len(tasks)):
+            if j in keep and sims[j] > similarity_threshold:
+                keep.discard(j)
+
+    deduped = [tasks[i] for i in sorted(keep)]
+    print(f"After dedup: {len(deduped)} tasks (removed {len(tasks) - len(deduped)} duplicates)")
+    return deduped
+
+
+# ── Main ────────────────────────────────────────────────────────────────────
+
+def main():
+    print("=" * 60)
+    print("Task Generation Pipeline")
+    print("=" * 60)
+
+    # Step 1
+    print("\n── Step 1: Embed MCP descriptions ──")
+    mcps = load_mcps()
+    embeddings, ids = embed_descriptions(mcps)
+
+    # Step 2
+    print("\n── Step 2: Cluster MCPs ──")
+    clusters = cluster_mcps(embeddings, ids, mcps, n_clusters=N_CLUSTERS)
+
+    # Step 3
+    print("\n── Step 3: Generate tasks ──")
+    allocations = compute_tasks_per_cluster(clusters)
+    tasks = generate_all_tasks(clusters, allocations)
+
+    # Step 4
+    print("\n── Step 4: Validate retrievability ──")
+    valid_tasks, task_emb = validate_tasks(tasks, embeddings, ids)
+
+    # Step 5
+    print("\n── Step 5: Deduplicate ──")
+    final_tasks = deduplicate_tasks(valid_tasks, task_emb)
+
+    # Clean up and save
+    for i, t in enumerate(final_tasks):
+        t["task_id"] = f"task_{i:04d}"
+        t.pop("embedding_index", None)
+
+    with open(TASKS_FINAL_FILE, "w") as f:
+        json.dump(final_tasks, f, indent=2)
+
+    print(f"\n{'=' * 60}")
+    print(f"Final: {len(final_tasks)} tasks saved to {TASKS_FINAL_FILE}")
+    print(f"Cluster coverage: {len(set(t['cluster_id'] for t in final_tasks))}/{len(clusters)} clusters")
+    print(f"{'=' * 60}")
 
 
 if __name__ == "__main__":

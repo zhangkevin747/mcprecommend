@@ -80,7 +80,7 @@ class TuckerRecommender(BaseRecommender):
         return f"tucker_n{total_obs}"
 
     def recommend(self, agent: str, task_query: str, candidates: list[dict], k: int,
-                  task_category: str = "", task_emb=None) -> list[dict]:
+                  task_category: str = "", task_emb=None, epsilon: float = 0.0) -> list[dict]:
         n_obs = self.n_obs.get(agent, 0)
         alpha = min(n_obs / 500, 0.5)
 

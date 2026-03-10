@@ -141,7 +141,7 @@ class SmitheryConnection:
         self.connection_id: str | None = None
         self.tools: list[dict] = []
         self._client = httpx.AsyncClient(
-            timeout=MCP_CALL_TIMEOUT,
+            timeout=httpx.Timeout(MCP_CALL_TIMEOUT, connect=10, read=MCP_CALL_TIMEOUT),
             headers={
                 "Authorization": f"Bearer {SMITHERY_API_KEY}",
                 "Accept": "application/json, text/event-stream",
@@ -151,10 +151,17 @@ class SmitheryConnection:
     async def connect(self) -> bool:
         """Create a Smithery Connect connection. Returns True on success."""
         try:
-            resp = await self._client.post(
-                f"{SMITHERY_API_BASE}/connect/{SMITHERY_NAMESPACE}",
-                json={"mcpUrl": self.mcp_url},
-            )
+            resp = None
+            for attempt in range(4):
+                resp = await self._client.post(
+                    f"{SMITHERY_API_BASE}/connect/{SMITHERY_NAMESPACE}",
+                    json={"mcpUrl": self.mcp_url},
+                )
+                if resp.status_code != 429:
+                    break
+                wait = 2 ** attempt
+                log.debug(f"Smithery 429 for {self.server_id}, retrying in {wait}s (attempt {attempt + 1})")
+                await asyncio.sleep(wait)
             if resp.status_code not in (200, 201):
                 log.warning(f"Smithery connect failed for {self.server_id}: {resp.status_code} {resp.text[:200]}")
                 return False
@@ -181,15 +188,17 @@ class SmitheryConnection:
         """Send MCP initialize + initialized notification. Required by some servers before tools/list."""
         ep = self._mcp_endpoint()
         try:
-            await self._client.post(ep, json={
+            await asyncio.wait_for(self._client.post(ep, json={
                 "jsonrpc": "2.0", "id": 0, "method": "initialize",
                 "params": {
-                    "protocolVersion": "2024-11-05",
+                    "protocolVersion": "2025-11-25",
                     "capabilities": {},
                     "clientInfo": {"name": "probe", "version": "1.0"},
                 },
-            })
-            await self._client.post(ep, json={"jsonrpc": "2.0", "method": "notifications/initialized"})
+            }), timeout=15)
+            await asyncio.wait_for(self._client.post(ep, json={
+                "jsonrpc": "2.0", "method": "notifications/initialized",
+            }), timeout=10)
         except Exception:
             pass
 
@@ -199,10 +208,10 @@ class SmitheryConnection:
             return []
         await self._mcp_initialize()
         try:
-            resp = await self._client.post(
+            resp = await asyncio.wait_for(self._client.post(
                 self._mcp_endpoint(),
                 json={"jsonrpc": "2.0", "id": 1, "method": "tools/list", "params": {}},
-            )
+            ), timeout=MCP_CALL_TIMEOUT)
             if resp.status_code != 200:
                 log.warning(f"Smithery list_tools failed for {self.server_id}: {resp.status_code}")
                 return []

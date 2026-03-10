@@ -6,11 +6,11 @@ import logging
 import anthropic
 import openai
 
-from .config import AGENTS, ANTHROPIC_API_KEY, OPENAI_API_KEY
+from .config import AGENTS, ANTHROPIC_API_KEY, OPENAI_API_KEY, OPENROUTER_API_KEY
 
 log = logging.getLogger(__name__)
 
-FEEDBACK_PROMPT = """You just completed a task using tools from an MCP server inventory.
+FEEDBACK_PROMPT_USED = """You just completed a task using tools from an MCP server inventory.
 
 Task: {task}
 Your answer: {answer}
@@ -18,7 +18,7 @@ Your answer: {answer}
 Tools you were offered: {tools_offered}
 Tools you actually used: {tools_used}
 
-For each tool you used, rate it on this scale:
+For each tool you USED, rate it on this scale:
 - liked: Tool worked well, returned useful results
 - neutral: Tool worked but results were mediocre or partially helpful
 - disliked: Tool failed, returned errors, or gave unhelpful results
@@ -28,6 +28,23 @@ Respond in JSON format:
   "ratings": {{
     "tool_name": {{"rating": "liked|neutral|disliked", "reason": "brief explanation"}}
   }}
+}}
+
+Only output the JSON, nothing else."""
+
+FEEDBACK_PROMPT_UNUSED = """You were given a task and offered tools from an MCP server inventory, but you did NOT use any of them.
+
+Task: {task}
+Your answer: {answer}
+
+Tools you were offered: {tools_offered}
+
+Were any of the offered tools relevant and useful for this task? Answer honestly.
+
+Respond in JSON format:
+{{
+  "tools_relevant": true or false,
+  "reason": "brief explanation of why you did or didn't find the tools relevant"
 }}
 
 Only output the JSON, nothing else."""
@@ -44,21 +61,39 @@ async def collect_feedback(
 
     Returns: {"tool_name": {"rating": "liked|neutral|disliked", "reason": "..."}}
     """
-    if not tools_used:
+    if not tools_offered:
         return {}
 
-    prompt = FEEDBACK_PROMPT.format(
-        task=task,
-        answer=answer,
-        tools_offered=", ".join(tools_offered),
-        tools_used=", ".join(tools_used),
-    )
+    # Cap offered tools list in prompt to avoid huge feedback prompts
+    offered_str = ", ".join(tools_offered[:30])
+    if len(tools_offered) > 30:
+        offered_str += f" ... and {len(tools_offered) - 30} more"
+
+    if tools_used:
+        prompt = FEEDBACK_PROMPT_USED.format(
+            task=task,
+            answer=answer or "(no answer produced)",
+            tools_offered=offered_str,
+            tools_used=", ".join(tools_used),
+        )
+    else:
+        prompt = FEEDBACK_PROMPT_UNUSED.format(
+            task=task,
+            answer=answer or "(no answer produced)",
+            tools_offered=offered_str,
+        )
 
     agent_cfg = AGENTS[agent_name]
 
     try:
         if agent_cfg["provider"] == "anthropic":
             return await _feedback_anthropic(agent_cfg["model"], prompt)
+        elif agent_cfg["provider"] == "openrouter":
+            return await _feedback_openai(
+                agent_cfg["model"], prompt,
+                base_url="https://openrouter.ai/api/v1",
+                api_key=OPENROUTER_API_KEY,
+            )
         else:
             return await _feedback_openai(agent_cfg["model"], prompt)
     except Exception as e:
@@ -77,8 +112,11 @@ async def _feedback_anthropic(model: str, prompt: str) -> dict:
     return _parse_feedback(text)
 
 
-async def _feedback_openai(model: str, prompt: str) -> dict:
-    client = openai.AsyncOpenAI(api_key=OPENAI_API_KEY)
+async def _feedback_openai(model: str, prompt: str, base_url=None, api_key=None) -> dict:
+    client = openai.AsyncOpenAI(
+        api_key=api_key or OPENAI_API_KEY,
+        **({"base_url": base_url} if base_url else {}),
+    )
     resp = await client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
@@ -89,8 +127,12 @@ async def _feedback_openai(model: str, prompt: str) -> dict:
 
 
 def _parse_feedback(text: str) -> dict:
-    """Parse JSON feedback from agent response."""
-    # Strip markdown code fences if present
+    """Parse JSON feedback from agent response.
+
+    Handles two formats:
+    - Tool ratings: {"ratings": {"tool": {"rating": "liked", "reason": "..."}}}
+    - Relevance check: {"tools_relevant": bool, "reason": "..."}
+    """
     text = text.strip()
     if text.startswith("```"):
         lines = text.split("\n")
@@ -98,6 +140,10 @@ def _parse_feedback(text: str) -> dict:
 
     try:
         data = json.loads(text)
+        # Relevance check format (unused tools path)
+        if "tools_relevant" in data:
+            return data
+        # Tool ratings format (used tools path)
         return data.get("ratings", data)
     except json.JSONDecodeError:
         log.warning(f"Failed to parse feedback JSON: {text[:200]}")
